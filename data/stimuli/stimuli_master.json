@@ -1,0 +1,6125 @@
+{
+  "items": [
+    {
+      "item_id": "Q130",
+      "skill": "noskill",
+      "steps": [
+        {
+          "step": 215,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.7084794719832086
+        },
+        {
+          "step": 216,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.5069114916873256
+        },
+        {
+          "step": 217,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.0375489949159154
+        },
+        {
+          "step": 218,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.9762739884962848
+        }
+      ],
+      "skill_cum_accuracy": 0.3425925925925926,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of overconfidence.",
+          "ko": "학생이 과신의 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows indications of slipping.",
+          "ko": "학생은 또한 미끄러지는 징후를 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q085",
+      "skill": "substitution",
+      "steps": [
+        {
+          "step": 11,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.4935325377964292
+        },
+        {
+          "step": 12,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 1.255289275552521
+        },
+        {
+          "step": 13,
+          "correct": true,
+          "hint_count": 2,
+          "response_time_ratio": 0.3540559536028255
+        },
+        {
+          "step": 14,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.611551190714006
+        }
+      ],
+      "skill_cum_accuracy": 0.1111111111111111,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of overconfidence, indicated by a high status level.",
+          "ko": "학생은 과신의 징후를 보이며, 높은 상태 수준을 나타내고 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows slipping, marked by another high status level.",
+          "ko": "학생은 또한 미끄러짐을 보이며, 또 다른 높은 상태 수준으로 표시된다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q140",
+      "skill": "transversals",
+      "steps": [
+        {
+          "step": 62,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.983502206356488
+        },
+        {
+          "step": 63,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.5527792834531997
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrates a strong sense of certainty in their responses.",
+          "ko": "학생은 자신의 답변에 대해 강한 확신을 보인다."
+        },
+        {
+          "id": "S2",
+          "en": "Their confidence level appears elevated compared to typical performance expectations.",
+          "ko": "그들의 자신감 수준은 일반적인 성과 기대치에 비해 높아 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q010",
+      "skill": "discount",
+      "steps": [
+        {
+          "step": 104,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.1079506430395498
+        },
+        {
+          "step": 105,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.4318024691733106
+        },
+        {
+          "step": 106,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.2698765432333191
+        },
+        {
+          "step": 107,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.2698765432333191
+        }
+      ],
+      "skill_cum_accuracy": 0.2,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of overconfidence.",
+          "ko": "학생이 과신의 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows indications of slipping.",
+          "ko": "학생은 또한 미끄러지는 징후를 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q064",
+      "skill": "inequality-solving",
+      "steps": [
+        {
+          "step": 461,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.1531745684373509
+        },
+        {
+          "step": 462,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.3063491186469294
+        },
+        {
+          "step": 463,
+          "correct": false,
+          "hint_count": 4,
+          "response_time_ratio": 0.1531745684373509
+        },
+        {
+          "step": 464,
+          "correct": false,
+          "hint_count": 5,
+          "response_time_ratio": 0.1148809012265323
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrates a high level of overconfidence.",
+          "ko": "학생이 과도한 자신감을 보여준다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q017",
+      "skill": "mean",
+      "steps": [
+        {
+          "step": 305,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 7.718453916712557
+        },
+        {
+          "step": 308,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 2.2991139368706284
+        },
+        {
+          "step": 309,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.1642224180764479
+        },
+        {
+          "step": 310,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.3519052048181313
+        }
+      ],
+      "skill_cum_accuracy": 0.2307692307692307,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of overconfidence, indicated by a high status level.",
+          "ko": "학생은 과신의 징후를 보이며, 높은 상태 수준을 나타내고 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows a high degree of slipping.",
+          "ko": "학생은 또한 높은 정도의 실수를 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q077",
+      "skill": "discount",
+      "steps": [
+        {
+          "step": 332,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.1975790909877041
+        },
+        {
+          "step": 333,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.9286217450015092
+        },
+        {
+          "step": 334,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.612495201381167
+        },
+        {
+          "step": 335,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.4346740152600889
+        }
+      ],
+      "skill_cum_accuracy": 0.25,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of overconfidence.",
+          "ko": "학생이 과신의 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows indications of slipping.",
+          "ko": "학생은 또한 미끄러지는 징후를 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q102",
+      "skill": "interpreting-numberline",
+      "steps": [
+        {
+          "step": 0,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.5385089712381173
+        },
+        {
+          "step": 107,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.1833222011024514
+        },
+        {
+          "step": 161,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.8822380900557146
+        }
+      ],
+      "skill_cum_accuracy": 1.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrates a strong sense of certainty in their responses.",
+          "ko": "학생은 자신의 답변에 대해 강한 확신을 보인다."
+        },
+        {
+          "id": "S2",
+          "en": "This indicates they may have less inclination to seek clarification or consider alternative perspectives.",
+          "ko": "이는 그들이 해명을 요청하거나 다른 관점을 고려하는 데 대한 의향이 적을 수 있음을 나타냅니다."
+        },
+        {
+          "id": "S3",
+          "en": "Their confidence level appears elevated compared to typical performance benchmarks.",
+          "ko": "그들의 자신감 수준은 일반적인 성능 기준에 비해 높아 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q050",
+      "skill": "percent-of",
+      "steps": [
+        {
+          "step": 30,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 1.5956744583442204
+        },
+        {
+          "step": 37,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.693368812458221
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrates a strong sense of certainty in their responses.",
+          "ko": "학생은 자신의 답변에 대해 강한 확신을 보인다."
+        },
+        {
+          "id": "S2",
+          "en": "This confidence appears to be consistently maintained across multiple instances.",
+          "ko": "이 자신감은 여러 사례에서 일관되게 유지되는 듯하다."
+        },
+        {
+          "id": "S3",
+          "en": "There is no indication of hesitation or doubt in their approach.",
+          "ko": "그들의 접근 방식에는 회의나 의심의 징후가 전혀 보이지 않는다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q111",
+      "skill": "probability",
+      "steps": [
+        {
+          "step": 533,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.9850392376045634
+        },
+        {
+          "step": 534,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.2626771186014282
+        },
+        {
+          "step": 535,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.0656692991869689
+        },
+        {
+          "step": 536,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.0656692991869689
+        }
+      ],
+      "skill_cum_accuracy": 0.3548387096774194,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrates a strong sense of certainty in their responses despite potential inaccuracies.",
+          "ko": "학생은 답변에서 강한 확신을 보이지만, 잠재적으로 오류가 있을 수 있음."
+        },
+        {
+          "id": "S2",
+          "en": "The level of confidence appears elevated compared to typical expectations.",
+          "ko": "자신감 수준은 일반적인 기대에 비해 높아 보인다."
+        },
+        {
+          "id": "S3",
+          "en": "This may indicate a tendency to overestimate their understanding of the material.",
+          "ko": "이는 자료에 대한 이해도를 과도하게 과대평가하는 경향을 나타낼 수 있습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q002",
+      "skill": "sum-of-interior-angles-more-than-3-sides",
+      "steps": [
+        {
+          "step": 474,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.2563735691555333
+        },
+        {
+          "step": 475,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.2563735283921358
+        },
+        {
+          "step": 476,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.170915753533753
+        },
+        {
+          "step": 477,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.1709156924313857
+        }
+      ],
+      "skill_cum_accuracy": 0.25,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have been overly confident in their understanding of the skill.",
+          "ko": "학생은 기술에 대한 이해를 너무 과신했을 수도 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student may have shown signs of inconsistency in applying the knowledge correctly.",
+          "ko": "학생은 지식을 올바르게 적용하는 데 일관성이 부족한 징후를 보일 수 있다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q134",
+      "skill": "probability",
+      "steps": [
+        {
+          "step": 466,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.0444230527667711
+        },
+        {
+          "step": 467,
+          "correct": true,
+          "hint_count": 3,
+          "response_time_ratio": 0.2221152003977516
+        },
+        {
+          "step": 468,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.0888460843881742
+        },
+        {
+          "step": 469,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.0444230527667711
+        }
+      ],
+      "skill_cum_accuracy": 0.3194444444444444,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits a strong sense of certainty in their responses despite potential inaccuracies.",
+          "ko": "학생은 답변에서 강한 확신을 보이지만, 잠재적으로 오류가 있을 수 있음."
+        },
+        {
+          "id": "S2",
+          "en": "The level of confidence appears elevated compared to typical expectations.",
+          "ko": "자신감 수준은 일반적인 기대에 비해 높아 보인다."
+        },
+        {
+          "id": "S3",
+          "en": "This may indicate a tendency to overestimate their understanding of the material.",
+          "ko": "이는 자료에 대한 이해도를 과도하게 과대평가하는 경향을 나타낼 수 있습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q103",
+      "skill": "least-common-multiple",
+      "steps": [
+        {
+          "step": 223,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.4056182855146712
+        },
+        {
+          "step": 224,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.0540824299021749
+        },
+        {
+          "step": 225,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.0270412246048023
+        },
+        {
+          "step": 226,
+          "correct": false,
+          "hint_count": 4,
+          "response_time_ratio": 0.0270412052703313
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have overestimated their ability to handle the skill correctly.",
+          "ko": "학생은 해당 기술을 올바르게 처리할 능력을 과대평가했을 수도 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "This appears to be, though this is not Certain, a sign of confidence beyond what is warranted.",
+          "ko": "이는 확실하지는 않지만, 과도한 자신감의 징후로 보인다."
+        },
+        {
+          "id": "S3",
+          "en": "The level of overconfidence recorded suggests a potential disconnect between actual performance and perceived mastery.",
+          "ko": "기록된 과신 수준은 실제 수행 능력과 인식된 숙련도 사이의 잠재적 불일치를 시사한다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q129",
+      "skill": "interpreting-numberline",
+      "steps": [
+        {
+          "step": 794,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.8671894183763823
+        },
+        {
+          "step": 795,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.3153416185649657
+        },
+        {
+          "step": 796,
+          "correct": false,
+          "hint_count": 4,
+          "response_time_ratio": 0.157670781138245
+        },
+        {
+          "step": 797,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.5518477808909207
+        }
+      ],
+      "skill_cum_accuracy": 0.25,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrates a strong sense of certainty in their responses.",
+          "ko": "학생은 자신의 답변에 대해 강한 확신을 보인다."
+        },
+        {
+          "id": "S2",
+          "en": "This confidence appears to be consistently high throughout the task.",
+          "ko": "이 자신감은 작업 전반에 걸쳐 일관되게 높아 보인다."
+        },
+        {
+          "id": "S3",
+          "en": "There is no indication of hesitation or doubt in their approach.",
+          "ko": "그들의 접근 방식에는 회의나 의심의 징후가 전혀 보이지 않는다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q127",
+      "skill": "proportion",
+      "steps": [
+        {
+          "step": 41,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.2083333581883618
+        },
+        {
+          "step": 42,
+          "correct": true,
+          "hint_count": 2,
+          "response_time_ratio": 1.041666641723059
+        },
+        {
+          "step": 639,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 1.0937499875592118
+        },
+        {
+          "step": 818,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.4166666542933902
+        }
+      ],
+      "skill_cum_accuracy": 0.4,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrated a strong sense of certainty in their responses.",
+          "ko": "학생은 답변에서 강한 확신을 보여주었다."
+        },
+        {
+          "id": "S2",
+          "en": "The level of confidence indicated was maximal.",
+          "ko": "표시된 자신감 수준은 최대였다."
+        },
+        {
+          "id": "S3",
+          "en": "There appears to be no indication of doubt or hesitation in their approach.",
+          "ko": "그들의 접근 방식에는 의심이나 망설임의 징후가 보이지 않는다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q101",
+      "skill": "pattern-finding",
+      "steps": [
+        {
+          "step": 1148,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.3162146864211643
+        },
+        {
+          "step": 1150,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 1.8972881185269856
+        },
+        {
+          "step": 1151,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 1.1383728559378865
+        },
+        {
+          "step": 1152,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.948644044085188
+        }
+      ],
+      "skill_cum_accuracy": 0.5666666666666667,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of overconfidence, indicated by a high level of certainty in their responses.",
+          "ko": "학생은 답변에 대한 높은 확신을 보여주는 과신의 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows tendencies of slipping, suggesting occasional lapses in attention or focus.",
+          "ko": "학생은 또한 미끄러지는 경향을 보이며, 주의나 집중력에 대한 가끔씩의 소홀을 시사한다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q117",
+      "skill": "multiplying-decimals",
+      "steps": [
+        {
+          "step": 438,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.0510422158764769
+        },
+        {
+          "step": 439,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.0510421793813012
+        },
+        {
+          "step": 440,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.1020844074568649
+        },
+        {
+          "step": 441,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.102084431803996
+        }
+      ],
+      "skill_cum_accuracy": 0.2222222222222222,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have been overly confident in their ability to handle the task.",
+          "ko": "학생은 작업을 처리할 수 있다는 자신감이 지나치게 있었을 수도 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student may have made errors due to a lack of attention or focus.",
+          "ko": "학생은 주의력이나 집중력 부족으로 인해 오류를 범했을 수도 있습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q032",
+      "skill": "interpreting-numberline",
+      "steps": [
+        {
+          "step": 1416,
+          "correct": false,
+          "hint_count": 6,
+          "response_time_ratio": 2.297430455551834
+        },
+        {
+          "step": 1417,
+          "correct": false,
+          "hint_count": 7,
+          "response_time_ratio": 0.7220495717448621
+        },
+        {
+          "step": 1418,
+          "correct": false,
+          "hint_count": 8,
+          "response_time_ratio": 0.787690426149677
+        },
+        {
+          "step": 1419,
+          "correct": false,
+          "hint_count": 9,
+          "response_time_ratio": 2.2317896169008278
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have overestimated their ability to interpret the number line correctly.",
+          "ko": "학생은 수선을 올바르게 해석할 수 있는 능력을 과대평가했을 수도 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "This indicates a potential lack of awareness regarding their actual skill level in this task.",
+          "ko": "이는 이 작업에서 실제 기술 수준에 대한 인식 부족의 가능성을 나타냅니다."
+        },
+        {
+          "id": "S3",
+          "en": "There appears to be a disconnect between perceived and actual performance.",
+          "ko": "인식된 성과와 실제 성과 사이에 차이가 있는 것으로 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q019",
+      "skill": "interpreting-numberline",
+      "steps": [
+        {
+          "step": 1121,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.0653754363571086
+        },
+        {
+          "step": 1122,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.0653754052384083
+        },
+        {
+          "step": 1123,
+          "correct": true,
+          "hint_count": 3,
+          "response_time_ratio": 0.3268770884294424
+        },
+        {
+          "step": 1124,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.5230033663820681
+        }
+      ],
+      "skill_cum_accuracy": 0.3076923076923077,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrates a strong sense of confidence in their ability to interpret number lines.",
+          "ko": "학생은 수선을 해석할 능력에 대한 자신감을 강하게 보여준다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows signs of inconsistency in maintaining accurate responses throughout the task.",
+          "ko": "학생은 작업 전반에 걸쳐 정확한 답변을 유지하는 데 일관성이 부족한 징후를 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q066",
+      "skill": "multiplying-decimals",
+      "steps": [
+        {
+          "step": 1296,
+          "correct": true,
+          "hint_count": 4,
+          "response_time_ratio": 0.0543972173720536
+        },
+        {
+          "step": 1297,
+          "correct": false,
+          "hint_count": 6,
+          "response_time_ratio": 0.3807804180320984
+        },
+        {
+          "step": 1298,
+          "correct": false,
+          "hint_count": 6,
+          "response_time_ratio": 0.108794408851038
+        },
+        {
+          "step": 1299,
+          "correct": false,
+          "hint_count": 6,
+          "response_time_ratio": 0.054397204425519
+        }
+      ],
+      "skill_cum_accuracy": 0.3925233644859813,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have been overly confident in their ability to solve problems related to multiplying decimals.",
+          "ko": "학생은 소수의 곱셈 관련 문제를 해결할 능력에 대해 과도하게 자신감을 가졌을 수도 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "This confidence appears to be consistently high, though this is not certain.",
+          "ko": "이 자신감은 일관되게 높아 보이지만, 이는 확실하지 않습니다."
+        },
+        {
+          "id": "S3",
+          "en": "There is no clear indication of specific strategies being used to address challenges in this skill area.",
+          "ko": "이 기술 분야에서 도전 과제에 대응하기 위한 구체적인 전략이 사용되고 있음을 분명히 나타내는 증거는 없습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q022",
+      "skill": "algebraic-manipulation",
+      "steps": [
+        {
+          "step": 290,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.2048642881604764
+        },
+        {
+          "step": 291,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.204864297912017
+        },
+        {
+          "step": 292,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.0819457387088608
+        },
+        {
+          "step": 293,
+          "correct": false,
+          "hint_count": 4,
+          "response_time_ratio": 1.1882129180562129
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have overestimated their ability to handle complex problems.",
+          "ko": "학생은 복잡한 문제를 처리할 능력이 과도하게 과대평가되었을 수도 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "There is no clear indication of any specific strategy being consistently applied or avoided.",
+          "ko": "어떤 특정 전략이 일관되게 적용되거나 회피되고 있는지에 대한 명확한 징후는 없다."
+        },
+        {
+          "id": "S3",
+          "en": "The level of confidence expressed does not seem to align with observable problem-solving actions.",
+          "ko": "표현된 자신감 수준은 관찰 가능한 문제 해결 행동과 일치하지 않는 듯 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q089",
+      "skill": "measurement",
+      "steps": [
+        {
+          "step": 421,
+          "correct": true,
+          "hint_count": 3,
+          "response_time_ratio": 0.2237819714480415
+        },
+        {
+          "step": 422,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.1790255685652059
+        },
+        {
+          "step": 423,
+          "correct": true,
+          "hint_count": 1,
+          "response_time_ratio": 0.2014037539614571
+        },
+        {
+          "step": 424,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.2014037699618673
+        }
+      ],
+      "skill_cum_accuracy": 0.2105263157894736,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrates a strong sense of confidence in their abilities.",
+          "ko": "학생은 자신의 능력에 대해 강한 자신감을 보여준다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows signs of inconsistency in maintaining focus during tasks.",
+          "ko": "학생은 작업 중 집중력을 유지하는 데 일관성이 부족한 징후도 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q131",
+      "skill": "probability",
+      "steps": [
+        {
+          "step": 10,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.4523281442729168
+        },
+        {
+          "step": 11,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.5815647920746816
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits a strong sense of overconfidence in their understanding of probability concepts.",
+          "ko": "학생은 확률 개념에 대한 이해에 대해 과도한 자신감을 보인다."
+        },
+        {
+          "id": "S2",
+          "en": "This high level of confidence may lead to less careful consideration of alternative solutions.",
+          "ko": "이 높은 수준의 자신감은 대안적인 해결책에 대한 신중한 고려를 줄일 수 있다."
+        },
+        {
+          "id": "S3",
+          "en": "At the same time, there appears to be a notable presence of unproductive frustration during problem-solving tasks.",
+          "ko": "문제 해결 과제 중에서 비생산적인 좌절이 상당히 나타나는 것으로 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q037",
+      "skill": "symbolization-articulation",
+      "steps": [
+        {
+          "step": 146,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.2211137617277014
+        },
+        {
+          "step": 147,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 2.21113757895063
+        },
+        {
+          "step": 148,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.3390410923533313
+        },
+        {
+          "step": 149,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.1768910136275453
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have overestimated their ability to perform the task successfully.",
+          "ko": "학생은 작업을 성공적으로 수행할 수 있는 능력을 과대평가했을 수도 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "This indicates a possible lack of awareness regarding the difficulty of the skill being practiced.",
+          "ko": "이는 연습 중인 기술의 어려움에 대한 인식 부족이 있을 수 있음을 나타냅니다."
+        },
+        {
+          "id": "S3",
+          "en": "There appears to be a tendency to rely on prior knowledge rather than current feedback.",
+          "ko": "이전 지식에 의존하는 경향이 있는 것으로 보인다."
+        },
+        {
+          "id": "S4",
+          "en": "The high level of confidence might lead to less attention given to corrective guidance.",
+          "ko": "높은 자신감은 교정 지도에 대한 관심을 줄일 수 있다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q093",
+      "skill": "discount",
+      "steps": [
+        {
+          "step": 110,
+          "correct": false,
+          "hint_count": 17,
+          "response_time_ratio": 0.0431949774204515
+        },
+        {
+          "step": 111,
+          "correct": false,
+          "hint_count": 18,
+          "response_time_ratio": 0.04319494653605
+        },
+        {
+          "step": 112,
+          "correct": false,
+          "hint_count": 19,
+          "response_time_ratio": 0.0431949774204515
+        },
+        {
+          "step": 113,
+          "correct": true,
+          "hint_count": 19,
+          "response_time_ratio": 0.3887547145408461
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have been avoiding tasks that require critical thinking.",
+          "ko": "학생은 비판적 사고가 필요한 작업을 피했을 수도 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "The behavior suggests a possible reluctance to engage deeply with complex material.",
+          "ko": "이 행동은 복잡한 자료와 깊이적으로 소통하는 데 대한 가능성이 있는 거부감을 나타냅니다."
+        },
+        {
+          "id": "S3",
+          "en": "The pattern indicates a potential inclination to bypass challenging aspects of work.",
+          "ko": "이 패턴은 작업의 어려운 측면을 회피하는 잠재적인 경향을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q053",
+      "skill": "noskill",
+      "steps": [
+        {
+          "step": 6,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.8751530001064652
+        },
+        {
+          "step": 7,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.1077111383089324
+        },
+        {
+          "step": 9,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 4.476744187311394
+        },
+        {
+          "step": 10,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.1952264365692729
+        }
+      ],
+      "skill_cum_accuracy": 0.4,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without seeking assistance, though it remains unclear whether this indicates a deep understanding developed through effort or a chance occurrence.",
+          "ko": "학생은 도움을 요청하지 않고 올바른 답변을 제공했지만, 이는 노력으로 인한 깊은 이해를 나타내는지, 아니면 우연한 일치인지 여전히 불확실하다."
+        },
+        {
+          "id": "S2",
+          "en": "The student demonstrated a strong inclination to avoid engaging deeply with challenging tasks, as evidenced by their frequent reluctance to attempt problems requiring sustained mental effort.",
+          "ko": "학생은 어려운 과제에 깊이적으로 접근하는 것을 피하려는 강한 경향을 보였으며, 이는 지속적인 정신적 노력이 필요한 문제를 시도하는 데 대한 빈번한 불편함으로 입증되었다."
+        },
+        {
+          "id": "S3",
+          "en": "There appears to be a notable disconnect between the student’s ability to produce accurate answers and their willingness to engage in the process of working through difficulties.",
+          "ko": "학생이 어려움을 극복하는 과정에 참여하는 의지와 정확한 답을 제시할 수 있는 능력 사이에 뚜렷한 차이가 있는 것으로 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q040",
+      "skill": "noskill",
+      "steps": [
+        {
+          "step": 0,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.9978850896698224
+        },
+        {
+          "step": 1,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.1838209313208448
+        },
+        {
+          "step": 2,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.1313006822194815
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The response was correct without the need for hints, yet the available data does not provide enough clarity to determine whether this accuracy stemmed from genuine understanding, luck, or a lack of confidence.",
+          "ko": "힌트 없이도 정확한 답변이었지만, 가용 데이터는 이 정확성이 진정한 이해, 운, 또는 불신을 기반으로 한 것인지 구분하기에 충분하지 않습니다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be a complex interplay between the student’s approach to problem-solving and their perceived ability to handle difficult material.",
+          "ko": "학생이 문제 해결에 접근하는 방식과 어려운 내용을 다루는 데 대한 인식 사이에 복잡한 상호작용이 있는 것으로 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q031",
+      "skill": "pattern-finding",
+      "steps": [
+        {
+          "step": 270,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.588102413876751
+        },
+        {
+          "step": 271,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.1069277108362986
+        },
+        {
+          "step": 272,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.6772088395736666
+        },
+        {
+          "step": 273,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.0891064214554496
+        }
+      ],
+      "skill_cum_accuracy": 0.6153846153846154,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits clear signs of avoiding challenging tasks.",
+          "ko": "학생은 도전적인 과제를 피하는 뚜렷한 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "The behavior suggests a preference for simpler activities over more complex ones.",
+          "ko": "이 행동은 더 복잡한 활동보다 더 간단한 활동을 선호하는 것을 나타낸다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q124",
+      "skill": "reading-graph",
+      "steps": [
+        {
+          "step": 366,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.1796431743188493
+        },
+        {
+          "step": 367,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.2395242847611855
+        },
+        {
+          "step": 377,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.4790485410189829
+        },
+        {
+          "step": 378,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.3592864057642372
+        }
+      ],
+      "skill_cum_accuracy": 0.375,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without requiring assistance, though the nature of this success remains unclear.",
+          "ko": "학생은 도움 없이 올바른 답변을 제공했지만, 이 성공의 본질은 여전히 불분명하다."
+        },
+        {
+          "id": "S2",
+          "en": "The student demonstrated a strong indication of avoiding challenging tasks.",
+          "ko": "학생은 도전적인 과제를 피하는 뚜렷한 징후를 보여주었다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q051",
+      "skill": "rate",
+      "steps": [
+        {
+          "step": 28,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 3.415819261531822
+        },
+        {
+          "step": 29,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.321698914360537
+        },
+        {
+          "step": 30,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.8754109665232307
+        },
+        {
+          "step": 31,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.1328847760869527
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits clear signs of avoiding challenging tasks.",
+          "ko": "학생은 도전적인 과제를 피하는 뚜렷한 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "The behavior appears to be persistent, indicating a strong inclination to steer clear of complex situations.",
+          "ko": "이 행동은 지속적인 것으로 보이며, 복잡한 상황을 피하려는 강한 경향을 나타내고 있다."
+        },
+        {
+          "id": "S3",
+          "en": "This trend may suggest a reluctance to engage deeply with difficult material.",
+          "ko": "이 경향은 어려운 내용과 깊이적으로 소통하려는 의지가 부족하다는 것을 시사할 수 있다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q033",
+      "skill": "noskill",
+      "steps": [
+        {
+          "step": 151,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.528634352791632
+        },
+        {
+          "step": 152,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.0528634361249781
+        },
+        {
+          "step": 153,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.3171806252080188
+        },
+        {
+          "step": 154,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.6343612250415883
+        }
+      ],
+      "skill_cum_accuracy": 0.4901960784313725,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits clear signs of avoiding challenging tasks.",
+          "ko": "학생은 도전적인 과제를 피하는 뚜렷한 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "This behavior may indicate a preference for simpler activities.",
+          "ko": "이 행동은 더 간단한 활동을 선호하는 것을 나타낼 수 있습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q122",
+      "skill": "inducing-functions",
+      "steps": [
+        {
+          "step": 687,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 2.2462006253636466
+        },
+        {
+          "step": 688,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.2945836862542459
+        },
+        {
+          "step": 689,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 1.2519806577430348
+        },
+        {
+          "step": 690,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.1841148039089037
+        }
+      ],
+      "skill_cum_accuracy": 0.4516129032258064,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits clear signs of avoiding challenging tasks.",
+          "ko": "학생은 도전적인 과제를 피하는 뚜렷한 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "The behavior suggests a preference for simpler activities over more complex ones.",
+          "ko": "이 행동은 더 복잡한 활동보다 더 간단한 활동을 선호하는 것을 나타낸다."
+        },
+        {
+          "id": "S3",
+          "en": "The pattern indicates a consistent trend rather than random occurrences.",
+          "ko": "이 패턴은 무작위적인 일어나는 일들보다 일관된 추세를 나타냅니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q075",
+      "skill": "combinatorics",
+      "steps": [
+        {
+          "step": 0,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 2.7179487140750185
+        },
+        {
+          "step": 1,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.2380684960890965
+        },
+        {
+          "step": 2,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 1.428411014625539
+        },
+        {
+          "step": 3,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 2.3806850045368573
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the problem-solving process.",
+          "ko": "학생은 문제 해결 과정에 깊이 참여하지 않을 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "This could indicate a reluctance to confront challenging aspects of the task.",
+          "ko": "이는 작업의 어려운 측면에 직면하는 것을 꺼리는 태도를 나타낼 수 있습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q099",
+      "skill": "evaluating-functions",
+      "steps": [
+        {
+          "step": 516,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.0865786731778688
+        },
+        {
+          "step": 517,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.7350384961615772
+        },
+        {
+          "step": 518,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.0639163840314749
+        },
+        {
+          "step": 519,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.1917491825186273
+        }
+      ],
+      "skill_cum_accuracy": 0.1428571428571428,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the function evaluation task.",
+          "ko": "학생은 함수 평가 작업에 깊이적으로 참여하지 않았을 수도 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "This avoidance could manifest through superficial responses or reluctance to explore complex aspects of the skill.",
+          "ko": "이 회피는 표면적인 반응이나 기술의 복잡한 측면을 탐구하는 것을 거부하는 태도로 나타날 수 있다."
+        },
+        {
+          "id": "S3",
+          "en": "There appears to be a pattern of disengagement rather than active problem-solving.",
+          "ko": "비활성화된 문제 해결보다는 탈진의 패턴이 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q057",
+      "skill": "pythagorean-theorem",
+      "steps": [
+        {
+          "step": 298,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.1937441643794186
+        },
+        {
+          "step": 299,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.0645813881264728
+        },
+        {
+          "step": 300,
+          "correct": true,
+          "hint_count": 2,
+          "response_time_ratio": 0.3874883365086037
+        },
+        {
+          "step": 301,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.8072673360813777
+        }
+      ],
+      "skill_cum_accuracy": 0.0952380952380952,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the problem-solving process.",
+          "ko": "학생은 문제 해결 과정에 깊이 참여하지 않을 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "This could indicate a reluctance to confront challenging aspects of the task.",
+          "ko": "이는 작업의 어려운 측면에 직면하는 것을 꺼리는 태도를 나타낼 수 있습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q052",
+      "skill": "equation-solving",
+      "steps": [
+        {
+          "step": 171,
+          "correct": true,
+          "hint_count": 3,
+          "response_time_ratio": 0.4062242034097088
+        },
+        {
+          "step": 317,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.8979692866165242
+        },
+        {
+          "step": 318,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.2138022225834055
+        },
+        {
+          "step": 319,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.7483077431231477
+        }
+      ],
+      "skill_cum_accuracy": 0.1,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have been avoiding engaging deeply with the problem-solving process.",
+          "ko": "학생이 문제 해결 과정에 깊이 참여하는 것을 피했을 수도 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "The behavior suggests a reluctance to confront challenging aspects of the task.",
+          "ko": "이 행동은 작업의 어려운 측면에 직면하는 것을 꺼리는 태도를 나타낸다."
+        },
+        {
+          "id": "S3",
+          "en": "The level of avoidance indicates a possible lack of confidence or interest in tackling complex equations.",
+          "ko": "회피 수준은 복잡한 방정식을 해결하는 데 대한 부족한 자신감이나 관심을 나타낼 수 있다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q123",
+      "skill": "interpreting-linear-equations",
+      "steps": [
+        {
+          "step": 69,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.1382974889217744
+        },
+        {
+          "step": 70,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.571562371596573
+        },
+        {
+          "step": 71,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.2514499828751714
+        },
+        {
+          "step": 72,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.8046399355448692
+        }
+      ],
+      "skill_cum_accuracy": 0.125,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have been avoiding engaging deeply with the problem-solving process.",
+          "ko": "학생이 문제 해결 과정에 깊이 참여하는 것을 피했을 수도 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "The tendency appears to be evident in their approach to tackling the task.",
+          "ko": "그들의 작업에 대한 접근 방식에서 이 경향이 분명하게 드러나 보인다."
+        },
+        {
+          "id": "S3",
+          "en": "There is a noticeable lack of effort in applying the required mathematical strategies.",
+          "ko": "필요한 수학 전략을 적용하는 데 있어 노력이 부족한 점이 눈에 띈다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q116",
+      "skill": "pythagorean-theorem",
+      "steps": [
+        {
+          "step": 248,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 1.618490239336147
+        },
+        {
+          "step": 249,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 1.785920284879476
+        },
+        {
+          "step": 250,
+          "correct": true,
+          "hint_count": 1,
+          "response_time_ratio": 0.2511450248669015
+        },
+        {
+          "step": 251,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.6697201018069028
+        }
+      ],
+      "skill_cum_accuracy": 0.3846153846153846,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the problem-solving process.",
+          "ko": "학생은 문제 해결 과정에 깊이 참여하지 않을 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "This could indicate a reluctance to confront challenging aspects of the task.",
+          "ko": "이는 작업의 어려운 측면에 직면하는 것을 꺼리는 태도를 나타낼 수 있습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q003",
+      "skill": "probability",
+      "steps": [
+        {
+          "step": 378,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.4802145579273173
+        },
+        {
+          "step": 379,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 1.3720415940780497
+        },
+        {
+          "step": 380,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.4116124617589157
+        }
+      ],
+      "skill_cum_accuracy": 1.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrated a strong indication of avoiding challenging tasks, as evidenced by the high cognitive avoidance score.",
+          "ko": "학생은 도전적인 과제를 피하는 데 강한 징후를 보였으며, 이는 높은 인지 회피 점수로 입증된다."
+        },
+        {
+          "id": "S2",
+          "en": "The response to the question could not be definitively categorized due to insufficient data to determine if the correct answer resulted from understanding, luck, or lack of confidence.",
+          "ko": "질문에 대한 답변은 이해, 운, 또는 자신감 부족으로 인한 것인지 판단하기에 데이터가 부족하여 명확히 분류할 수 없었다."
+        },
+        {
+          "id": "S3",
+          "en": "There appears to be a potential conflict between the high confidence level and the tendency to avoid difficult work, though this remains uncertain.",
+          "ko": "높은 신뢰 수준과 어려운 일을 피하는 경향 사이에 잠재적인 갈등이 있을 수 있지만, 이는 여전히 불확실합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q138",
+      "skill": "inequality-solving",
+      "steps": [
+        {
+          "step": 128,
+          "correct": true,
+          "hint_count": 3,
+          "response_time_ratio": 0.3730184158941285
+        },
+        {
+          "step": 129,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.865092148686284
+        },
+        {
+          "step": 130,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.1243394752527978
+        },
+        {
+          "step": 131,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.7460368415696291
+        }
+      ],
+      "skill_cum_accuracy": 0.15,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the problem-solving process.",
+          "ko": "학생은 문제 해결 과정에 깊이 참여하지 않을 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be a tendency to make errors during task execution.",
+          "ko": "작업 수행 중 오류를 발생시키는 경향이 있는 것으로 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q125",
+      "skill": "point-plotting",
+      "steps": [
+        {
+          "step": 494,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.0796473401057622
+        },
+        {
+          "step": 495,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 1.0885136481120838
+        },
+        {
+          "step": 496,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 1.115062755108884
+        },
+        {
+          "step": 497,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.4778840533781478
+        }
+      ],
+      "skill_cum_accuracy": 0.375,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the task due to discomfort or uncertainty.",
+          "ko": "학생은 불편함이나 불확실함으로 인해 작업에 깊이 참여하지 않은 것으로 보일 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be a noticeable inconsistency in performance, suggesting difficulty maintaining focus or accuracy.",
+          "ko": "성능에 있어 눈에 띄는 불일치가 있는 것으로 보이며, 집중력이나 정확도를 유지하는 데 어려움이 있을 가능성이 있습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q067",
+      "skill": "square-root",
+      "steps": [
+        {
+          "step": 20,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.1306152491314644
+        },
+        {
+          "step": 21,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.1959228853546083
+        },
+        {
+          "step": 22,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.0979614504489119
+        },
+        {
+          "step": 23,
+          "correct": true,
+          "hint_count": 2,
+          "response_time_ratio": 0.1632690633572325
+        }
+      ],
+      "skill_cum_accuracy": 0.4285714285714285,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrated a strong engagement with the task, making independent judgments despite using a hint.",
+          "ko": "학생은 작업에 대한 강한 참여를 보였으며, 단서를 사용하더라도 독립적인 판단을 내렸다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also showed a clear inclination to avoid deeper cognitive effort, indicating a preference for less challenging paths.",
+          "ko": "학생은 또한 더 깊은 인지적 노력은 피하는 경향이 있었으며, 이는 덜 도전적인 길을 선호하는 것을 나타냈다."
+        },
+        {
+          "id": "S3",
+          "en": "This combination suggests a complex interaction between persistence and avoidance tendencies.",
+          "ko": "이 조합은 지속성과 회피 경향 사이의 복잡한 상호작용을 시사합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q015",
+      "skill": "interpreting-numberline",
+      "steps": [
+        {
+          "step": 743,
+          "correct": false,
+          "hint_count": 12,
+          "response_time_ratio": 23.743312323735456
+        },
+        {
+          "step": 744,
+          "correct": false,
+          "hint_count": 11,
+          "response_time_ratio": 22.096878248825583
+        },
+        {
+          "step": 755,
+          "correct": false,
+          "hint_count": 13,
+          "response_time_ratio": 7.582262147178293
+        },
+        {
+          "step": 756,
+          "correct": false,
+          "hint_count": 15,
+          "response_time_ratio": 0.2599632736175414
+        }
+      ],
+      "skill_cum_accuracy": 0.1935483870967742,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the number line task.",
+          "ko": "학생은 수선 작업에 깊이 참여하지 않을 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "This avoidance could manifest through minimal effort or incomplete responses.",
+          "ko": "이 회피는 최소한의 노력이나 불완전한 답변을 통해 나타날 수 있다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q119",
+      "skill": "interpreting-linear-equations",
+      "steps": [
+        {
+          "step": 149,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.156211352541625
+        },
+        {
+          "step": 150,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.0598603840146026
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the material.",
+          "ko": "학생은 자료와 깊이적으로 소통하지 않을 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "The behavior suggests a possible reluctance to confront challenging aspects of the task.",
+          "ko": "이 행동은 작업의 어려운 측면에 직면하는 데 대한 가능성이 있는 주저를 나타냅니다."
+        },
+        {
+          "id": "S3",
+          "en": "The pattern indicates a lack of commitment to mastering the skill.",
+          "ko": "이 패턴은 기술을 마스터하는 데 대한 의지가 부족함을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q061",
+      "skill": "perimeter",
+      "steps": [
+        {
+          "step": 97,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.1346482148829695
+        },
+        {
+          "step": 98,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.8767736320316406
+        },
+        {
+          "step": 99,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.151839858690917
+        },
+        {
+          "step": 100,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 2.699087421470957
+        }
+      ],
+      "skill_cum_accuracy": 0.3333333333333333,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have been avoiding tasks related to calculating perimeters.",
+          "ko": "학생은 둘레 계산과 관련된 과제를 피하고 있었을 수도 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "This avoidance could indicate a reluctance to engage with the skill being practiced.",
+          "ko": "이 회피는 연습하는 기술과 소통하려는 의욕이 부족함을 나타낼 수 있다."
+        },
+        {
+          "id": "S3",
+          "en": "The behavior suggests a possible difficulty in applying the concept of perimeter.",
+          "ko": "이 행동은 둘레 개념을 적용하는 데 어려움이 있을 수 있음을 시사합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q106",
+      "skill": "point-plotting",
+      "steps": [
+        {
+          "step": 0,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 3.5821248889417947
+        },
+        {
+          "step": 1,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 10.36006709832247
+        },
+        {
+          "step": 2,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.0886850321236825
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the task due to discomfort or uncertainty.",
+          "ko": "학생은 불편함이나 불확실함으로 인해 작업에 깊이 참여하지 않은 것으로 보일 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "The behavior suggests a reluctance to confront challenging aspects of the skill being practiced.",
+          "ko": "이 행동은 연습 중인 기술의 어려운 측면에 직면하는 것을 꺼리는 태도를 나타냅니다."
+        },
+        {
+          "id": "S3",
+          "en": "The tendency indicates a possible lack of confidence in executing the step effectively.",
+          "ko": "이 경향은 해당 단계를 효과적으로 실행하는 데 대한 신뢰 부족이 있을 수 있음을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q062",
+      "skill": "multiplication",
+      "steps": [
+        {
+          "step": 323,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.3753976542201363
+        },
+        {
+          "step": 324,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.3217694416066552
+        },
+        {
+          "step": 429,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.6435388705570464
+        },
+        {
+          "step": 430,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.1072564762810448
+        }
+      ],
+      "skill_cum_accuracy": 0.6774193548387096,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits clear signs of avoiding challenging tasks related to multiplication.",
+          "ko": "학생은 곱셈과 관련된 도전적인 과제를 피하는 뚜렷한 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "The behavior suggests a reluctance to engage deeply with complex problems.",
+          "ko": "이 행동은 복잡한 문제에 깊이적으로 접근하는 것을 꺼리는 태도를 나타낸다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q079",
+      "skill": "equation-concept",
+      "steps": [
+        {
+          "step": 199,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 4.362167596216384
+        },
+        {
+          "step": 200,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 1.7137087207695365
+        },
+        {
+          "step": 201,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 1.1424724722041335
+        },
+        {
+          "step": 202,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.2463336060408732
+        }
+      ],
+      "skill_cum_accuracy": 0.6666666666666666,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the concept being taught.",
+          "ko": "학생은 가르치고 있는 개념과 깊이적으로 소통하지 않을 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "This avoidance could manifest through minimal effort or disengagement during the task.",
+          "ko": "이 회피는 작업 중 최소한의 노력이나 참여를 중단하는 방식으로 나타날 수 있다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q073",
+      "skill": "of-means-multiply",
+      "steps": [
+        {
+          "step": 63,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.3143073809429861
+        },
+        {
+          "step": 64,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.1676306058516823
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without requiring assistance.",
+          "ko": "학생은 도움 없이 올바른 답변을 제공했습니다."
+        },
+        {
+          "id": "S2",
+          "en": "This outcome could indicate either a well-reasoned solution following some form of effort or a chance occurrence.",
+          "ko": "이 결과는 어떤 형태의 노력 끝에 이른 잘 설계된 해결책이었거나, 우연한 일이었을 수도 있습니다."
+        },
+        {
+          "id": "S3",
+          "en": "The available information does not definitively clarify the nature of the student’s approach.",
+          "ko": "이용 가능한 정보가 학생의 접근 방식의 본질을 명확히 설명하지는 않는다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q118",
+      "skill": "multiplication",
+      "steps": [
+        {
+          "step": 262,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.7801008616601919
+        },
+        {
+          "step": 263,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.1155704842419502
+        },
+        {
+          "step": 282,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.0866778735177991
+        },
+        {
+          "step": 294,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.9823492262674932
+        }
+      ],
+      "skill_cum_accuracy": 0.7692307692307693,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without requiring assistance, indicating some level of mastery or understanding.",
+          "ko": "학생은 도움 없이 올바른 답변을 제공하여 어느 정도의 숙련도나 이해 수준이 있음을 나타냈습니다."
+        },
+        {
+          "id": "S2",
+          "en": "This outcome could reflect either a confident and accurate solution or a chance occurrence, given the ambiguity in determining the exact nature of the response.",
+          "ko": "이 결과는 정확하고 자신 있는 해결책이거나, 응답의 정확한 성격을 판단하기 어려운 상황에서의 우연한 일치일 수 있다."
+        },
+        {
+          "id": "S3",
+          "en": "The presence of high confidence suggests the likelihood of a meaningful engagement with the problem rather than mere luck.",
+          "ko": "높은 자신감의 존재는 문제에 대한 의미 있는 참여 가능성보다 단순한 운이 아니라 보여준다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q088",
+      "skill": "substitution",
+      "steps": [
+        {
+          "step": 12,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.4842233009173323
+        },
+        {
+          "step": 13,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.5606796115884901
+        },
+        {
+          "step": 14,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 1.274271838402791
+        },
+        {
+          "step": 15,
+          "correct": true,
+          "hint_count": 1,
+          "response_time_ratio": 1.0958737862865944
+        }
+      ],
+      "skill_cum_accuracy": 0.1111111111111111,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student engaged in independent problem-solving despite receiving a hint, indicating a strong capacity for productive struggle.",
+          "ko": "학생은 팁을 받았음에도 불구하고 독립적인 문제 해결에 참여했으며, 이는 생산적인 고민 능력이 강하다는 것을 보여준다."
+        },
+        {
+          "id": "S2",
+          "en": "This suggests the student was actively working through challenges rather than relying solely on external guidance.",
+          "ko": "이는 학생이 외부 지도에만 의존하는 것이 아니라 적극적으로 어려움을 극복하고 있음을 시사합니다."
+        },
+        {
+          "id": "S3",
+          "en": "The level of engagement appears to be significant, though the exact nature of the struggle remains partially unclear.",
+          "ko": "참여 수준은 중요한 것으로 보이지만, 정확한 갈등의 성격은 부분적으로 불분명하다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q068",
+      "skill": "unit-conversion",
+      "steps": [
+        {
+          "step": 34,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 9.411223071343269
+        },
+        {
+          "step": 35,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.0255820013643304
+        },
+        {
+          "step": 37,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.3418606719477116
+        }
+      ],
+      "skill_cum_accuracy": 0.5,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without seeking assistance, indicating some level of engagement with the problem.",
+          "ko": "학생은 도움을 요청하지 않고 올바른 답변을 제공함으로써 문제에 대한 어느 정도의 참여를 보여주었다."
+        },
+        {
+          "id": "S2",
+          "en": "This outcome could reflect either a successful resolution through effort or a chance occurrence, given the ambiguity in determining the exact nature of their approach.",
+          "ko": "이 결과는 노력을 통해 성공적으로 해결된 것일 수도 있고, 그들의 접근 방식의 정확한 성격을 판단하기 어려운 상황에서 우연히 발생한 것일 수도 있다."
+        },
+        {
+          "id": "S3",
+          "en": "The presence of high confidence suggests a possible alignment with productive struggle, although this remains uncertain.",
+          "ko": "높은 자신감의 존재는 생산적 고난과의 일치 가능성과 관련이 있을 수 있지만, 이는 여전히 불확실합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q035",
+      "skill": "divisibility",
+      "steps": [
+        {
+          "step": 63,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.3762660667438472
+        },
+        {
+          "step": 64,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.7723355914232521
+        },
+        {
+          "step": 65,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.5743008409656358
+        },
+        {
+          "step": 66,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.2178382369101806
+        }
+      ],
+      "skill_cum_accuracy": 0.25,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without seeking assistance, indicating some level of engagement with the problem.",
+          "ko": "학생은 도움을 요청하지 않고 올바른 답변을 제공함으로써 문제에 대한 어느 정도의 참여를 보여주었다."
+        },
+        {
+          "id": "S2",
+          "en": "This outcome could reflect either a successful resolution through effort or a chance occurrence, given the ambiguity in determining the exact nature of their approach.",
+          "ko": "이 결과는 노력을 통해 성공적으로 해결된 것일 수도 있고, 그들의 접근 방식의 정확한 성격을 판단하기 어려운 상황에서 우연히 발생한 것일 수도 있다."
+        },
+        {
+          "id": "S3",
+          "en": "The presence of high confidence suggests a possible alignment with productive struggle, although this remains uncertain.",
+          "ko": "높은 자신감의 존재는 생산적 고난과의 일치 가능성과 관련이 있을 수 있지만, 이는 여전히 불확실합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q082",
+      "skill": "multiplication",
+      "steps": [
+        {
+          "step": 289,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.8471774814026038
+        }
+      ],
+      "skill_cum_accuracy": null,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without requiring assistance, indicating some level of mastery or understanding.",
+          "ko": "학생은 도움 없이 올바른 답변을 제공하여 어느 정도의 숙련도나 이해 수준이 있음을 나타냈습니다."
+        },
+        {
+          "id": "S2",
+          "en": "This outcome may reflect a combination of factors including prior knowledge, strategic guessing, or effective problem-solving strategies.",
+          "ko": "이 결과는 이전 지식, 전략적 추측, 또는 효과적인 문제 해결 전략과 같은 요인들의 조합을 반영할 수 있습니다."
+        },
+        {
+          "id": "S3",
+          "en": "The available data does not allow for a clear determination of the exact contributing factors behind the correct answer.",
+          "ko": "현재의 데이터는 정답 뒤에 있는 정확한 기여 요인들을 명확히 판단할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q041",
+      "skill": "order-of-operations",
+      "steps": [
+        {
+          "step": 2,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.6968305391311681
+        },
+        {
+          "step": 4,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.623479956991263
+        },
+        {
+          "step": 5,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.9168822855508832
+        },
+        {
+          "step": 6,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.8435316770047687
+        }
+      ],
+      "skill_cum_accuracy": 0.25,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without seeking assistance, indicating some level of engagement with the problem.",
+          "ko": "학생은 도움을 요청하지 않고 올바른 답변을 제공함으로써 문제에 대한 어느 정도의 참여를 보여주었다."
+        },
+        {
+          "id": "S2",
+          "en": "This outcome could reflect either a successful resolution through effort or a chance occurrence, given the ambiguity in determining the exact nature of their approach.",
+          "ko": "이 결과는 노력을 통해 성공적으로 해결된 것일 수도 있고, 그들의 접근 방식의 정확한 성격을 판단하기 어려운 상황에서 우연히 발생한 것일 수도 있다."
+        },
+        {
+          "id": "S3",
+          "en": "The presence of high confidence suggests a possible alignment with productive struggle, although this remains uncertain.",
+          "ko": "높은 자신감의 존재는 생산적 고난과의 일치 가능성과 관련이 있을 수 있지만, 이는 여전히 불확실합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q039",
+      "skill": "multiplying-decimals",
+      "steps": [
+        {
+          "step": 36,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.2092563290845222
+        },
+        {
+          "step": 37,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.1255537974507133
+        },
+        {
+          "step": 38,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 1.12998417705642
+        },
+        {
+          "step": 39,
+          "correct": true,
+          "hint_count": 1,
+          "response_time_ratio": 0.8370253062937851
+        }
+      ],
+      "skill_cum_accuracy": 0.0512820512820512,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student engaged in independent problem-solving despite the availability of hints, indicating a strong capacity for self-directed effort.",
+          "ko": "학생은 단서가 제공되었음에도 불구하고 독립적인 문제 해결에 참여했으며, 자기 주도적 노력에 대한 강한 능력을 보여주었다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q005",
+      "skill": "substitution",
+      "steps": [
+        {
+          "step": 53,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.3937434828178437
+        },
+        {
+          "step": 54,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.3937434828178437
+        },
+        {
+          "step": 55,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.5660062624568025
+        },
+        {
+          "step": 56,
+          "correct": true,
+          "hint_count": 1,
+          "response_time_ratio": 0.442961412263922
+        }
+      ],
+      "skill_cum_accuracy": 0.1428571428571428,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrated a strong engagement with the task, indicating they were actively working through challenges rather than relying solely on external guidance.",
+          "ko": "학생은 과제에 대한 강한 참여를 보여주었으며, 외부 지도에만 의존하는 것이 아니라 도전 과제를 적극적으로 해결하고 있음을 나타냈습니다."
+        },
+        {
+          "id": "S2",
+          "en": "The use of hints suggests the student was attempting to solve problems independently but still required some level of support.",
+          "ko": "힌트 사용은 학생이 문제를 독립적으로 해결하려고 시도했음을 시사하지만, 여전히 어느 정도의 지원이 필요했음을 나타냅니다."
+        },
+        {
+          "id": "S3",
+          "en": "This indicates a willingness to persist despite difficulties, showing a proactive approach to learning.",
+          "ko": "이는 어려움에도 불구하고 지속하려는 의지를 보여주며, 학습에 대한 적극적인 접근 방식을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q042",
+      "skill": "pattern-finding",
+      "steps": [
+        {
+          "step": 16,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.2691798995470689
+        },
+        {
+          "step": 17,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.2691798995470689
+        },
+        {
+          "step": 18,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.2467482255493192
+        },
+        {
+          "step": 19,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.8075396878740108
+        }
+      ],
+      "skill_cum_accuracy": 0.5,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without requiring assistance, indicating some level of understanding or insight.",
+          "ko": "학생은 도움 없이 올바른 답변을 제공하여 어느 정도의 이해나 통찰력을 보여주었다."
+        },
+        {
+          "id": "S2",
+          "en": "This outcome could suggest the student arrived at the solution through thoughtful engagement rather than mere chance, although the exact nature of their process remains unclear.",
+          "ko": "이 결과는 학생이 고민을 통해 해법에 도달했을 가능성이 있음을 시사하지만, 그들의 정확한 과정은 여전히 불분명하다."
+        },
+        {
+          "id": "S3",
+          "en": "There is a slight indication that the student may have engaged in meaningful problem-solving efforts leading to the correct answer.",
+          "ko": "학생이 정답에 이르는 의미 있는 문제 해결을 시도했을 가능성이 약간 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q100",
+      "skill": "percents",
+      "steps": [
+        {
+          "step": 96,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 3.9904156065994623
+        },
+        {
+          "step": 113,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.4464800678712685
+        },
+        {
+          "step": 114,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.4185750703265152
+        }
+      ],
+      "skill_cum_accuracy": 0.5,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without requiring assistance, indicating some level of understanding or insight.",
+          "ko": "학생은 도움 없이 올바른 답변을 제공하여 어느 정도의 이해나 통찰력을 보여주었다."
+        },
+        {
+          "id": "S2",
+          "en": "This outcome could suggest the student arrived at the solution through thoughtful engagement rather than mere chance, though the exact nature of their process remains unclear.",
+          "ko": "이 결과는 학생이 고민을 통해 해법에 도달했을 가능성이 있음을 시사하지만, 그들의 정확한 과정은 여전히 불분명하다."
+        },
+        {
+          "id": "S3",
+          "en": "The presence of high confidence further complicates interpretation, as it may reflect genuine mastery or overestimation of competence.",
+          "ko": "높은 자신감의 존재는 해석을 더욱 복잡하게 만들며, 이는 진정한 숙련도를 반영할 수도 있거나 능력 과대평가를 나타낼 수도 있다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q128",
+      "skill": "pattern-finding",
+      "steps": [
+        {
+          "step": 68,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.3653846154034646
+        },
+        {
+          "step": 69,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.1538461538540903
+        },
+        {
+          "step": 70,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 2.3076923039652013
+        },
+        {
+          "step": 71,
+          "correct": true,
+          "hint_count": 2,
+          "response_time_ratio": 0.5961538554153694
+        }
+      ],
+      "skill_cum_accuracy": 0.3684210526315789,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student engaged in independent problem-solving despite receiving a hint, indicating a strong capacity for productive struggle.",
+          "ko": "학생은 팁을 받았음에도 불구하고 독립적인 문제 해결에 참여했으며, 이는 생산적인 고민 능력이 강하다는 것을 보여준다."
+        },
+        {
+          "id": "S2",
+          "en": "This suggests the student was actively working through challenges rather than relying solely on external guidance.",
+          "ko": "이는 학생이 외부 지도에만 의존하는 것이 아니라 적극적으로 어려움을 극복하고 있음을 시사합니다."
+        },
+        {
+          "id": "S3",
+          "en": "The high level of engagement in this process may reflect a deeper commitment to understanding the material.",
+          "ko": "이 과정에서의 높은 참여 수준은 소재를 이해하는 데 대한 더 깊은 약속을 반영할 수 있다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q094",
+      "skill": "equation-solving",
+      "steps": [
+        {
+          "step": 37,
+          "correct": false,
+          "hint_count": 4,
+          "response_time_ratio": 0.498735239894
+        },
+        {
+          "step": 38,
+          "correct": false,
+          "hint_count": 4,
+          "response_time_ratio": 2.033305231404012
+        },
+        {
+          "step": 39,
+          "correct": false,
+          "hint_count": 4,
+          "response_time_ratio": 0.460370994920963
+        },
+        {
+          "step": 40,
+          "correct": true,
+          "hint_count": 4,
+          "response_time_ratio": 0.6330101226200341
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student engaged in independent problem-solving despite receiving a hint, indicating a strong capacity for tackling challenges on their own.",
+          "ko": "학생은 팁을 받았음에도 불구하고 독립적인 문제 해결에 참여했으며, 이는 스스로 도전 과제를 해결하는 데 있어 강한 능력을 보여주는 징후이다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q018",
+      "skill": "stem-and-leaf-plot",
+      "steps": [
+        {
+          "step": 2,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.620671834634955
+        },
+        {
+          "step": 3,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.9955555555614723
+        },
+        {
+          "step": 4,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.4862015503904865
+        },
+        {
+          "step": 5,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.1620671724197745
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without seeking assistance, indicating some level of mastery or understanding.",
+          "ko": "학생은 도움을 요청하지 않고 올바른 답변을 제공하여 어느 정도의 숙련도나 이해 수준이 있음을 나타냈습니다."
+        },
+        {
+          "id": "S2",
+          "en": "This outcome may suggest the student arrived at the solution through thoughtful engagement rather than mere chance.",
+          "ko": "이 결과는 학생이 단순한 운이 아닌 신중한 참여를 통해 해법에 도달했음을 시사할 수 있다."
+        },
+        {
+          "id": "S3",
+          "en": "The available information does not definitively clarify whether the accuracy resulted from sustained effort or inherent knowledge.",
+          "ko": "가용한 정보는 정확성 결과가 지속적인 노력에서 비롯되었는지, 본래의 지식에서 비롯되었는지 명확히 구분하지 못한다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q043",
+      "skill": "transversals",
+      "steps": [
+        {
+          "step": 32,
+          "correct": false,
+          "hint_count": 5,
+          "response_time_ratio": 0.8278188528067704
+        },
+        {
+          "step": 33,
+          "correct": false,
+          "hint_count": 5,
+          "response_time_ratio": 0.2956496286296619
+        },
+        {
+          "step": 34,
+          "correct": false,
+          "hint_count": 5,
+          "response_time_ratio": 0.1773897320498421
+        },
+        {
+          "step": 35,
+          "correct": true,
+          "hint_count": 5,
+          "response_time_ratio": 0.236519694412673
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrated a strong inclination toward independent problem-solving despite receiving hints, indicating a significant level of engagement with the task.",
+          "ko": "학생은 팁을 받았음에도 불구하고 독립적인 문제 해결에 대한 강한 경향을 보였으며, 이는 작업에 대한 중요한 참여 수준을 나타냅니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also showed a notable resistance to engaging deeply with challenging aspects of the material, suggesting a preference for avoiding complex thinking.",
+          "ko": "학생은 또한 자료의 어려운 부분에 깊이적으로 접근하는 데 대한 뚜렷한 저항을 보였으며, 복잡한 사고를 피하는 것을 선호하는 것으로 보인다."
+        },
+        {
+          "id": "S3",
+          "en": "This combination indicates a complex interaction between effortful engagement and avoidance tendencies.",
+          "ko": "이 조합은 노력적인 참여와 회피 경향 사이의 복잡한 상호작용을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q135",
+      "skill": "noskill",
+      "steps": [
+        {
+          "step": 2,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.3440192518158962
+        },
+        {
+          "step": 3,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 13.967181956144318
+        },
+        {
+          "step": 4,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.5136847522721026
+        },
+        {
+          "step": 5,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.6192346680063984
+        }
+      ],
+      "skill_cum_accuracy": 0.2,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without seeking assistance, indicating some level of engagement with the task.",
+          "ko": "학생은 도움을 요청하지 않고 올바른 답변을 제공함으로써 작업과의 어느 정도의 참여를 보여주었다."
+        },
+        {
+          "id": "S2",
+          "en": "This outcome could reflect either a successful resolution through effort or a chance occurrence, as the available data does not definitively clarify the underlying process.",
+          "ko": "이 결과는 노력을 통해 성공적으로 해결된 것일 수도 있고, 우연한 일이었을 수도 있으며, 이용 가능한 데이터는 근본적인 과정을 명확히 구분하지 못하기 때문입니다."
+        },
+        {
+          "id": "S3",
+          "en": "There is a slight inclination suggesting the response may have resulted from meaningful problem-solving rather than mere luck.",
+          "ko": "약간의 경향성이 나타나며, 이 응답은 단순한 운이 아닌 의미 있는 문제 해결 결과일 가능성이 있음을 시사합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q095",
+      "skill": "perimeter",
+      "steps": [
+        {
+          "step": 199,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.5462785150658129
+        },
+        {
+          "step": 200,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.2521285160614105
+        },
+        {
+          "step": 201,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.4622356495269869
+        },
+        {
+          "step": 202,
+          "correct": true,
+          "hint_count": 2,
+          "response_time_ratio": 0.2101071134213576
+        }
+      ],
+      "skill_cum_accuracy": 0.25,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrated a strong engagement with the task, making independent judgments despite receiving hints.",
+          "ko": "학생은 작업에 대한 강한 참여를 보였으며, 팁을 받았음에도 불구하고 독립적인 판단을 내렸다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also showed a clear inclination to avoid deeper cognitive effort, indicating a preference for less challenging paths.",
+          "ko": "학생은 또한 더 깊은 인지적 노력은 피하는 경향이 있었으며, 이는 덜 도전적인 길을 선호하는 것을 나타냈다."
+        },
+        {
+          "id": "S3",
+          "en": "This combination suggests a complex interaction between persistence and avoidance tendencies.",
+          "ko": "이 조합은 지속성과 회피 경향 사이의 복잡한 상호작용을 시사합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q048",
+      "skill": "properties-of-geometric-figures",
+      "steps": [
+        {
+          "step": 6,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.5691864053912147
+        },
+        {
+          "step": 7,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.3794576387572162
+        },
+        {
+          "step": 8,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.3162146864211643
+        },
+        {
+          "step": 9,
+          "correct": true,
+          "hint_count": 3,
+          "response_time_ratio": 0.4427005459378109
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrated a strong engagement with the task, making independent judgments despite receiving hints.",
+          "ko": "학생은 작업에 대한 강한 참여를 보였으며, 팁을 받았음에도 불구하고 독립적인 판단을 내렸다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also showed a clear inclination to avoid deeper cognitive effort, indicating a preference for less challenging paths.",
+          "ko": "학생은 또한 더 깊은 인지적 노력은 피하는 경향이 있었으며, 이는 덜 도전적인 길을 선호하는 것을 나타냈다."
+        },
+        {
+          "id": "S3",
+          "en": "This combination suggests a complex interaction between persistence and avoidance tendencies.",
+          "ko": "이 조합은 지속성과 회피 경향 사이의 복잡한 상호작용을 시사합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q108",
+      "skill": "inducing-functions",
+      "steps": [
+        {
+          "step": 304,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.2463754617801709
+        },
+        {
+          "step": 305,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.1478252394613556
+        },
+        {
+          "step": 306,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 2.611579669377156
+        },
+        {
+          "step": 307,
+          "correct": true,
+          "hint_count": 2,
+          "response_time_ratio": 0.3449256018588649
+        }
+      ],
+      "skill_cum_accuracy": 0.3571428571428571,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrated a strong engagement with the task, making independent judgments despite receiving hints.",
+          "ko": "학생은 작업에 대한 강한 참여를 보였으며, 팁을 받았음에도 불구하고 독립적인 판단을 내렸다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also showed a clear inclination to avoid challenging aspects of the work.",
+          "ko": "학생은 또한 작업의 도전적인 측면을 피하려는 분명한 경향을 보였습니다."
+        },
+        {
+          "id": "S3",
+          "en": "This combination indicates a complex interaction between effort and avoidance tendencies.",
+          "ko": "이 조합은 노력과 회피 경향 사이의 복잡한 상호작용을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q083",
+      "skill": "combinatorics",
+      "steps": [
+        {
+          "step": 953,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.4310373947903254
+        },
+        {
+          "step": 954,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.0538796871721531
+        },
+        {
+          "step": 955,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.1077593358742188
+        },
+        {
+          "step": 956,
+          "correct": true,
+          "hint_count": 3,
+          "response_time_ratio": 0.3771577076181722
+        }
+      ],
+      "skill_cum_accuracy": 0.1875,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrated a strong engagement with the problem, making independent judgments despite receiving hints.",
+          "ko": "학생은 문제에 대한 강한 참여를 보였으며, 팁을 받았음에도 불구하고 독립적인 판단을 내렸다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also showed a clear inclination to avoid deeper cognitive effort, indicating a preference for less challenging tasks.",
+          "ko": "학생은 또한 더 깊은 인지적 노력 회피에 대한 분명한 경향을 보였으며, 덜 도전적인 작업에 대한 선호를 나타냈습니다."
+        },
+        {
+          "id": "S3",
+          "en": "This combination suggests a complex interaction between persistence and avoidance tendencies.",
+          "ko": "이 조합은 지속성과 회피 경향 사이의 복잡한 상호작용을 시사합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q107",
+      "skill": "substitution",
+      "steps": [
+        {
+          "step": 113,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.2214759008709487
+        },
+        {
+          "step": 114,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.6644277026128461
+        },
+        {
+          "step": 115,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 2.851502209871221
+        },
+        {
+          "step": 116,
+          "correct": true,
+          "hint_count": 1,
+          "response_time_ratio": 1.1073795043547434
+        }
+      ],
+      "skill_cum_accuracy": 0.3333333333333333,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrated a strong inclination toward independent problem-solving despite receiving hints.",
+          "ko": "학생은 제시된 단서를 받았음에도 불구하고 독립적인 문제 해결에 대한 강한 경향을 보여주었다."
+        },
+        {
+          "id": "S2",
+          "en": "The student appeared capable of making judgments without direct guidance.",
+          "ko": "학생은 직접적인 지도 없이도 판단을 내릴 수 있는 능력이 있었습니다."
+        },
+        {
+          "id": "S3",
+          "en": "This indicates a level of confidence in applying knowledge autonomously.",
+          "ko": "이는 지식을 독자적으로 적용하는 데 대한 자신감 수준을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q133",
+      "skill": "multiplication",
+      "steps": [
+        {
+          "step": 253,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.041814605611826
+        },
+        {
+          "step": 254,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.041814605611826
+        },
+        {
+          "step": 255,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.0418145857080784
+        },
+        {
+          "step": 256,
+          "correct": true,
+          "hint_count": 3,
+          "response_time_ratio": 0.2508875739597135
+        }
+      ],
+      "skill_cum_accuracy": 0.1818181818181818,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrated a strong engagement with challenging tasks, indicating a willingness to persist despite difficulty.",
+          "ko": "학생은 어려움에도 불구하고 지속적으로 도전하는 태도를 보여주었다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also showed signs of avoiding more complex aspects of the task, suggesting a preference for simpler solutions.",
+          "ko": "학생은 또한 작업의 더 복잡한 측면을 피하는 징후도 보였으며, 더 간단한 해결책을 선호하는 것으로 보였습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q087",
+      "skill": "pythagorean-theorem",
+      "steps": [
+        {
+          "step": 38,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.4145680953731278
+        },
+        {
+          "step": 39,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.527632144407929
+        },
+        {
+          "step": 40,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.7537602153421639
+        },
+        {
+          "step": 41,
+          "correct": true,
+          "hint_count": 3,
+          "response_time_ratio": 0.3015040825188166
+        }
+      ],
+      "skill_cum_accuracy": 0.1875,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student engaged in independent problem-solving despite receiving a hint, indicating a strong sense of initiative.",
+          "ko": "학생은 팁을 받았음에도 불구하고 독립적인 문제 해결에 참여했으며, 이는 강한 주도성을 나타내는 징후이다."
+        },
+        {
+          "id": "S2",
+          "en": "This demonstrates an ability to persist through challenges without immediate external guidance.",
+          "ko": "이는 즉각적인 외부 지도 없이도 어려움을 극복할 능력을 보여줍니다."
+        },
+        {
+          "id": "S3",
+          "en": "The level of engagement suggests a willingness to tackle complex tasks on their own.",
+          "ko": "참여 수준은 복잡한 작업을 혼자 수행하려는 의지를 나타낸다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q096",
+      "skill": "inequality-solving",
+      "steps": [
+        {
+          "step": 595,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.214512939798569
+        },
+        {
+          "step": 596,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.1608847144215673
+        },
+        {
+          "step": 597,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.6435388705570464
+        },
+        {
+          "step": 598,
+          "correct": true,
+          "hint_count": 3,
+          "response_time_ratio": 0.5899106195457468
+        }
+      ],
+      "skill_cum_accuracy": 0.2222222222222222,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student engaged in independent problem-solving despite receiving a hint, indicating a strong capacity for tackling challenges on their own.",
+          "ko": "학생은 팁을 받았음에도 불구하고 독립적인 문제 해결에 참여했으며, 이는 스스로 도전 과제를 해결하는 데 있어 강한 능력을 보여주는 징후이다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also showed signs of avoiding deeper engagement with the material, suggesting a potential reluctance to fully confront the task.",
+          "ko": "학생은 또한 자료와 더 깊이적으로 소통하는 것을 피하는 징후를 보였으며, 작업을 완전히 직면하는 데 대한 잠재적인 거부감을 시사했다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q115",
+      "skill": "algebraic-manipulation",
+      "steps": [
+        {
+          "step": 338,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.2493760272326294
+        },
+        {
+          "step": 567,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 1.205317407171744
+        },
+        {
+          "step": 776,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 1.579381443157856
+        },
+        {
+          "step": 1121,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.246880096678611
+        }
+      ],
+      "skill_cum_accuracy": 0.4166666666666667,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging tasks, indicating a possible reluctance to engage deeply with complex problems.",
+          "ko": "학생은 도전적인 과제를 피하는 징후를 보이며, 복잡한 문제에 깊이적으로 접근하는 것을 꺼리는 가능성이 있음을 나타냅니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows frustration that does not lead to effective problem-solving strategies, suggesting difficulty in managing emotional responses during task completion.",
+          "ko": "학생은 효과적인 문제 해결 전략으로 이어지지 않는 좌절감을 보이며, 작업 완료 중 감정 반응을 관리하는 데 어려움이 있음을 시사한다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q086",
+      "skill": "sum-of-interior-angles-triangle",
+      "steps": [
+        {
+          "step": 47,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.3522719437826334
+        },
+        {
+          "step": 50,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 3.1433496386653466
+        },
+        {
+          "step": 190,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 3.143349652214268
+        },
+        {
+          "step": 201,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.108391360868447
+        }
+      ],
+      "skill_cum_accuracy": 0.3333333333333333,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging aspects of the task.",
+          "ko": "학생이 작업의 도전적인 측면을 피하려는 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows frustration without effective problem-solving strategies.",
+          "ko": "학생은 효과적인 문제 해결 전략이 없으면 좌절을 보이기도 한다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q121",
+      "skill": "sum-of-interior-angles-more-than-3-sides",
+      "steps": [
+        {
+          "step": 2,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 1.531136172224411
+        },
+        {
+          "step": 3,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 1.083573287111774
+        },
+        {
+          "step": 4,
+          "correct": true,
+          "hint_count": 1,
+          "response_time_ratio": 1.1777970455550242
+        },
+        {
+          "step": 541,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 3.180052038262815
+        }
+      ],
+      "skill_cum_accuracy": 0.5,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of unproductive frustration during the task.",
+          "ko": "학생은 작업 중 비생산적인 좌절의 징후를 보인다."
+        },
+        {
+          "id": "S2",
+          "en": "This indicates a struggle with understanding the concept being taught.",
+          "ko": "이는 가르치는 개념을 이해하는 데 어려움을 겪고 있음을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q030",
+      "skill": "linear-area-volume-conversion",
+      "steps": [
+        {
+          "step": 147,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.1599364502230883
+        },
+        {
+          "step": 148,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.2199126094605595
+        },
+        {
+          "step": 149,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.099960290925641
+        },
+        {
+          "step": 150,
+          "correct": false,
+          "hint_count": 4,
+          "response_time_ratio": 0.0799682203534347
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of unproductive frustration during the task.",
+          "ko": "학생은 작업 중 비생산적인 좌절의 징후를 보인다."
+        },
+        {
+          "id": "S2",
+          "en": "This indicates a struggle with understanding the material.",
+          "ko": "이는 자료를 이해하는 데 어려움을 겪고 있음을 나타냅니다."
+        },
+        {
+          "id": "S3",
+          "en": "The behavior may suggest difficulty in applying the concepts being taught.",
+          "ko": "이 행동은 가르치고 있는 개념을 적용하는 데 어려움이 있음을 시사할 수 있다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q091",
+      "skill": "triangle-inequality",
+      "steps": [
+        {
+          "step": 3,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.1643578924244224
+        },
+        {
+          "step": 4,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.9861472631635538
+        },
+        {
+          "step": 5,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.6574315306900864
+        },
+        {
+          "step": 109,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.2052911286412995
+        }
+      ],
+      "skill_cum_accuracy": 0.4,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging aspects of the task.",
+          "ko": "학생이 작업의 도전적인 측면을 피하려는 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows frustration that does not lead to productive problem-solving.",
+          "ko": "학생은 생산적인 문제 해결로 이어지지 않는 불만을 보이기도 합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q132",
+      "skill": "equation-solving",
+      "steps": [
+        {
+          "step": 252,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.1768416112043915
+        },
+        {
+          "step": 253,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.1768416112043915
+        },
+        {
+          "step": 254,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 6.366297736091485
+        },
+        {
+          "step": 298,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.4736800278402908
+        }
+      ],
+      "skill_cum_accuracy": 0.6363636363636364,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging tasks, indicating a possible reluctance to engage deeply with complex problems.",
+          "ko": "학생은 도전적인 과제를 피하는 징후를 보이며, 복잡한 문제에 깊이적으로 접근하는 것을 꺼리는 가능성이 있음을 나타냅니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows frustration that does not lead to effective problem-solving strategies, suggesting difficulty in managing task demands.",
+          "ko": "학생은 효과적인 문제 해결 전략으로 이어지지 않는 좌절을 보이며, 작업 요구사항을 관리하는 데 어려움이 있음을 시사한다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q025",
+      "skill": "linear-area-volume-conversion",
+      "steps": [
+        {
+          "step": 868,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.2920342840762628
+        },
+        {
+          "step": 869,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.1460171159740731
+        },
+        {
+          "step": 870,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.949111366775728
+        },
+        {
+          "step": 871,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.0
+        }
+      ],
+      "skill_cum_accuracy": 0.2,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of unproductive frustration during the task.",
+          "ko": "학생은 작업 중 비생산적인 좌절의 징후를 보인다."
+        },
+        {
+          "id": "S2",
+          "en": "This indicates a struggle with understanding the material.",
+          "ko": "이는 자료를 이해하는 데 어려움을 겪고 있음을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q074",
+      "skill": "interpreting-linear-equations",
+      "steps": [
+        {
+          "step": 5,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.0825045523532968
+        },
+        {
+          "step": 6,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.98837371606603
+        },
+        {
+          "step": 7,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 1.011906429373734
+        },
+        {
+          "step": 383,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.011906429373734
+        }
+      ],
+      "skill_cum_accuracy": 0.25,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging aspects of the task.",
+          "ko": "학생이 작업의 도전적인 측면을 피하려는 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows frustration that does not lead to productive problem-solving.",
+          "ko": "학생은 생산적인 문제 해결로 이어지지 않는 불만을 보이기도 합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q047",
+      "skill": "sum-of-interior-angles-more-than-3-sides",
+      "steps": [
+        {
+          "step": 1305,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.1311499187555399
+        },
+        {
+          "step": 1306,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.2622998166582427
+        },
+        {
+          "step": 1307,
+          "correct": true,
+          "hint_count": 2,
+          "response_time_ratio": 1.0491993500443193
+        },
+        {
+          "step": 1308,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 3.016448152361405
+        }
+      ],
+      "skill_cum_accuracy": 0.1794871794871795,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of unproductive frustration during the task.",
+          "ko": "학생은 작업 중 비생산적인 좌절의 징후를 보인다."
+        },
+        {
+          "id": "S2",
+          "en": "This indicates a struggle with understanding the concept being taught.",
+          "ko": "이는 가르치는 개념을 이해하는 데 어려움을 겪고 있음을 나타냅니다."
+        },
+        {
+          "id": "S3",
+          "en": "The level of frustration remains consistently high throughout the activity.",
+          "ko": "활동 전반에 걸쳐 좌절감의 수준이 일관되게 높은 상태를 유지한다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q080",
+      "skill": "properties-of-geometric-figures",
+      "steps": [
+        {
+          "step": 87,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.1407125017580162
+        },
+        {
+          "step": 88,
+          "correct": false,
+          "hint_count": 4,
+          "response_time_ratio": 0.1407124514533088
+        },
+        {
+          "step": 89,
+          "correct": true,
+          "hint_count": 4,
+          "response_time_ratio": 0.2814249196514014
+        },
+        {
+          "step": 90,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.2110687022971388
+        }
+      ],
+      "skill_cum_accuracy": 0.2631578947368421,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student demonstrates a strong sense of confidence in their understanding despite potential gaps in knowledge.",
+          "ko": "학생은 지식의 공백이 있을지라도 자신의 이해에 대한 강한 자신감을 보여준다."
+        },
+        {
+          "id": "S2",
+          "en": "The student shows signs of frustration that does not lead to effective problem-solving strategies.",
+          "ko": "학생은 효과적인 문제 해결 전략으로 이어지지 않는 좌절의 징후를 보인다."
+        },
+        {
+          "id": "S3",
+          "en": "The student makes errors in applying geometric concepts consistently throughout the task.",
+          "ko": "학생은 과제 전반에서 기하학적 개념을 적용하는 데 오류를 범합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q081",
+      "skill": "noskill",
+      "steps": [
+        {
+          "step": 295,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.1207070911564016
+        },
+        {
+          "step": 296,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.3621213119144166
+        },
+        {
+          "step": 297,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.4224748478058726
+        },
+        {
+          "step": 298,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.0804713957136957
+        }
+      ],
+      "skill_cum_accuracy": 0.6630434782608695,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of unproductive frustration.",
+          "ko": "학생이 비생산적인 좌절의 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "This emotion appears to be intense, given the high status level recorded.",
+          "ko": "이 감정이 매우 강렬한 것으로 보인다."
+        },
+        {
+          "id": "S3",
+          "en": "There is no clear indication of alternative coping strategies being employed.",
+          "ko": "대체적인 대처 전략이 사용되고 있음을 분명히 나타내는 증거는 없다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q038",
+      "skill": "interpreting-numberline",
+      "steps": [
+        {
+          "step": 524,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.7413493710417345
+        },
+        {
+          "step": 525,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.4633433458735121
+        },
+        {
+          "step": 526,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.9266867249224088
+        },
+        {
+          "step": 573,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.5096776925911924
+        }
+      ],
+      "skill_cum_accuracy": 0.8571428571428571,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging tasks during the number line interpretation activity.",
+          "ko": "학생은 수선도 해석 활동 중 도전적인 과제를 피하는 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows frustration that does not lead to productive problem-solving efforts.",
+          "ko": "학생은 생산적인 문제 해결을 위한 노력으로 이어지지 않는 불만을 보이기도 한다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q139",
+      "skill": "measurement",
+      "steps": [
+        {
+          "step": 465,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.2230180328999946
+        },
+        {
+          "step": 466,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 13.693305891416484
+        },
+        {
+          "step": 467,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.0892072259255488
+        },
+        {
+          "step": 468,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.535243206488054
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of overconfidence, indicating a strong belief in their abilities without sufficient justification.",
+          "ko": "학생은 과신의 징후를 보이며, 충분한 근거 없이 자신의 능력을 강하게 믿고 있는 것으로 보인다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows unproductive frustration, suggesting they become overly concerned with difficulties rather than addressing them effectively.",
+          "ko": "학생은 또한 생산적이지 않은 좌절을 보이며, 어려움에 과도하게 신경 쓰는 대신 효과적으로 해결하지 않는 모습을 보인다."
+        },
+        {
+          "id": "S3",
+          "en": "Additionally, there is evidence of slipping, meaning the student may struggle to maintain focus or consistency in tasks.",
+          "ko": "또한 미끄러짐의 증거가 있음으로, 학생이 작업에서 집중력이나 일관성을 유지하는 데 어려움을 겪을 수 있습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q011",
+      "skill": "interpreting-linear-equations",
+      "steps": [
+        {
+          "step": 1062,
+          "correct": true,
+          "hint_count": 5,
+          "response_time_ratio": 0.3361713814741723
+        },
+        {
+          "step": 1063,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.3361713714730737
+        },
+        {
+          "step": 1064,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.084042845368543
+        },
+        {
+          "step": 1065,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.0420214326853701
+        }
+      ],
+      "skill_cum_accuracy": 0.1923076923076923,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of unproductive frustration during the task.",
+          "ko": "학생은 작업 중 비생산적인 좌절의 징후를 보인다."
+        },
+        {
+          "id": "S2",
+          "en": "This emotion appears to be persistent rather than fleeting.",
+          "ko": "이 감정은 일시적인 것이 아니라 지속적인 것으로 보인다."
+        },
+        {
+          "id": "S3",
+          "en": "There is no clear indication of strategies being employed to resolve the issue.",
+          "ko": "문제를 해결하기 위한 전략이 사용되고 있음을 분명히 나타내는 증거는 없다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q097",
+      "skill": "sum-of-interior-angles-more-than-3-sides",
+      "steps": [
+        {
+          "step": 439,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.4590163935082708
+        },
+        {
+          "step": 440,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.6229508276300771
+        },
+        {
+          "step": 502,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 4.852459017087434
+        },
+        {
+          "step": 518,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 3.2459016555461915
+        }
+      ],
+      "skill_cum_accuracy": 0.25,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding engaging deeply with the task, indicating a possible reluctance to confront challenging aspects of the skill.",
+          "ko": "학생은 작업에 깊이 참여하는 것을 피하는 징후를 보이며, 기술의 어려운 측면에 직면하는 것을 꺼리는 가능성이 있음을 나타냅니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows frustration that does not lead to productive problem-solving efforts, suggesting difficulty in managing emotional responses during practice.",
+          "ko": "학생은 생산적인 문제 해결을 위한 노력으로 이어지지 않는 불만을 보이며, 연습 중 감정 반응을 관리하는 데 어려움이 있음을 시사한다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q016",
+      "skill": "pattern-finding",
+      "steps": [
+        {
+          "step": 7,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 2.2322368251641453
+        },
+        {
+          "step": 462,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.3188909858859896
+        },
+        {
+          "step": 463,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.0354323392610163
+        },
+        {
+          "step": 464,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.0
+        }
+      ],
+      "skill_cum_accuracy": 0.5,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of unproductive frustration during the task.",
+          "ko": "학생은 작업 중 비생산적인 좌절의 징후를 보인다."
+        },
+        {
+          "id": "S2",
+          "en": "This emotion appears to persist without clear resolution.",
+          "ko": "이 감정은 명확한 해결 없이 지속되는 듯하다."
+        },
+        {
+          "id": "S3",
+          "en": "There is no indication of alternative coping strategies being employed.",
+          "ko": "대체적인 대처 전략이 사용되고 있음을 나타내는 증거가 없다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q069",
+      "skill": "substitution",
+      "steps": [
+        {
+          "step": 753,
+          "correct": false,
+          "hint_count": 11,
+          "response_time_ratio": 0.0524382348239535
+        },
+        {
+          "step": 754,
+          "correct": true,
+          "hint_count": 11,
+          "response_time_ratio": 0.2097530016973285
+        },
+        {
+          "step": 771,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.8914501790020005
+        },
+        {
+          "step": 772,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.10487648212821
+        }
+      ],
+      "skill_cum_accuracy": 0.1875,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of overconfidence during the task.",
+          "ko": "학생은 작업 중 과신의 징후를 보인다."
+        },
+        {
+          "id": "S2",
+          "en": "They also display unproductive frustration, indicating difficulty in managing their approach.",
+          "ko": "그들은 또한 생산적이지 않은 좌절을 보이며, 접근 방식을 관리하는 데 어려움을 나타냅니다."
+        },
+        {
+          "id": "S3",
+          "en": "This combination may suggest a struggle to balance confidence with effective problem-solving strategies.",
+          "ko": "이 조합은 자신감과 효과적인 문제 해결 전략 사이의 균형을 유지하는 데 어려움이 있을 수 있음을 시사할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q059",
+      "skill": "square-root",
+      "steps": [
+        {
+          "step": 111,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.2572094225441758
+        },
+        {
+          "step": 112,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.192907078386103
+        },
+        {
+          "step": 113,
+          "correct": true,
+          "hint_count": 3,
+          "response_time_ratio": 0.192907078386103
+        },
+        {
+          "step": 114,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.1286047189240687
+        }
+      ],
+      "skill_cum_accuracy": 0.1818181818181818,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of overconfidence during the task.",
+          "ko": "학생은 작업 중 과신의 징후를 보인다."
+        },
+        {
+          "id": "S2",
+          "en": "A high level of unproductive frustration is also observed.",
+          "ko": "높은 수준의 비생산적인 좌절이 또한 관찰된다."
+        },
+        {
+          "id": "S3",
+          "en": "Additionally, there is evidence of slipping in performance.",
+          "ko": "또한 성능에서 미끄러짐의 증거가 있다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q006",
+      "skill": "multiplying-decimals",
+      "steps": [
+        {
+          "step": 182,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 3.7362658843838097
+        },
+        {
+          "step": 183,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.4187194525602545
+        },
+        {
+          "step": 184,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.9662756597544336
+        },
+        {
+          "step": 185,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 3.285337243165074
+        }
+      ],
+      "skill_cum_accuracy": 0.3333333333333333,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging tasks related to multiplying decimals.",
+          "ko": "학생이 소수의 곱셈과 관련된 도전적인 과제를 피하는 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows unproductive frustration during the skill practice.",
+          "ko": "학생은 기술 연습 중에도 생산적이지 않은 좌절을 보인다."
+        },
+        {
+          "id": "S3",
+          "en": "This may indicate difficulty in engaging with the material.",
+          "ko": "이는 자료와의 상호작용에 어려움이 있을 수 있음을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q034",
+      "skill": "equivalent-fractions-decimals-percents",
+      "steps": [
+        {
+          "step": 100,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.6025033635238013
+        },
+        {
+          "step": 102,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.3373691291629055
+        },
+        {
+          "step": 104,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.0421711511820947
+        },
+        {
+          "step": 261,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 2.4880973275764284
+        }
+      ],
+      "skill_cum_accuracy": 0.6666666666666666,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging tasks related to converting fractions, decimals, and percentages.",
+          "ko": "학생은 분수, 소수, 백분율 변환과 관련된 도전적인 과제를 피하는 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows frustration during attempts to solve problems involving these concepts.",
+          "ko": "학생은 이러한 개념을 포함한 문제를 해결하는 시도 중에도 실망감을 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q126",
+      "skill": "noskill",
+      "steps": [
+        {
+          "step": 65,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.5854043392393316
+        },
+        {
+          "step": 66,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.5435897435793793
+        },
+        {
+          "step": 67,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.9199211045189496
+        },
+        {
+          "step": 68,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.0453648914988063
+        }
+      ],
+      "skill_cum_accuracy": 0.4761904761904761,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging tasks, indicating a possible reluctance to engage deeply with material.",
+          "ko": "학생이 도전적인 과제를 피하는 징후를 보이며, 자료와 깊이적으로 상호작용하는 것을 거부할 가능성이 있음을 나타냅니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows frustration that does not lead to productive actions, suggesting difficulty in managing task demands effectively.",
+          "ko": "학생은 생산적인 행동으로 이어지지 않는 불만을 보이기도 하며, 작업 요구사항을 효과적으로 관리하는 데 어려움이 있음을 시사한다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q045",
+      "skill": "exponents",
+      "steps": [
+        {
+          "step": 550,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.5518478372582316
+        },
+        {
+          "step": 551,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.2365062186144305
+        },
+        {
+          "step": 552,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.7095185619503303
+        },
+        {
+          "step": 604,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.0248601804364603
+        }
+      ],
+      "skill_cum_accuracy": 0.3,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits overconfident tendencies during exponent problems, often dismissing alternative approaches without thorough consideration.",
+          "ko": "학생은 지수 문제에서 과도한 자신감을 보이며, 철저한 고려 없이 대안적인 접근법을 무시하는 경향이 있다."
+        },
+        {
+          "id": "S2",
+          "en": "This behavior coincides with frequent expressions of frustration, indicating difficulty in resolving complex steps within the skill domain.",
+          "ko": "이 행동은 자주 나타나는 실망의 표현과 일치하며, 기술 영역 내에서 복잡한 단계를 해결하는 데 어려움을 나타내고 있음을 시사합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q046",
+      "skill": "discount",
+      "steps": [
+        {
+          "step": 45,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.6994662333628795
+        },
+        {
+          "step": 46,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 3.147598039640964
+        },
+        {
+          "step": 47,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 1.0054826999671458
+        },
+        {
+          "step": 170,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 3.5847644669687444
+        }
+      ],
+      "skill_cum_accuracy": 0.6,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging tasks, indicating a possible reluctance to engage deeply with material.",
+          "ko": "학생이 도전적인 과제를 피하는 징후를 보이며, 자료와 깊이적으로 상호작용하는 것을 거부할 가능성이 있음을 나타냅니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows frustration that does not lead to productive actions, suggesting difficulty in managing task demands effectively.",
+          "ko": "학생은 생산적인 행동으로 이어지지 않는 불만을 보이기도 하며, 작업 요구사항을 효과적으로 관리하는 데 어려움이 있음을 시사한다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q013",
+      "skill": "proportion",
+      "steps": [
+        {
+          "step": 1970,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.1199376994737655
+        },
+        {
+          "step": 1971,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.0599688426005887
+        },
+        {
+          "step": 1972,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.1199377423514981
+        },
+        {
+          "step": 1973,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.1799065706195302
+        }
+      ],
+      "skill_cum_accuracy": 0.225,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of overconfidence during the task.",
+          "ko": "학생은 작업 중 과신의 징후를 보인다."
+        },
+        {
+          "id": "S2",
+          "en": "A high level of unproductive frustration is also observed.",
+          "ko": "높은 수준의 비생산적인 좌절이 또한 관찰된다."
+        },
+        {
+          "id": "S3",
+          "en": "Additionally, there is evidence of slipping in performance.",
+          "ko": "또한 성능에서 미끄러짐의 증거가 있다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q049",
+      "skill": "combinatorics",
+      "steps": [
+        {
+          "step": 481,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.7952925160634077
+        },
+        {
+          "step": 482,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.4768745745793427
+        },
+        {
+          "step": 483,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.4207716767200142
+        },
+        {
+          "step": 484,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.5329774724386711
+        }
+      ],
+      "skill_cum_accuracy": 0.375,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging tasks, indicating a possible reluctance to engage deeply with complex problems.",
+          "ko": "학생은 도전적인 과제를 피하는 징후를 보이며, 복잡한 문제에 깊이적으로 접근하는 것을 꺼리는 가능성이 있음을 나타냅니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows frustration that does not lead to productive problem-solving efforts.",
+          "ko": "학생은 생산적인 문제 해결을 위한 노력으로 이어지지 않는 불만을 보이기도 한다."
+        },
+        {
+          "id": "S3",
+          "en": "There is a noticeable pattern of errors occurring frequently during practice sessions.",
+          "ko": "연습 세션 중에 오류가 자주 발생하는 뚜렷한 패턴이 존재한다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q012",
+      "skill": "pattern-finding",
+      "steps": [
+        {
+          "step": 461,
+          "correct": true,
+          "hint_count": 3,
+          "response_time_ratio": 0.1317331844911441
+        },
+        {
+          "step": 462,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.3512884919763845
+        },
+        {
+          "step": 463,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.1536887257124564
+        },
+        {
+          "step": 464,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.4610661404496773
+        }
+      ],
+      "skill_cum_accuracy": 0.4545454545454545,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with complex tasks, indicating a possible reluctance to confront challenging material.",
+          "ko": "학생은 복잡한 작업에 깊이적으로 참여하지 않았을 수 있으며, 어려운 내용에 직면하는 데 대한 가능성이 있는 회피 태도를 보여줄 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be a noticeable inconsistency in performance across similar problems, suggesting difficulty maintaining focus or applying learned strategies consistently.",
+          "ko": "유사한 문제들에서 성능에 있어 눈에 띄는 불일치가 있는 것으로 보이며, 이는 집중력 유지나 학습된 전략을 일관되게 적용하는 데 어려움이 있을 수 있음을 시사합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q014",
+      "skill": "noskill",
+      "steps": [
+        {
+          "step": 0,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.7925445644782656
+        },
+        {
+          "step": 1,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 3.2940133832014005
+        },
+        {
+          "step": 2,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.4210392911487047
+        },
+        {
+          "step": 3,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 2.5757698662561457
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without seeking assistance, yet it remains unclear whether this accuracy stemmed from genuine understanding, persistent effort, or chance.",
+          "ko": "학생은 도움을 요청하지 않고 올바른 답변을 제공했지만, 이 정확성은 진정한 이해, 지속적인 노력, 혹은 운이 있었는지는 여전히 불분명하다."
+        },
+        {
+          "id": "S2",
+          "en": "This outcome does not strongly indicate a particular level of confidence or engagement with the material.",
+          "ko": "이 결과는 특정 수준의 자신감이나 자료에 대한 참여도를 강하게 나타내지 않는다."
+        },
+        {
+          "id": "S3",
+          "en": "The available information does not allow for a clear determination of the underlying factors contributing to the correct answer.",
+          "ko": "이용 가능한 정보는 정답에 기여하는 근본적 요인들을 명확히 판단할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q105",
+      "skill": "pattern-finding",
+      "steps": [
+        {
+          "step": 231,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.283448210783391
+        },
+        {
+          "step": 232,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.9031521232800963
+        },
+        {
+          "step": 233,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 3.806304285433088
+        },
+        {
+          "step": 234,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.404926007248478
+        }
+      ],
+      "skill_cum_accuracy": 0.7142857142857143,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with complex tasks, indicating a possible reluctance to confront challenging material.",
+          "ko": "학생은 복잡한 작업에 깊이적으로 참여하지 않았을 수 있으며, 어려운 내용에 직면하는 데 대한 가능성이 있는 회피 태도를 보여줄 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be a noticeable inconsistency in performance across similar problems, suggesting difficulty maintaining focus or applying learned strategies consistently.",
+          "ko": "유사한 문제들에서 성능에 있어 눈에 띄는 불일치가 있는 것으로 보이며, 이는 집중력 유지나 학습된 전략을 일관되게 적용하는 데 어려움이 있을 수 있음을 시사합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q110",
+      "skill": "noskill",
+      "steps": [
+        {
+          "step": 62,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.6203319438135694
+        },
+        {
+          "step": 63,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.0788381679384464
+        },
+        {
+          "step": 64,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.5394190936787667
+        },
+        {
+          "step": 65,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.4045643089312742
+        }
+      ],
+      "skill_cum_accuracy": 0.4615384615384615,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging tasks.",
+          "ko": "학생이 도전적인 과제를 피하는 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "There is also a noticeable pattern of errors occurring during task execution.",
+          "ko": "작업 수행 중에 오류가 발생하는 뚜렷한 패턴이 또한 존재한다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q028",
+      "skill": "noskill",
+      "steps": [
+        {
+          "step": 261,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.3972765319694143
+        },
+        {
+          "step": 262,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.2979573752894475
+        },
+        {
+          "step": 263,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.2979573989770608
+        },
+        {
+          "step": 264,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.8442126423533014
+        }
+      ],
+      "skill_cum_accuracy": 0.296875,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging tasks.",
+          "ko": "학생이 도전적인 과제를 피하는 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "There is also a noticeable pattern of errors occurring during task execution.",
+          "ko": "작업 수행 중에 오류가 발생하는 뚜렷한 패턴이 또한 존재한다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q020",
+      "skill": "pattern-finding",
+      "steps": [
+        {
+          "step": 298,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 3.0374753452159147
+        },
+        {
+          "step": 299,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 1.4174885013768943
+        },
+        {
+          "step": 300,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 2.34319526630942
+        },
+        {
+          "step": 301,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.4628533859376632
+        }
+      ],
+      "skill_cum_accuracy": 0.5555555555555556,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with complex tasks, indicating a possible reluctance to confront challenging material.",
+          "ko": "학생은 복잡한 작업에 깊이적으로 참여하지 않았을 수 있으며, 어려운 내용에 직면하는 데 대한 가능성이 있는 회피 태도를 보여줄 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be a notable inconsistency in task completion, suggesting difficulty maintaining focus or accuracy over time.",
+          "ko": "작업 완료에 있어 뚜렷한 불일치가 보이는데, 이는 시간이 지남에 따라 집중력이나 정확도를 유지하는 데 어려움이 있음을 시사합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q114",
+      "skill": "discount",
+      "steps": [
+        {
+          "step": 80,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.7702702735671507
+        },
+        {
+          "step": 81,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.0270270238126928
+        },
+        {
+          "step": 82,
+          "correct": true,
+          "hint_count": 1,
+          "response_time_ratio": 1.0405405373697545
+        },
+        {
+          "step": 83,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.2027027092033042
+        }
+      ],
+      "skill_cum_accuracy": 0.2307692307692307,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging tasks.",
+          "ko": "학생이 도전적인 과제를 피하는 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "There is also a noticeable pattern of errors occurring during task execution.",
+          "ko": "작업 수행 중에 오류가 발생하는 뚜렷한 패턴이 또한 존재한다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q044",
+      "skill": "pattern-finding",
+      "steps": [
+        {
+          "step": 522,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.6525276133464837
+        },
+        {
+          "step": 523,
+          "correct": true,
+          "hint_count": 1,
+          "response_time_ratio": 1.3050552005918632
+        },
+        {
+          "step": 524,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.7069048872700406
+        },
+        {
+          "step": 525,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.0875460135437711
+        }
+      ],
+      "skill_cum_accuracy": 0.44,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with complex tasks, indicating a possible reluctance to confront challenging material.",
+          "ko": "학생은 복잡한 작업에 깊이적으로 참여하지 않았을 수 있으며, 어려운 내용에 직면하는 데 대한 가능성이 있는 회피 태도를 보여줄 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be a noticeable inconsistency in performance across repeated attempts, suggesting difficulty maintaining focus or accuracy.",
+          "ko": "반복적인 시도에서 성능에 있어 눈에 띄는 불일치가 있는 것으로 보이며, 집중력이나 정확도를 유지하는 데 어려움이 있을 가능성이 있음."
+        },
+        {
+          "id": "S3",
+          "en": "This pattern may reflect an underlying struggle with sustaining attention during extended problem-solving activities.",
+          "ko": "이 패턴은 장시간 문제 해결 활동 중 주의를 유지하는 데 대한 내재적인 갈등을 반영할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q055",
+      "skill": "combinatorics",
+      "steps": [
+        {
+          "step": 336,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.1331683861436987
+        },
+        {
+          "step": 337,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.0951202648074359
+        },
+        {
+          "step": 338,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.1331683725415002
+        },
+        {
+          "step": 339,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.7419381099457998
+        }
+      ],
+      "skill_cum_accuracy": 0.3571428571428571,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the problem-solving process.",
+          "ko": "학생은 문제 해결 과정에 깊이 참여하지 않을 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be a tendency to make errors during task execution.",
+          "ko": "작업 수행 중 오류를 발생시키는 경향이 있는 것으로 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q120",
+      "skill": "equation-solving",
+      "steps": [
+        {
+          "step": 339,
+          "correct": true,
+          "hint_count": 3,
+          "response_time_ratio": 0.3529058450316398
+        },
+        {
+          "step": 350,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.5097528737877927
+        },
+        {
+          "step": 441,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 3.0977290116597165
+        },
+        {
+          "step": 442,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.1960587882782907
+        }
+      ],
+      "skill_cum_accuracy": 0.3076923076923077,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the problem-solving process.",
+          "ko": "학생은 문제 해결 과정에 깊이 참여하지 않을 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be a likelihood of errors occurring during task execution.",
+          "ko": "작업 실행 중 오류가 발생할 가능성이 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q021",
+      "skill": "inequality-solving",
+      "steps": [
+        {
+          "step": 775,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 2.185831968767005
+        },
+        {
+          "step": 776,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.2677825479702192
+        },
+        {
+          "step": 777,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.4371664168357867
+        },
+        {
+          "step": 778,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.4371663854472394
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the problem-solving process.",
+          "ko": "학생은 문제 해결 과정에 깊이 참여하지 않을 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be a pattern of inconsistent performance during practice sessions.",
+          "ko": "훈련 세션 중 일관되지 않은 성능이 나타나는 양상이 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q113",
+      "skill": "percent-of",
+      "steps": [
+        {
+          "step": 1041,
+          "correct": false,
+          "hint_count": 7,
+          "response_time_ratio": 0.1048765196215568
+        },
+        {
+          "step": 1042,
+          "correct": false,
+          "hint_count": 8,
+          "response_time_ratio": 0.1573147168997253
+        },
+        {
+          "step": 1043,
+          "correct": true,
+          "hint_count": 8,
+          "response_time_ratio": 2.097529917340616
+        },
+        {
+          "step": 1044,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.9438884388914364
+        }
+      ],
+      "skill_cum_accuracy": 0.2592592592592592,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging tasks, indicating a possible reluctance to engage deeply with complex material.",
+          "ko": "학생은 도전적인 과제를 피하는 징후를 보이며, 복잡한 내용과 깊이 있게 소통하는 데 대한 가능성이 있는 거부감을 나타내고 있다."
+        },
+        {
+          "id": "S2",
+          "en": "There is also evidence of inconsistent performance, suggesting difficulty maintaining focus or applying knowledge consistently.",
+          "ko": "또한 일관되지 않은 성능의 증거도 있으며, 집중력 유지나 지식의 일관된 적용에 어려움이 있음을 시사합니다."
+        },
+        {
+          "id": "S3",
+          "en": "This combination may point to underlying struggles with task engagement and retention.",
+          "ko": "이 조합은 작업 참여와 유지에 대한 깊은 문제를 암시할 수 있다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q098",
+      "skill": "pattern-finding",
+      "steps": [
+        {
+          "step": 62,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.9558576391755153
+        },
+        {
+          "step": 281,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.7965480371979657
+        },
+        {
+          "step": 303,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.4551703015082224
+        },
+        {
+          "step": 304,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.5462043792884067
+        }
+      ],
+      "skill_cum_accuracy": 0.2631578947368421,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with complex tasks, indicating a possible reluctance to confront challenging material.",
+          "ko": "학생은 복잡한 작업에 깊이적으로 참여하지 않았을 수 있으며, 어려운 내용에 직면하는 데 대한 가능성이 있는 회피 태도를 보여줄 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be a noticeable inconsistency in performance across repeated attempts, suggesting difficulty maintaining focus or applying knowledge consistently.",
+          "ko": "반복적인 시도에서 성능에 있어 눈에 띄는 불일치가 있는 것으로 보이며, 집중력 유지나 지식의 일관된 적용에 어려움이 있을 가능성이 있음을 시사합니다."
+        },
+        {
+          "id": "S3",
+          "en": "This pattern may reflect an underlying struggle with sustaining attention during extended problem-solving activities.",
+          "ko": "이 패턴은 장시간 문제 해결 활동 중 주의를 유지하는 데 대한 내재적인 갈등을 반영할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q001",
+      "skill": "pattern-finding",
+      "steps": [
+        {
+          "step": 58,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 4.621759260306644
+        },
+        {
+          "step": 59,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.4138888889826845
+        },
+        {
+          "step": 60,
+          "correct": true,
+          "hint_count": 2,
+          "response_time_ratio": 1.3796296133867263
+        },
+        {
+          "step": 61,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.8967592925735943
+        }
+      ],
+      "skill_cum_accuracy": 0.2941176470588235,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with complex tasks, indicating a possible reluctance to confront challenging material.",
+          "ko": "학생은 복잡한 작업에 깊이적으로 참여하지 않았을 수 있으며, 어려운 내용에 직면하는 데 대한 가능성이 있는 회피 태도를 보여줄 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "There is also a likelihood of inconsistent performance, suggesting difficulty maintaining focus or applying knowledge consistently.",
+          "ko": "또한 일관된 성능을 유지하는 데 어려움이나 지식을 일관되게 적용하는 데 어려움이 있을 가능성이 있다."
+        },
+        {
+          "id": "S3",
+          "en": "This combination appears to be present, though the exact nature of the interactions remains unclear.",
+          "ko": "이 조합은 존재하는 것으로 보이지만, 상호작용의 정확한 성격은 여전히 불분명합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q112",
+      "skill": "combinatorics",
+      "steps": [
+        {
+          "step": 770,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.171328386187258
+        },
+        {
+          "step": 771,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.2788876977219111
+        },
+        {
+          "step": 772,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 1.8964364615525904
+        },
+        {
+          "step": 773,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.3904427821206976
+        }
+      ],
+      "skill_cum_accuracy": 0.375,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the problem-solving process.",
+          "ko": "학생은 문제 해결 과정에 깊이 참여하지 않을 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be a significant likelihood of errors occurring during task execution.",
+          "ko": "작업 수행 중 오류가 발생할 가능성이 상당히 높아 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q104",
+      "skill": "rate",
+      "steps": [
+        {
+          "step": 596,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 3.6990775905539257
+        },
+        {
+          "step": 601,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 2.867824189443171
+        },
+        {
+          "step": 602,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.5818773837700403
+        },
+        {
+          "step": 603,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.7065653625152752
+        }
+      ],
+      "skill_cum_accuracy": 0.6,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the material, indicating a possible reluctance to confront challenging aspects.",
+          "ko": "학생이 자료와 깊이적으로 소통하지 않은 것으로 보일 수 있으며, 이는 어려운 측면에 직면하는 것을 회피하고자 하는 가능성을 시사합니다."
+        },
+        {
+          "id": "S2",
+          "en": "There is also a likelihood of errors occurring during task execution, suggesting instability in performance.",
+          "ko": "작업 수행 중 오류가 발생할 가능성이 있으며, 이는 성능의 불안정성을 시사합니다."
+        },
+        {
+          "id": "S3",
+          "en": "This combination appears to be present, though this is not certain.",
+          "ko": "이 조합은 존재할 가능성이 있지만 확실하지는 않습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q136",
+      "skill": "mean",
+      "steps": [
+        {
+          "step": 306,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 2.096282329570692
+        },
+        {
+          "step": 307,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.0607618213572593
+        },
+        {
+          "step": 308,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.0911427102983525
+        },
+        {
+          "step": 309,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 1.0329507094232455
+        }
+      ],
+      "skill_cum_accuracy": 0.5,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the material, indicating a possible reluctance to confront challenging aspects of the task.",
+          "ko": "학생이 자료와 깊이적으로 소통하지 않은 것으로 보일 수 있으며, 이는 작업의 어려운 측면에 직면하는 것을 꺼리는 가능성을 시사합니다."
+        },
+        {
+          "id": "S2",
+          "en": "There is also a likelihood of errors occurring during practice, suggesting inconsistency in maintaining focus or accuracy.",
+          "ko": "실습 중 오류가 발생할 가능성이 있으며, 이는 집중력이나 정확도를 유지하는 데 일관성이 부족한 것을 시사합니다."
+        },
+        {
+          "id": "S3",
+          "en": "This combination appears to be, though this is not Certain, related to difficulties in sustaining attention or applying knowledge consistently.",
+          "ko": "이 조합은 확실하지는 않지만, 주의를 지속하거나 지식을 일관되게 적용하는 데 어려움과 관련이 있을 것으로 보입니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q076",
+      "skill": "area",
+      "steps": [
+        {
+          "step": 14,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 1.2270463744029845
+        },
+        {
+          "step": 16,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.7749766575176744
+        },
+        {
+          "step": 17,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.3229069561318975
+        },
+        {
+          "step": 19,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.5489417990750194
+        }
+      ],
+      "skill_cum_accuracy": 0.3636363636363636,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the material, indicating a possible reluctance to confront challenging aspects of the skill.",
+          "ko": "학생은 재료와 깊이적으로 소통하지 않았을 수도 있으며, 이는 기술의 어려운 측면에 직면하는 것을 피하고자 하는 가능성을 시사합니다."
+        },
+        {
+          "id": "S2",
+          "en": "There is also a likelihood of errors occurring during practice sessions, suggesting inconsistency in applying the knowledge.",
+          "ko": "실습 세션 중 오류가 발생할 가능성도 있으며, 이는 지식을 적용하는 데 일관성이 부족함을 시사합니다."
+        },
+        {
+          "id": "S3",
+          "en": "This combination appears to be present, though this is not certain.",
+          "ko": "이 조합은 존재할 가능성이 있지만 확실하지는 않습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q137",
+      "skill": "reading-graph",
+      "steps": [
+        {
+          "step": 141,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 2.156646764306762
+        },
+        {
+          "step": 142,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.7842351998535801
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the graph material.",
+          "ko": "학생은 그래프 자료와 깊이적으로 상호작용하지 않았을 수도 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be a likelihood of errors or omissions in completing tasks related to interpreting the graph.",
+          "ko": "그래프 해석과 관련된 작업을 완료하는 데 있어 오류나 누락이 발생할 가능성이 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q141",
+      "skill": "inducing-functions",
+      "steps": [
+        {
+          "step": 656,
+          "correct": false,
+          "hint_count": 6,
+          "response_time_ratio": 0.1038668373666322
+        },
+        {
+          "step": 657,
+          "correct": true,
+          "hint_count": 6,
+          "response_time_ratio": 9.03641484051032
+        },
+        {
+          "step": 658,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.6232010366638139
+        },
+        {
+          "step": 659,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.0386683487382813
+        }
+      ],
+      "skill_cum_accuracy": 0.2631578947368421,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the material, indicating a possible reluctance to confront challenging aspects.",
+          "ko": "학생이 자료와 깊이적으로 소통하지 않은 것으로 보일 수 있으며, 이는 어려운 측면에 직면하는 것을 회피하고자 하는 가능성을 시사합니다."
+        },
+        {
+          "id": "S2",
+          "en": "There is also a likelihood of errors occurring during task execution, suggesting instability in performance.",
+          "ko": "작업 수행 중 오류가 발생할 가능성이 있으며, 이는 성능의 불안정성을 시사합니다."
+        },
+        {
+          "id": "S3",
+          "en": "This combination appears to be present, though this is not certain.",
+          "ko": "이 조합은 존재할 가능성이 있지만 확실하지는 않습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q054",
+      "skill": "scientific-notation",
+      "steps": [
+        {
+          "step": 379,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.7223352815358104
+        },
+        {
+          "step": 380,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.2626673808348557
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the material, indicating a possible reluctance to confront challenging aspects of the task.",
+          "ko": "학생이 자료와 깊이적으로 소통하지 않은 것으로 보일 수 있으며, 이는 작업의 어려운 측면에 직면하는 것을 꺼리는 가능성을 시사합니다."
+        },
+        {
+          "id": "S2",
+          "en": "There is also a likelihood of errors occurring during practice, suggesting inconsistency in applying the skill correctly.",
+          "ko": "실습 중 오류가 발생할 가능성도 있으며, 이는 기술을 올바르게 적용하는 데 일관성이 부족함을 시사합니다."
+        },
+        {
+          "id": "S3",
+          "en": "This combination may reflect difficulty maintaining focus or understanding key components of the step.",
+          "ko": "이 조합은 주의를 유지하는 데 어려움이나 단계의 핵심 요소를 이해하는 데 어려움을 반영할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q070",
+      "skill": "proportion",
+      "steps": [
+        {
+          "step": 193,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.3652048958877724
+        },
+        {
+          "step": 194,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.0608674814306124
+        },
+        {
+          "step": 195,
+          "correct": true,
+          "hint_count": 1,
+          "response_time_ratio": 0.2130361922503738
+        },
+        {
+          "step": 196,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.6391085550214306
+        }
+      ],
+      "skill_cum_accuracy": 0.5,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the material, indicating a possible reluctance to confront challenging aspects of the task.",
+          "ko": "학생이 자료와 깊이적으로 소통하지 않은 것으로 보일 수 있으며, 이는 작업의 어려운 측면에 직면하는 것을 꺼리는 가능성을 시사합니다."
+        },
+        {
+          "id": "S2",
+          "en": "There is also a likelihood of errors occurring during practice, suggesting inconsistency in applying the skill.",
+          "ko": "실습 중 오류가 발생할 가능성도 있으며, 이는 기술을 적용하는 데 일관성이 부족함을 시사합니다."
+        },
+        {
+          "id": "S3",
+          "en": "This combination appears to be, though this is not Certain.",
+          "ko": "이 조합은 확실하지는 않지만 보이는 것처럼 보인다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q090",
+      "skill": "area",
+      "steps": [
+        {
+          "step": 59,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.72120670966424
+        },
+        {
+          "step": 60,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 3.1983950066681426
+        },
+        {
+          "step": 61,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.438995393072098
+        },
+        {
+          "step": 63,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.6898498883477405
+        }
+      ],
+      "skill_cum_accuracy": 0.1666666666666666,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the material, indicating a possible reluctance to confront challenging aspects of the skill.",
+          "ko": "학생은 재료와 깊이적으로 소통하지 않았을 수도 있으며, 이는 기술의 어려운 측면에 직면하는 것을 피하고자 하는 가능성을 시사합니다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be a noticeable inconsistency in performance, suggesting difficulty maintaining focus or accuracy over time.",
+          "ko": "성능에서 눈에 띄는 불일치가 있어, 시간이 지남에 따라 집중력이나 정확도를 유지하는 데 어려움이 있을 가능성이 있음을 시사합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q084",
+      "skill": "reading-graph",
+      "steps": [
+        {
+          "step": 21,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 1.0026201606959977
+        },
+        {
+          "step": 61,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.6774460522393155
+        }
+      ],
+      "skill_cum_accuracy": 1.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the material, indicating a possible reluctance to confront challenging aspects of the task.",
+          "ko": "학생이 자료와 깊이적으로 소통하지 않은 것으로 보일 수 있으며, 이는 작업의 어려운 측면에 직면하는 것을 꺼리는 가능성을 시사합니다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be inconsistency in performance, suggesting difficulty maintaining focus or accuracy over time.",
+          "ko": "성능에 일관성이 없어 보이며, 시간이 지남에 따라 집중력이나 정확도를 유지하는 데 어려움이 있을 가능성이 있음을 시사합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q092",
+      "skill": "inducing-functions",
+      "steps": [
+        {
+          "step": 96,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 4.685571957553511
+        },
+        {
+          "step": 127,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 4.24825192317568
+        },
+        {
+          "step": 195,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 7.309492285020623
+        },
+        {
+          "step": 197,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 7.496915119590758
+        }
+      ],
+      "skill_cum_accuracy": 0.5,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the material.",
+          "ko": "학생은 자료와 깊이적으로 소통하지 않을 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "They might have shown inconsistency in their responses.",
+          "ko": "그들은 답변에서 일관성을 보이지 않았을 수도 있습니다."
+        },
+        {
+          "id": "S3",
+          "en": "This could indicate a lack of focus during the task.",
+          "ko": "이는 작업 중에 집중력 부족을 나타낼 수 있습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q026",
+      "skill": "transformations-rotations",
+      "steps": [
+        {
+          "step": 7,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.4475628851126368
+        },
+        {
+          "step": 10,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.2120034748238349
+        },
+        {
+          "step": 421,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.3533391040556833
+        }
+      ],
+      "skill_cum_accuracy": 1.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the expressions and equations, indicating a possible reluctance to confront challenging material.",
+          "ko": "학생은 표현과 방정식에 깊이적으로 접근하지 않은 것으로 보이며, 어려운 내용에 직면하는 것을 꺼릴 가능성이 있음을 시사합니다."
+        },
+        {
+          "id": "S2",
+          "en": "There is also a likelihood of errors occurring during problem-solving tasks, suggesting inconsistency in maintaining focus or accuracy.",
+          "ko": "문제 해결 과제 중 오류가 발생할 가능성이 있으며, 이는 집중력이나 정확도를 유지하는 데 일관성이 부족함을 시사합니다."
+        },
+        {
+          "id": "S3",
+          "en": "This combination may reflect a struggle to sustain attention while working through mathematical problems.",
+          "ko": "이 조합은 수학 문제를 해결하는 동안 주의를 유지하려는 노력의 결과일 수 있습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q072",
+      "skill": "unit-conversion",
+      "steps": [
+        {
+          "step": 27,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 3.890709097834862
+        },
+        {
+          "step": 28,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.6496606750617615
+        },
+        {
+          "step": 29,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.4046337468222397
+        },
+        {
+          "step": 30,
+          "correct": true,
+          "hint_count": 1,
+          "response_time_ratio": 0.2801310406453738
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have been overly confident in their ability to solve problems related to the Pythagorean theorem.",
+          "ko": "학생은 피타고라스 정리와 관련된 문제를 해결할 능력에 대해 과도하게 자신감을 가졌을 수도 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "This confidence appears to be quite strong, though this is not certain.",
+          "ko": "이 자신감은 상당히 강해 보이지만, 확실하지는 않습니다."
+        },
+        {
+          "id": "S3",
+          "en": "There is no clear indication of specific actions taken due to this confidence.",
+          "ko": "이에 대한 구체적인 조치가 명확히 나타나지 않았다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q004",
+      "skill": "equivalent-fractions-decimals-percents",
+      "steps": [
+        {
+          "step": 92,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.0863986312683185
+        },
+        {
+          "step": 96,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.2793596443156294
+        },
+        {
+          "step": 97,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.124159843573522
+        },
+        {
+          "step": 98,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.3724795307205662
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without seeking assistance, indicating some level of engagement with the problem.",
+          "ko": "학생은 도움을 요청하지 않고 올바른 답변을 제공함으로써 문제에 대한 어느 정도의 참여를 보여주었다."
+        },
+        {
+          "id": "S2",
+          "en": "This outcome could reflect either a successful resolution through effort or a chance occurrence, given the ambiguity in determining the exact nature of their approach.",
+          "ko": "이 결과는 노력을 통해 성공적으로 해결된 것일 수도 있고, 그들의 접근 방식의 정확한 성격을 판단하기 어려운 상황에서 우연히 발생한 것일 수도 있다."
+        },
+        {
+          "id": "S3",
+          "en": "The presence of high confidence suggests a possible alignment with productive struggle, although this remains uncertain.",
+          "ko": "높은 자신감의 존재는 생산적 고난과의 일치 가능성과 관련이 있을 수 있지만, 이는 여전히 불확실합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q078",
+      "skill": "noskill",
+      "steps": [
+        {
+          "step": 772,
+          "correct": false,
+          "hint_count": 4,
+          "response_time_ratio": 0.1271703367070495
+        },
+        {
+          "step": 773,
+          "correct": true,
+          "hint_count": 4,
+          "response_time_ratio": 0.5722663483660734
+        },
+        {
+          "step": 774,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.5086812255077258
+        },
+        {
+          "step": 775,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 2.7977467555529283
+        }
+      ],
+      "skill_cum_accuracy": 0.2677595628415301,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of overconfidence during the task.",
+          "ko": "학생은 작업 중 과신의 징후를 보인다."
+        },
+        {
+          "id": "S2",
+          "en": "There is also a high level of unproductive frustration observed.",
+          "ko": "또한 비생산적인 좌절이 높은 수준으로 관찰된다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q065",
+      "skill": "equation-solving",
+      "steps": [
+        {
+          "step": 544,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.689273450148546
+        },
+        {
+          "step": 545,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.076585938905394
+        },
+        {
+          "step": 546,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.2552864569421622
+        },
+        {
+          "step": 547,
+          "correct": true,
+          "hint_count": 2,
+          "response_time_ratio": 0.3574010543520471
+        }
+      ],
+      "skill_cum_accuracy": 0.2222222222222222,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging tasks, indicating a possible reluctance to engage deeply with complex problems.",
+          "ko": "학생은 도전적인 과제를 피하는 징후를 보이며, 복잡한 문제에 깊이적으로 접근하는 것을 꺼리는 가능성이 있음을 나타냅니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows persistent frustration without effective problem-solving strategies, suggesting difficulty in managing task demands.",
+          "ko": "학생은 효과적인 문제 해결 전략 없이 지속적인 좌절을 보이며, 작업 요구사항을 관리하는 데 어려움이 있음을 시사한다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q060",
+      "skill": "discount",
+      "steps": [
+        {
+          "step": 166,
+          "correct": true,
+          "hint_count": 5,
+          "response_time_ratio": 0.265285881468551
+        },
+        {
+          "step": 948,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.7958575939482831
+        },
+        {
+          "step": 959,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 6.7913179070917415
+        },
+        {
+          "step": 970,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 3.714001986243925
+        }
+      ],
+      "skill_cum_accuracy": 0.1153846153846153,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without seeking assistance, indicating some level of independent problem-solving.",
+          "ko": "학생은 도움을 요청하지 않고 올바른 답변을 제공함으로써 어느 정도의 독립적인 문제 해결 능력을 보여주었다."
+        },
+        {
+          "id": "S2",
+          "en": "This outcome could reflect either a well-reasoned solution following effort or a chance occurrence, as the available data does not definitively clarify the underlying process.",
+          "ko": "이 결과는 노력 끝에 도출된 합리적인 해결책일 수도 있고, 우연한 일이었을 수도 있으며, 이용 가능한 데이터는 근본적인 과정을 명확히 설명하지 못하기 때문입니다."
+        },
+        {
+          "id": "S3",
+          "en": "There is a slight inclination suggesting the resolution might have involved thoughtful engagement rather than mere luck.",
+          "ko": "약간의 경향성이 있어, 해결책이 단순한 운이 아닌 신중한 참여를 포함했을 가능성이 있음을 시사합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q056",
+      "skill": "supplementary-angles",
+      "steps": [
+        {
+          "step": 258,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.4514690300212136
+        },
+        {
+          "step": 259,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.4780260186648844
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the function evaluation task.",
+          "ko": "학생은 함수 평가 작업에 깊이적으로 참여하지 않았을 수도 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "This avoidance could manifest through minimal effort or incomplete responses.",
+          "ko": "이 회피는 최소한의 노력이나 불완전한 답변을 통해 나타날 수 있다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q024",
+      "skill": "order-of-operations",
+      "steps": [
+        {
+          "step": 421,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.6639506872424843
+        },
+        {
+          "step": 422,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.76066317131085
+        },
+        {
+          "step": 423,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.6180388152801181
+        },
+        {
+          "step": 424,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 1.8065750432732164
+        }
+      ],
+      "skill_cum_accuracy": 0.3571428571428571,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging tasks related to that skill.",
+          "ko": "학생이 곱셈과 관련된 도전적인 과제를 피하는 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows frustration that does not lead to productive problem-solving.",
+          "ko": "학생은 생산적인 문제 해결로 이어지지 않는 불만을 보이기도 합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q008",
+      "skill": "p-patterns-relations-algebra",
+      "steps": [
+        {
+          "step": 1171,
+          "correct": false,
+          "hint_count": 3,
+          "response_time_ratio": 0.2998442843658837
+        },
+        {
+          "step": 1172,
+          "correct": false,
+          "hint_count": 4,
+          "response_time_ratio": 0.5397196832534459
+        },
+        {
+          "step": 1173,
+          "correct": false,
+          "hint_count": 5,
+          "response_time_ratio": 0.2398754417652948
+        },
+        {
+          "step": 1174,
+          "correct": true,
+          "hint_count": 5,
+          "response_time_ratio": 0.4797508549854138
+        }
+      ],
+      "skill_cum_accuracy": 0.4615384615384615,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the material.",
+          "ko": "학생은 자료와 깊이적으로 소통하지 않을 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "They might have struggled with maintaining focus during the task.",
+          "ko": "그들은 작업 중 집중을 유지하는 데 어려움을 겪었을 수도 있습니다."
+        },
+        {
+          "id": "S3",
+          "en": "This could indicate difficulty in sustaining attention over time.",
+          "ko": "이는 시간이 지남에 따라 주의를 유지하는 데 어려움이 있을 수 있음을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q009",
+      "skill": "multiplication",
+      "steps": [
+        {
+          "step": 9,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 2.1450700378195884
+        }
+      ],
+      "skill_cum_accuracy": null,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging tasks related to multiplication.",
+          "ko": "학생이 곱셈과 관련된 도전적인 과제를 피하는 징후를 보입니다."
+        },
+        {
+          "id": "S2",
+          "en": "There is also a notable pattern of errors occurring during practice sessions.",
+          "ko": "실습 세션 중에도 눈에 띄는 오류 패턴이 나타난다."
+        },
+        {
+          "id": "S3",
+          "en": "This may indicate difficulties in maintaining focus or understanding the concepts being taught.",
+          "ko": "이는 집중력 유지나 가르쳐지는 개념을 이해하는 데 어려움이 있을 수 있음을 나타냅니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q109",
+      "skill": "discount",
+      "steps": [
+        {
+          "step": 181,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 5.248750000386525
+        },
+        {
+          "step": 182,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.2124999949581487
+        },
+        {
+          "step": 183,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.2550000051187785
+        },
+        {
+          "step": 184,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.3824999949281679
+        }
+      ],
+      "skill_cum_accuracy": 0.3333333333333333,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without seeking assistance, indicating some level of independent problem-solving.",
+          "ko": "학생은 도움을 요청하지 않고 올바른 답변을 제공함으로써 어느 정도의 독립적인 문제 해결 능력을 보여주었다."
+        },
+        {
+          "id": "S2",
+          "en": "This outcome could reflect either a successful resolution through effort or a chance occurrence, as the available data does not definitively clarify the underlying process.",
+          "ko": "이 결과는 노력을 통해 성공적으로 해결된 것일 수도 있고, 우연한 일이었을 수도 있으며, 이용 가능한 데이터는 근본적인 과정을 명확히 구분하지 못하기 때문입니다."
+        },
+        {
+          "id": "S3",
+          "en": "There is a slight inclination suggesting the answer may have resulted from meaningful engagement rather than mere luck.",
+          "ko": "약간의 경향성이 나타나며, 이 답은 단순한 운이 아닌 의미 있는 참여로 인해 발생했을 가능성이 있음을 시사합니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q023",
+      "skill": "multiplying-decimals",
+      "steps": [
+        {
+          "step": 14,
+          "correct": false,
+          "hint_count": 9,
+          "response_time_ratio": 0.0424868621108544
+        },
+        {
+          "step": 15,
+          "correct": false,
+          "hint_count": 9,
+          "response_time_ratio": 1.699474079959345
+        },
+        {
+          "step": 16,
+          "correct": false,
+          "hint_count": 9,
+          "response_time_ratio": 0.3823816477246242
+        },
+        {
+          "step": 17,
+          "correct": true,
+          "hint_count": 9,
+          "response_time_ratio": 0.339894815991869
+        }
+      ],
+      "skill_cum_accuracy": 0.0588235294117647,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the problem-solving process.",
+          "ko": "학생은 문제 해결 과정에 깊이 참여하지 않을 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be a tendency to make errors during critical steps.",
+          "ko": "중요한 단계에서 실수하는 경향이 있는 것으로 보인다."
+        },
+        {
+          "id": "S3",
+          "en": "This could indicate inconsistent attention to detail.",
+          "ko": "이는 세심한 주의가 일관되지 않았음을 나타낼 수 있습니다."
+        },
+        {
+          "id": "S4",
+          "en": "The behavior might suggest difficulty maintaining focus throughout the task.",
+          "ko": "이 행동은 작업 전반에 걸쳐 집중력을 유지하는 데 어려움이 있을 수 있음을 시사할 수 있다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q027",
+      "skill": "pattern-finding",
+      "steps": [
+        {
+          "step": 457,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.5294309549012433
+        },
+        {
+          "step": 458,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.0992683119192685
+        },
+        {
+          "step": 461,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.8934147363958479
+        },
+        {
+          "step": 462,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.2316260506445793
+        }
+      ],
+      "skill_cum_accuracy": 0.3529411764705882,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the material, indicating a possible reluctance to confront challenging aspects of the task.",
+          "ko": "학생이 자료와 깊이적으로 소통하지 않은 것으로 보일 수 있으며, 이는 작업의 어려운 측면에 직면하는 것을 꺼리는 가능성을 시사합니다."
+        },
+        {
+          "id": "S2",
+          "en": "There is also a likelihood of errors occurring during practice, suggesting inconsistency in maintaining focus or accuracy.",
+          "ko": "실습 중 오류가 발생할 가능성이 있으며, 이는 집중력이나 정확도를 유지하는 데 일관성이 부족한 것을 시사합니다."
+        },
+        {
+          "id": "S3",
+          "en": "This combination appears to be, though this is not Certain, related to difficulties in sustaining attention or applying knowledge effectively.",
+          "ko": "이 조합은 확실하지는 않지만, 주의를 유지하거나 지식을 효과적으로 적용하는 데 어려움과 관련이 있을 것으로 보입니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q036",
+      "skill": "n-number-sense-operations",
+      "steps": [
+        {
+          "step": 4,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.4917450832068154
+        },
+        {
+          "step": 5,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 1.0690110564732438
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student exhibits signs of avoiding challenging tasks, indicating a possible reluctance to engage deeply with the material.",
+          "ko": "학생이 도전적인 과제를 피하는 징후를 보이며, 자료와 깊이적으로 상호작용하는 데 대한 가능성이 있는 거부감을 나타내고 있다."
+        },
+        {
+          "id": "S2",
+          "en": "The student also shows frustration without productive outcomes, suggesting difficulty in managing task demands effectively.",
+          "ko": "학생은 생산적인 결과 없이 좌절감을 보이기도 하며, 작업 요구사항을 효과적으로 관리하는 데 어려움이 있음을 시사한다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q058",
+      "skill": "probability",
+      "steps": [
+        {
+          "step": 1042,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.0760471436606083
+        },
+        {
+          "step": 1043,
+          "correct": true,
+          "hint_count": 2,
+          "response_time_ratio": 0.7604712375147082
+        },
+        {
+          "step": 1044,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.4562827714675704
+        },
+        {
+          "step": 1045,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 2.6616493946487347
+        }
+      ],
+      "skill_cum_accuracy": 0.3,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without requiring assistance, indicating some level of understanding or mastery.",
+          "ko": "학생은 도움 없이 올바른 답변을 제공하여 어느 정도의 이해나 숙련도가 있음을 나타냈습니다."
+        },
+        {
+          "id": "S2",
+          "en": "This outcome may reflect a combination of factors, including potential perseverance through challenges or chance accuracy.",
+          "ko": "이 결과는 어려움을 극복하는 데 대한 잠재력이나 우연한 정확성과 같은 요인들의 조합을 반영할 수 있습니다."
+        },
+        {
+          "id": "S3",
+          "en": "The available information does not allow for a clear determination of the exact contributing elements behind the successful response.",
+          "ko": "이용 가능한 정보는 성공적인 반응 뒤에 있는 정확한 기여 요소를 명확히 판단할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "Q063",
+      "skill": "pattern-finding",
+      "steps": [
+        {
+          "step": 155,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.527503997317333
+        },
+        {
+          "step": 156,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.340325166278247
+        },
+        {
+          "step": 157,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.2382276135360415
+        },
+        {
+          "step": 158,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.2892763837812914
+        }
+      ],
+      "skill_cum_accuracy": 0.2,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have been avoiding tasks that require deeper thinking or analysis.",
+          "ko": "학생은 더 깊은 사고나 분석이 필요한 작업을 피했을 수도 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "This could indicate a preference for simpler problems or a reluctance to engage with complex material.",
+          "ko": "이는 더 쉬운 문제를 선호하거나 복잡한 자료와의 상호작용에 대한 불편함을 나타낼 수 있습니다."
+        }
+      ]
+    }
+  ]
+}
