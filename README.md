@@ -8,6 +8,7 @@ MetaKT-Verba turns the nine metacognitive indicators of Meta-KT into short narra
 
 ```
 src/                    pipeline, experiments and analyses (run from the repository root)
+instruments/            rater tool and minimal-pair survey
 data/stimuli/           the 138 rated items and the hidden answer key
 data/ratings/           expert ratings R1-R5
 data/minimal_pairs/     minimal-pair survey responses
