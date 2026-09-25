@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MetaKT-Verba 평정 도구</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F2F0E9;
+    --paper-raised:#FBFAF6;
+    --ink:#26302B;
+    --ink-soft:#5B6459;
+    --line:#D9D4C5;
+    --accent:#2F6F62;
+    --accent-soft:#E4EEEA;
+    --support:#2F6F62;
+    --partial:#B08A2E;
+    --unsupported:#B5482A;
+    --unknown:#4C5B78;
+    --warn-bg:#F6E9DE;
+    --radius:10px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif; line-height:1.6;
+    min-height:100vh;
+  }
+  .serif{font-family:'Noto Serif KR', serif;}
+  .mono{font-family:'JetBrains Mono', monospace;}
+
+  header{
+    position:sticky; top:0; z-index:20;
+    background:var(--paper); border-bottom:1px solid var(--line);
+    padding:14px 20px; display:flex; align-items:center; justify-content:space-between;
+    gap:12px;
+  }
+  header h1{font-size:15px; margin:0; font-weight:700; letter-spacing:.2px;}
+  header .sub{font-size:12px; color:var(--ink-soft);}
+  .progress-wrap{flex:1; max-width:280px; margin:0 16px;}
+  .progress-bar{height:6px; background:var(--line); border-radius:99px; overflow:hidden;}
+  .progress-fill{height:100%; background:var(--accent); transition:width .3s ease;}
+  .progress-label{font-size:11px; color:var(--ink-soft); margin-top:4px; text-align:right;}
+  button{
+    font-family:inherit; cursor:pointer; border:none; border-radius:8px;
+    padding:9px 16px; font-size:13.5px; font-weight:600;
+  }
+  .btn-primary{background:var(--accent); color:#fff;}
+  .btn-primary:disabled{background:#B9C4BF; cursor:not-allowed;}
+  .btn-ghost{background:transparent; color:var(--ink); border:1px solid var(--line);}
+  .btn-ghost:hover{background:var(--paper-raised);}
+
+  main{max-width:760px; margin:0 auto; padding:28px 20px 80px;}
+  .card{
+    background:var(--paper-raised); border:1px solid var(--line); border-radius:var(--radius);
+    padding:22px; margin-bottom:18px;
+  }
+  .hidden{display:none !important;}
+
+  /* ── intro ── */
+  .announce{font-size:15px; line-height:1.85;}
+  .field{margin:16px 0;}
+  .field label{display:block; font-size:13px; font-weight:600; margin-bottom:6px;}
+  .field input[type=text]{
+    width:100%; padding:10px 12px; border:1px solid var(--line); border-radius:8px;
+    font-size:14px; font-family:inherit; background:#fff;
+  }
+  .file-drop{
+    border:1.5px dashed var(--line); border-radius:8px; padding:16px; text-align:center;
+    font-size:13px; color:var(--ink-soft); background:#fff;
+  }
+  .file-drop.ok{border-color:var(--accent); color:var(--accent);}
+  .file-status{font-size:12px; margin-top:6px;}
+
+  /* ── context (B3) ── */
+  .ctx-title{font-size:13px; font-weight:700; margin-bottom:10px; display:flex; align-items:center; gap:6px;}
+  .ctx-title .icon{color:var(--accent);}
+  table.steps{width:100%; border-collapse:collapse; font-size:13px;}
+  table.steps th, table.steps td{padding:6px 8px; border-bottom:1px solid var(--line); text-align:left;}
+  table.steps th{color:var(--ink-soft); font-weight:600; font-size:11.5px;}
+  .tag-correct{color:var(--accent); font-weight:600;}
+  .tag-wrong{color:var(--unsupported); font-weight:600;}
+  .cum-acc{margin-top:10px; font-size:12.5px; color:var(--ink-soft);}
+
+  /* ── sentences (Level 1) ── */
+  .sent-block{border-top:1px solid var(--line); padding:16px 0;}
+  .sent-block:first-child{border-top:none; padding-top:0;}
+  .sent-id{font-size:11px; color:var(--ink-soft); font-weight:700; margin-bottom:6px;}
+  .sent-primary{font-size:16px; font-weight:500;}
+  .sent-secondary{font-size:12.5px; color:var(--ink-soft); margin-top:4px; font-style:italic;}
+  .tag-row{display:flex; gap:8px; margin-top:10px; flex-wrap:wrap;}
+  .tag-btn{
+    border:1px solid var(--line); background:#fff; border-radius:99px;
+    padding:7px 13px; font-size:12.5px; font-weight:600; color:var(--ink-soft);
+    display:flex; align-items:center; gap:5px;
+  }
+  .tag-btn[data-v="supported"].active{background:var(--accent-soft); border-color:var(--support); color:var(--support);}
+  .tag-btn[data-v="partial"].active{background:#FBF1DE; border-color:var(--partial); color:var(--partial);}
+  .tag-btn[data-v="unsupported"].active{background:#FBE7E0; border-color:var(--unsupported); color:var(--unsupported);}
+  .tag-btn[data-v="unknown"].active{background:#E9ECF3; border-color:var(--unknown); color:var(--unknown);}
+
+  /* ── likert (Level 2) ── */
+  .likert{margin-bottom:20px;}
+  .likert-q{font-size:13.5px; font-weight:700; margin-bottom:3px;}
+  .likert-hint{font-size:12px; color:var(--ink-soft); margin-bottom:10px;}
+  .likert-row{display:flex; gap:6px;}
+  .likert-opt{
+    flex:1; border:1px solid var(--line); background:#fff; border-radius:8px;
+    padding:8px 4px; text-align:center; font-size:12px; color:var(--ink-soft);
+  }
+  .likert-opt .num{display:block; font-size:15px; font-weight:700; font-family:'JetBrains Mono',monospace;}
+  .likert-opt.active{background:var(--accent); border-color:var(--accent); color:#fff;}
+  .likert-anchor{font-size:12px; color:var(--ink-soft); margin-top:8px; min-height:16px;}
+
+  textarea{
+    width:100%; min-height:70px; border:1px solid var(--line); border-radius:8px;
+    padding:10px 12px; font-family:inherit; font-size:13.5px; resize:vertical;
+  }
+
+  .footer-nav{display:flex; justify-content:space-between; align-items:center; margin-top:6px;}
+  .practice-badge{
+    display:inline-block; background:var(--warn-bg); color:#8A5A2A; font-size:11.5px;
+    font-weight:700; padding:3px 10px; border-radius:99px; margin-bottom:14px;
+  }
+
+  /* ── reference drawer ── */
+  .drawer-backdrop{
+    position:fixed; inset:0; background:rgba(30,30,25,.35); z-index:30;
+  }
+  .drawer{
+    position:fixed; top:0; right:0; height:100%; width:min(360px,88vw);
+    background:var(--paper-raised); z-index:31; padding:20px; overflow-y:auto;
+    box-shadow:-8px 0 24px rgba(0,0,0,.12);
+  }
+  .drawer h3{margin-top:0; font-size:15px;}
+  .ref-row{padding:10px 0; border-bottom:1px solid var(--line);}
+  .ref-cat{font-size:10.5px; text-transform:uppercase; letter-spacing:.06em; color:var(--accent); font-weight:700;}
+  .ref-name{font-size:13.5px; font-weight:700; margin:2px 0;}
+  .ref-def{font-size:12.5px; color:var(--ink-soft);}
+
+  .center-note{text-align:center; color:var(--ink-soft); font-size:13px; padding:40px 20px;}
+  .done-emoji{font-size:36px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>MetaKT-Verba 평정 도구</h1>
+    <div class="sub" id="headerSub">평정 준비</div>
+  </div>
+  <div class="progress-wrap hidden" id="progressWrap">
+    <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+    <div class="progress-label" id="progressLabel"></div>
+  </div>
+  <button class="btn-ghost" id="refBtn">지표 참고자료</button>
+</header>
+
+<main>
+
+  <!-- ══════════ INTRO ══════════ -->
+  <section id="phase-intro" class="card">
+    <p class="announce serif">
+      서술문은 영어로 먼저 생성되고 한국어로 번역되며, 판단은 영어 원문을 기준으로 하시면 됩니다.
+    </p>
+
+    <div class="field">
+      <label>평정자 ID</label>
+      <input type="text" id="raterIdInput" placeholder="예: R1">
+    </div>
+
+    <div class="field">
+      <label>배정받은 문항 파일 업로드 (rater_forms/&lt;내ID&gt;.json)</label>
+      <div class="file-drop" id="mainFileDrop">파일을 선택하세요</div>
+      <input type="file" id="mainFileInput" accept="application/json" class="hidden">
+      <div class="file-status" id="mainFileStatus"></div>
+    </div>
+
+    <div class="field">
+      <label>연습문항 파일 (선택 — calibration_practice.json, 없으면 내장 예시 1개 사용)</label>
+      <div class="file-drop" id="calibFileDrop">파일을 선택하세요 (선택사항)</div>
+      <input type="file" id="calibFileInput" accept="application/json" class="hidden">
+      <div class="file-status" id="calibFileStatus"></div>
+    </div>
+
+    <div id="resumeNotice" class="hidden" style="background:var(--accent-soft);border-radius:8px;padding:12px 14px;font-size:13px;margin:14px 0;">
+      이 브라우저에 저장된 진행 기록이 있습니다 (<span id="resumeCount"></span>문항 완료).
+      <div style="margin-top:8px;display:flex;gap:8px;">
+        <button class="btn-primary" id="resumeBtn">이어서 하기</button>
+        <button class="btn-ghost" id="restartBtn">새로 시작</button>
+      </div>
+    </div>
+
+    <button class="btn-primary" id="startBtn" disabled style="margin-top:8px;">연습문항 시작</button>
+  </section>
+
+  <!-- ══════════ RATING (calibration & main share this layout) ══════════ -->
+  <section id="phase-rating" class="hidden">
+    <div id="practiceBadgeWrap" class="hidden"><span class="practice-badge">연습 문항 — 분석에 포함되지 않습니다</span></div>
+
+    <div class="card">
+      <div class="ctx-title"><span class="icon">■</span> 학생의 최근 행동 기록 <span id="ctxSkill" style="font-weight:400;color:var(--ink-soft);"></span></div>
+      <table class="steps">
+        <thead><tr><th>단계</th><th>정오답</th><th>힌트</th><th>응답시간(개인평균 대비)</th></tr></thead>
+        <tbody id="stepsBody"></tbody>
+      </table>
+      <div class="cum-acc" id="cumAcc"></div>
+    </div>
+
+    <div class="card">
+      <div class="ctx-title"><span class="icon">■</span> AI 생성 서술문 (각 문장을 판단해주세요)</div>
+      <div id="sentencesWrap"></div>
+    </div>
+
+    <div class="card">
+      <div class="likert" data-key="faithfulness">
+        <div class="likert-q">① 충실도 (Faithfulness)</div>
+        <div class="likert-hint">이 서술문은 위에 제시된 행동 기록과 부합합니까?</div>
+        <div class="likert-row"></div>
+        <div class="likert-anchor"></div>
+      </div>
+      <div class="likert" data-key="actionability">
+        <div class="likert-q">② 실행가능성 (Actionability)</div>
+        <div class="likert-hint">이 서술문을 읽고 교사가 취할 구체적 다음 행동을 떠올릴 수 있습니까?</div>
+        <div class="likert-row"></div>
+        <div class="likert-anchor"></div>
+      </div>
+      <div class="likert" data-key="clarity">
+        <div class="likert-q">③ 명료성 (Clarity)</div>
+        <div class="likert-hint">이 서술문은 명확하고 이해하기 쉽습니까?</div>
+        <div class="likert-row"></div>
+        <div class="likert-anchor"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <label style="display:block;font-size:13px;font-weight:600;margin-bottom:8px;">
+        (선택) 서술문 중 행동 기록과 맞지 않는다고 느낀 부분이 있다면 적어주세요 (몇 번 문장인지 명시):
+      </label>
+      <textarea id="freeText" placeholder="예: S2는 힌트를 안 썼는데 썼다고 되어 있어 이상합니다."></textarea>
+    </div>
+
+    <div class="footer-nav">
+      <button class="btn-ghost" id="prevBtn">← 이전 문항</button>
+      <span style="font-size:12px;color:var(--ink-soft);" id="itemIdLabel"></span>
+      <button class="btn-primary" id="nextBtn" disabled>다음</button>
+    </div>
+  </section>
+
+  <!-- ══════════ DONE ══════════ -->
+  <section id="phase-done" class="card hidden">
+    <div class="center-note">
+      <div class="done-emoji">✅</div>
+      <p style="font-size:15px;font-weight:600;color:var(--ink);">모든 문항 평정을 완료했습니다.</p>
+      <p>아래 버튼으로 CSV 파일을 내려받아 연구팀에 전달해주세요.</p>
+      <button class="btn-primary" id="downloadBtn">CSV 다운로드</button>
+      <div style="margin-top:14px;">
+        <button class="btn-ghost" id="reviewBtn">← 이전 문항으로 돌아가 수정하기</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════ REFERENCE DRAWER ══════════ -->
+<div id="drawerBackdrop" class="drawer-backdrop hidden"></div>
+<div id="drawer" class="drawer hidden">
+  <h3>메타인지 지표 정의 요약</h3>
+  <div id="refList"></div>
+  <button class="btn-ghost" id="closeDrawerBtn" style="margin-top:10px;width:100%;">닫기</button>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  // ── 참고자료 (B2) ──
+  const REFERENCE = [
+    ['Monitoring','Overconfidence','확신 높음(응답시간 빠름) + 오답'],
+    ['Monitoring','Underconfidence','확신 낮음(주저함) + 정답'],
+    ['Regulation','Strategic Help','어려움을 느낀 후 효과적으로 힌트 활용해 정답 도달'],
+    ['Regulation','Cognitive Avoidance','과도한 힌트 의존 또는 반복 추측'],
+    ['Struggle','Productive Struggle','힌트 없이 지속적 시도 끝에 정답 도달'],
+    ['Affective','Unproductive Frustration','높은 노력에도 반복 오답, 정서적 어려움 신호'],
+    ['Affective','Boredom / Off-task','숙련도 높은 영역에서 낮은 참여 신호'],
+    ['Reliability','Lucky Guess','낮은 확신 + 우연한 정답으로 추정'],
+    ['Reliability','Slipping','높은 확신에도 실수로 추정되는 오답'],
+  ];
+
+  const LEVEL1_OPTIONS = [
+    {v:'supported', icon:'✅', label:'지지됨'},
+    {v:'partial', icon:'🟡', label:'부분지지'},
+    {v:'unsupported', icon:'❌', label:'근거없음'},
+    {v:'unknown', icon:'❓', label:'판단불가'},
+  ];
+
+  const LIKERT_ANCHORS = {
+    faithfulness: [
+      '서술 내용이 행동 기록과 명백히 모순됨',
+      '대부분의 내용이 행동 기록으로 뒷받침되지 않음',
+      '일부는 부합하나 핵심 주장 1개 이상이 근거 없음',
+      '거의 모든 내용이 부합하나 사소한 과장/뉘앙스 차이 존재',
+      '모든 내용이 행동 기록으로 완전히 뒷받침됨',
+    ],
+    actionability: [
+      '무엇을 해야 할지 전혀 알 수 없음',
+      '막연한 우려만 전달, 구체적 단서 없음',
+      '방향성은 있으나 구체적 행동 특정 어려움',
+      '구체적 개입 방향을 유추 가능',
+      '구체적이고 즉시 실행 가능한 개입 방향을 명확히 제시',
+    ],
+    clarity: [
+      '이해 불가/모호한 표현 남발',
+      '여러 번 읽어야 이해됨',
+      '보통, 약간의 모호함 존재',
+      '명확하며 쉽게 이해됨',
+      '매우 명확하고 간결하며 즉시 이해됨',
+    ],
+  };
+
+  const BUILTIN_CALIBRATION = [{
+    item_id: 'C1',
+    skill: '분수의 덧셈',
+    steps: [
+      {step:27, correct:false, hint_count:0, response_time_ratio:0.4},
+      {step:28, correct:false, hint_count:1, response_time_ratio:0.5},
+      {step:29, correct:false, hint_count:2, response_time_ratio:0.3},
+      {step:30, correct:true,  hint_count:0, response_time_ratio:2.8},
+    ],
+    skill_cum_accuracy: 0.22,
+    sentences: [
+      {id:'S1', en:'The student showed a persistent attempt to solve the problem independently despite repeated incorrect answers.',
+                 ko:'이 학생은 반복된 오답에도 불구하고 스스로 문제를 해결하려는 끈기 있는 시도를 보였습니다.'},
+      {id:'S2', en:'The student actively used hints to effectively adjust their learning strategy.',
+                 ko:'힌트를 적극적으로 활용해 효과적으로 학습 전략을 조정했습니다.'},
+      {id:'S3', en:'The final correct answer appears to be based on sufficient understanding.',
+                 ko:'최종 정답은 충분한 이해에 기반한 것으로 보입니다.'},
+    ]
+  }];
+
+  const STORAGE_KEY_PREFIX = 'verba_rating_progress_v1:';
+
+  // ── 저장소 ──
+  // 버그 수정: 이 파일은 Claude.ai 안에서 아티팩트로 보는 게 아니라, 평정가가
+  // 다운로드해서 자기 브라우저에서 직접 여는 "독립 파일"이다. window.storage는
+  // Claude.ai가 아티팩트를 렌더링할 때만 주입하는 API라, 이 파일을 그냥 열면
+  // window.storage 자체가 undefined다. 지금까지는 이걸 try/catch로 조용히
+  // 삼켜서 "저장이 항상 조용히 실패 -> 새로고침하면 무조건 처음부터"였다.
+  // 독립 HTML 파일에서는 브라우저 표준 localStorage가 정상 동작하므로 이걸 쓴다
+  // (Claude.ai 아티팩트 안에서 localStorage를 금지하는 규칙은 이 경우엔 해당하지
+  // 않는다 — 이 파일은 애초에 아티팩트로 렌더링되지 않고 평정가 자신의 브라우저에서
+  // 독립적으로 열리기 때문).
+  const LocalStore = {
+    async get(key){
+      const v = localStorage.getItem(key);
+      if(v === null) throw new Error('not found');
+      return {key, value: v};
+    },
+    async set(key, value){
+      localStorage.setItem(key, value);
+      return {key, value};
+    },
+  };
+
+  // ── state ──
+  let state = {
+    raterId: '',
+    mainItems: [],
+    calibItems: [],
+    queue: [],        // [{item, isPractice}]
+    qIndex: 0,
+    responses: [],    // 본 평정만 (연습 제외)
+    draft: null,
+    itemStartedAt: null,
+  };
+
+  // ── DOM refs ──
+  const $ = (id) => document.getElementById(id);
+  const phaseIntro = $('phase-intro'), phaseRating = $('phase-rating'), phaseDone = $('phase-done');
+  const headerSub = $('headerSub'), progressWrap = $('progressWrap'), progressFill = $('progressFill'), progressLabel = $('progressLabel');
+
+  function showPhase(name){
+    phaseIntro.classList.toggle('hidden', name !== 'intro');
+    phaseRating.classList.toggle('hidden', name !== 'rating');
+    phaseDone.classList.toggle('hidden', name !== 'done');
+    progressWrap.classList.toggle('hidden', name !== 'rating');
+  }
+
+  // ── 참고자료 드로어 ──
+  const refList = $('refList');
+  REFERENCE.forEach(([cat, name, def]) => {
+    const row = document.createElement('div');
+    row.className = 'ref-row';
+    row.innerHTML = `<div class="ref-cat">${cat}</div><div class="ref-name">${name}</div><div class="ref-def">${def}</div>`;
+    refList.appendChild(row);
+  });
+  function openDrawer(){ $('drawer').classList.remove('hidden'); $('drawerBackdrop').classList.remove('hidden'); }
+  function closeDrawer(){ $('drawer').classList.add('hidden'); $('drawerBackdrop').classList.add('hidden'); }
+  $('refBtn').addEventListener('click', openDrawer);
+  $('closeDrawerBtn').addEventListener('click', closeDrawer);
+  $('drawerBackdrop').addEventListener('click', closeDrawer);
+
+  // ── 파일 업로드 ──
+  function wireFileInput(dropId, inputId, statusId, onLoaded){
+    const drop = $(dropId), input = $(inputId), status = $(statusId);
+    drop.addEventListener('click', () => input.click());
+    input.addEventListener('change', () => {
+      const file = input.files[0];
+      if(!file) return;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try{
+          const data = JSON.parse(e.target.result);
+          onLoaded(data);
+          drop.classList.add('ok');
+          drop.textContent = `✓ ${file.name}`;
+          status.textContent = '';
+        }catch(err){
+          status.textContent = '파일을 읽을 수 없습니다 (올바른 JSON인지 확인하세요).';
+          status.style.color = 'var(--unsupported)';
+        }
+      };
+      reader.readAsText(file);
+    });
+  }
+
+  function checkStartEnabled(){
+    $('startBtn').disabled = !(state.raterId && state.mainItems.length > 0);
+  }
+
+  wireFileInput('mainFileDrop','mainFileInput','mainFileStatus', (data) => {
+    state.mainItems = data.items || [];
+    if(data.rater_id && !$('raterIdInput').value){
+      $('raterIdInput').value = data.rater_id;
+      state.raterId = data.rater_id;
+    }
+    $('mainFileStatus').textContent = `${state.mainItems.length}개 문항 로드됨`;
+    checkStartEnabled();
+    cacheItems();       // 다음에 ID만 입력해도 재업로드 없이 이어할 수 있도록 문항 목록 자체를 캐싱
+    checkResumable();
+  });
+  wireFileInput('calibFileDrop','calibFileInput','calibFileStatus', (data) => {
+    state.calibItems = data.items || [];
+    $('calibFileStatus').textContent = `${state.calibItems.length}개 연습문항 로드됨`;
+  });
+
+  $('raterIdInput').addEventListener('input', (e) => {
+    state.raterId = e.target.value.trim();
+    checkStartEnabled();
+    checkResumable();
+  });
+
+  // ── 진행상황 저장/복원 (localStorage, 새로고침·브라우저 재시작 대비) ──
+  async function saveProgress(){
+    if(!state.raterId) return;
+    try{
+      await LocalStore.set(STORAGE_KEY_PREFIX + state.raterId, JSON.stringify({
+        qIndex: state.qIndex,
+        responses: state.responses,
+      }));
+    }catch(err){ /* 저장 실패해도 진행에는 지장 없음 — 최종 제출은 CSV 다운로드로 보장 */ }
+  }
+
+  // 문항 목록(rater_forms/<id>.json 내용)도 함께 캐싱 — 이렇게 해두면 다음 방문 때
+  // 파일을 다시 찾아 업로드하지 않고 평정자 ID만 입력해도 이어하기가 가능해진다.
+  async function cacheItems(){
+    if(!state.raterId || state.mainItems.length === 0) return;
+    try{
+      await LocalStore.set(STORAGE_KEY_PREFIX + state.raterId + ':items', JSON.stringify(state.mainItems));
+    }catch(err){ /* 캐싱 실패해도 파일을 다시 업로드하면 되므로 치명적이지 않음 */ }
+  }
+
+  async function checkResumable(){
+    if(!state.raterId) return;
+    // 아직 파일을 안 올렸다면, 이전에 캐싱해둔 문항 목록이 있는지 먼저 확인해서
+    // 있으면 자동으로 불러온다 (재업로드 없이 ID만으로 이어하기가 되게 하려는 목적).
+    if(state.mainItems.length === 0){
+      try{
+        const cachedItems = await LocalStore.get(STORAGE_KEY_PREFIX + state.raterId + ':items');
+        if(cachedItems && cachedItems.value){
+          state.mainItems = JSON.parse(cachedItems.value);
+          $('mainFileStatus').textContent = `${state.mainItems.length}개 문항 (이전에 저장된 배정을 불러옴)`;
+          $('mainFileDrop').classList.add('ok');
+          $('mainFileDrop').textContent = '✓ 저장된 배정 불러옴 (재업로드 불필요)';
+          checkStartEnabled();
+        }
+      }catch(err){ /* 캐싱된 문항 없음 — 파일 업로드 필요 */ }
+    }
+    if(state.mainItems.length === 0) return;
+    try{
+      const res = await LocalStore.get(STORAGE_KEY_PREFIX + state.raterId);
+      if(res && res.value){
+        const saved = JSON.parse(res.value);
+        if(saved.responses && saved.responses.length > 0){
+          $('resumeCount').textContent = saved.responses.length;
+          $('resumeNotice').classList.remove('hidden');
+          $('resumeBtn').onclick = () => {
+            state.responses = saved.responses;
+            state.qIndex = saved.qIndex;
+            beginQueue(true);
+          };
+          $('restartBtn').onclick = () => {
+            $('resumeNotice').classList.add('hidden');
+          };
+        }
+      }
+    }catch(err){ /* 저장된 기록 없음 — 정상 */ }
+  }
+
+  // ── 시작 ──
+  $('startBtn').addEventListener('click', () => beginQueue(false));
+
+  function beginQueue(resumed){
+    const calib = state.calibItems.length > 0 ? state.calibItems : BUILTIN_CALIBRATION;
+    state.queue = resumed
+      ? state.mainItems.map(it => ({item: it, isPractice:false}))
+      : [
+          ...calib.map(it => ({item: it, isPractice:true})),
+          ...state.mainItems.map(it => ({item: it, isPractice:false})),
+        ];
+    if(resumed){
+      // 이어하기: 이미 완료한 본 문항 수만큼 큐 앞부분을 건너뜀
+      state.qIndex = state.responses.length;
+    } else {
+      state.qIndex = 0;
+    }
+    headerSub.textContent = state.raterId ? `평정자: ${state.raterId}` : '';
+    showPhase('rating');
+    renderCurrent();
+  }
+
+  // ── 문항 렌더링 ──
+  function renderCurrent(){
+    if(state.qIndex >= state.queue.length){
+      showPhase('done');
+      return;
+    }
+    const {item, isPractice} = state.queue[state.qIndex];
+    state.draft = {level1:{}, faithfulness:null, actionability:null, clarity:null, freeText:''};
+    state.itemStartedAt = Date.now();
+
+    // "이전" 버튼으로 되돌아왔거나 이어하기로 재방문한 문항이면, 이미 저장된 응답을
+    // 찾아 draft에 미리 채운다 — 그래야 되돌아갔을 때 빈 화면이 아니라 직전 답변이
+    // 그대로 보이고, 그 상태에서 수정도 가능하다 (연습 문항은애초에 responses에
+    // 저장되지 않으므로 항상 새로 답함).
+    const existing = !isPractice ? state.responses.find(r => r.item_id === item.item_id) : null;
+    if(existing){
+      state.draft = {
+        level1: Object.assign({}, existing.level1),
+        faithfulness: existing.faithfulness,
+        actionability: existing.actionability,
+        clarity: existing.clarity,
+        freeText: existing.free_text || '',
+      };
+    }
+
+    $('practiceBadgeWrap').classList.toggle('hidden', !isPractice);
+    $('itemIdLabel').textContent = `문항 ${item.item_id}`;
+    $('prevBtn').disabled = (state.qIndex === 0);
+
+    // 진행률 표시 (연습 제외, 본 문항 기준)
+    const mainTotal = state.mainItems.length;
+    const mainDone = Math.max(0, state.qIndex - (state.queue.length - mainTotal) - Math.min(0,0));
+    const doneCountForBar = isPractice ? 0 : (state.qIndex - (state.queue.length - mainTotal));
+    const pct = mainTotal > 0 ? Math.max(0, Math.min(100, (doneCountForBar / mainTotal) * 100)) : 0;
+    progressFill.style.width = pct + '%';
+    progressLabel.textContent = isPractice ? '연습 문항' : `${doneCountForBar + 1} / ${mainTotal}`;
+
+    // 컨텍스트(B3)
+    $('ctxSkill').textContent = `(Skill: ${item.skill})`;
+    const stepsBody = $('stepsBody');
+    stepsBody.innerHTML = '';
+    (item.steps || []).forEach(s => {
+      const tr = document.createElement('tr');
+      const rt = (s.response_time_ratio !== undefined && s.response_time_ratio !== null)
+        ? s.response_time_ratio.toFixed(2) + '배' : '—';
+      tr.innerHTML = `
+        <td>${s.step}</td>
+        <td class="${s.correct ? 'tag-correct' : 'tag-wrong'}">${s.correct ? '정답' : '오답'}</td>
+        <td>${s.hint_count === 0 ? '미사용' : s.hint_count + '회'}</td>
+        <td>${rt}</td>`;
+      stepsBody.appendChild(tr);
+    });
+    $('cumAcc').textContent = (item.skill_cum_accuracy !== undefined && item.skill_cum_accuracy !== null)
+      ? `※ 직전까지 해당 스킬 누적 정답률: ${(item.skill_cum_accuracy*100).toFixed(0)}%` : '';
+
+    // 문장 (Level 1)
+    const wrap = $('sentencesWrap');
+    wrap.innerHTML = '';
+    (item.sentences || []).forEach(s => {
+      const block = document.createElement('div');
+      block.className = 'sent-block';
+      block.innerHTML = `
+        <div class="sent-id">[${s.id}]</div>
+        <div class="sent-primary serif">${escapeHtml(s.en || '')}</div>
+        <div class="sent-secondary">${escapeHtml(s.ko || '')}</div>
+        <div class="tag-row" data-sent="${s.id}">
+          ${LEVEL1_OPTIONS.map(o => `<button class="tag-btn" data-v="${o.v}">${o.icon} ${o.label}</button>`).join('')}
+        </div>`;
+      wrap.appendChild(block);
+      block.querySelectorAll('.tag-btn').forEach(btn => {
+        if(state.draft.level1[s.id] === btn.dataset.v) btn.classList.add('active');
+        btn.addEventListener('click', () => {
+          block.querySelectorAll('.tag-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          state.draft.level1[s.id] = btn.dataset.v;
+          checkNextEnabled();
+        });
+      });
+    });
+
+    // Likert (Level 2)
+    document.querySelectorAll('.likert').forEach(block => {
+      const key = block.dataset.key;
+      const row = block.querySelector('.likert-row');
+      const anchor = block.querySelector('.likert-anchor');
+      row.innerHTML = '';
+      for(let i=1;i<=5;i++){
+        const opt = document.createElement('button');
+        opt.className = 'likert-opt';
+        opt.innerHTML = `<span class="num">${i}</span>`;
+        if(state.draft[key] === i) opt.classList.add('active');
+        opt.addEventListener('click', () => {
+          row.querySelectorAll('.likert-opt').forEach(o => o.classList.remove('active'));
+          opt.classList.add('active');
+          state.draft[key] = i;
+          anchor.textContent = LIKERT_ANCHORS[key][i-1];
+          checkNextEnabled();
+        });
+        row.appendChild(opt);
+      }
+      anchor.textContent = state.draft[key] ? LIKERT_ANCHORS[key][state.draft[key]-1] : '';
+    });
+
+    $('freeText').value = state.draft.freeText || '';
+    $('freeText').oninput = (e) => { state.draft.freeText = e.target.value; };
+
+    checkNextEnabled();
+    window.scrollTo({top:0, behavior:'instant'});
+  }
+
+  function checkNextEnabled(){
+    const {item} = state.queue[state.qIndex];
+    const allTagged = (item.sentences || []).every(s => state.draft.level1[s.id]);
+    const allLikert = state.draft.faithfulness && state.draft.actionability && state.draft.clarity;
+    $('nextBtn').disabled = !(allTagged && allLikert);
+  }
+
+  $('prevBtn').addEventListener('click', () => {
+    if(state.qIndex > 0){
+      state.qIndex -= 1;
+      renderCurrent();
+    }
+  });
+
+  // 완료 화면에서도 마지막 문항으로 돌아가 수정할 수 있게 한다 — 문항이 phase-rating
+  // 안에서만 보이므로, done 화면에서는 qIndex를 마지막 문항으로 되돌리고 다시 그 화면을 띄운다.
+  $('reviewBtn').addEventListener('click', () => {
+    state.qIndex = state.queue.length - 1;
+    showPhase('rating');
+    renderCurrent();
+  });
+
+  $('nextBtn').addEventListener('click', async () => {
+    const {item, isPractice} = state.queue[state.qIndex];
+    const durationSec = Math.round((Date.now() - state.itemStartedAt) / 1000);
+    if(!isPractice){
+      const responseObj = {
+        item_id: item.item_id,
+        rater_id: state.raterId,
+        level1: Object.assign({}, state.draft.level1),
+        faithfulness: state.draft.faithfulness,
+        actionability: state.draft.actionability,
+        clarity: state.draft.clarity,
+        free_text: state.draft.freeText || '',
+        duration_sec: durationSec,
+      };
+      // "이전"으로 되돌아가 이미 답한 문항을 수정한 경우 새로 push하지 않고
+      // 기존 응답을 덮어쓴다 (같은 item_id가 CSV에 중복으로 남지 않도록).
+      const existingIdx = state.responses.findIndex(r => r.item_id === item.item_id);
+      if(existingIdx >= 0){
+        state.responses[existingIdx] = responseObj;
+      } else {
+        state.responses.push(responseObj);
+      }
+      await saveProgress();
+    }
+    state.qIndex += 1;
+    renderCurrent();
+  });
+
+  // ── CSV 다운로드 ──
+  function csvEscape(v){
+    const s = String(v === undefined || v === null ? '' : v);
+    if(/[",\n]/.test(s)) return '"' + s.replace(/"/g,'""') + '"';
+    return s;
+  }
+  $('downloadBtn').addEventListener('click', () => {
+    const header = ['item_id','rater_id','level1_tags','faithfulness','actionability','clarity','free_text','duration_sec'];
+    const rows = state.responses.map(r => {
+      const tags = Object.keys(r.level1).map(k => `${k}:${r.level1[k]}`).join(';');
+      return [r.item_id, r.rater_id, tags, r.faithfulness, r.actionability, r.clarity, r.free_text, r.duration_sec]
+        .map(csvEscape).join(',');
+    });
+    const csv = header.join(',') + '\n' + rows.join('\n');
+    const blob = new Blob(['\uFEFF' + csv], {type:'text/csv;charset=utf-8;'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `metakt_verba_ratings_${state.raterId || 'rater'}.csv`;
+    a.click();
+  });
+
+  function escapeHtml(str){
+    const d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+  }
+
+})();
+</script>
+</body>
+</html>
