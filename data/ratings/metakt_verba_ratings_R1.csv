@@ -1,0 +1,62 @@
+﻿item_id,rater_id,level1_tags,faithfulness,actionability,clarity,free_text,duration_sec
+Q125,R1,S1:supported;S2:unsupported,5,5,4,,2
+Q057,R1,S1:supported;S2:partial,4,5,5,,31
+Q023,R1,S1:partial;S2:unsuppported;S3:supported;S4:supported,3,5,5,,68
+Q037,R1,S1:unsupported;S2:unsupported;S3:unsupported;S4:unsupported,1,4,5,,570
+Q113,R1,S1:supported;S2:supported;S3:supported,5,5,5,,98
+Q039,R1,S1:unsupported,1,2,5,,766
+Q076,R1,S1:unsupported;S2:unsupported;S3:unsupported,2,2,4,"[S1] 모든 문제에서 힌트를 사용하지 않았기 때문에 깊이있게 소통했을 가능성도 있으며, 14단계에서는 힌트를 쓰지 않고 평균 시간대비 오래 걸렸기에 깊이있는 소통을 하지 않았다고만 볼 수는 없다.",270
+Q074,R1,S1:unsupported;S2:unsupported,1,2,5,,108
+Q056,R1,S1:supported;S2:supported,5,4,4,,748
+Q038,R1,S2:unsupported;S1:unsupported,1,1,5,"s1  도전적인 과제를 피하는 징후를 보이는지 물었는데 해당 학생은 지금까지의 누적 정답율이 높고 4문제 중 3문제를 정답으로 맞추었고, 응답시간이 너무 빠른 기록은 없었기에 행동 기록과 맞지 않다고 생각됩니다. 
+s2 지금까지의 높은 정답율처럼 4문제 중 3문제를 맞추었기에 문제 해결을 위한 노력으로 이어지지 않는 불만을 보인다고 판단할 수 없다.",6
+Q095,R1,S1:partial;S2:partial;S3:supported,4,3,5,,81
+Q133,R1,S1:unsupported;S2:unsupported,2,4,5,,66
+Q015,R1,S1:supported;S2:unsupported,3,1,3,,38
+Q054,R1,S1:supported;S2:partial;S3:supported,5,5,5,,360
+Q050,R1,S1:unsupported;S2:unsupported;S3:unsupported,1,1,5,s3: 의심 징후가 전혀 보이지 않는 다고 하였는데 30단계에서 힌트를 1회 사용했기 때문에 맞지 않는 다고 생각되었다. ,102
+Q008,R1,S1:partial;S2:unsupported;S3:unsupported,2,3,5,"s2: 작업 중 집중을 유지하는 데 어려움을 겪었을 수도 있다라고 하였는데 직전까지 해당 스킬 누적 정답률이46%이며, 마지막 단계인 1174 단계에서는 정답을 맞췄기에 반드시 어려움을 겪었다고 판단할 근거가 없다. ",126
+Q114,R1,S1:supported;S2:partial,3,1,5,,2
+Q081,R1,S1:unsupported;S2:unsupported;S3:partial,2,2,3,,462
+Q118,R1,S1:supported;S2:partial;S3:supported,4,3,3,,115
+Q098,R1,S1:unsupported;S2:partial;S3:partial,4,4,5,,185
+Q078,R1,S1:unsupported;S2:unsupported,1,2,5,,34
+Q040,R1,S1:supported;S2:unsupported,3,2,3,,71
+Q025,R1,S1:supported;S2:supported,5,5,5,,18
+Q010,R1,S1:unsupported;S2:partial,2,2,4,,42
+Q064,R1,S1:unsupported,1,1,5,"s1에서 과도한 자신감을 보인다고 하였는데 직전까지 해당 스킬 누적 정답률 0%이며, 4단계에서 모두 오답을 하였으며, 힌트도 여러차례 사용한 것으로 보아 자신감을 보인다고 할 수 없다. ",77
+Q035,R1,S1:supported;S2:supported;S3:unsupported,3,3,3,,63
+Q022,R1,S1:unsupported;S2:supported;S3:supported,3,3,1,,78
+Q009,R1,S1:unsupported;S2:unsupported;S3:unsupported,1,1,5,s1 : 학생이 문제를 푸는데 평균대비 긴 시간이 걸렸고 정답을 맞췄으므로 도전적인 과제를 피한다고는 볼 수 없다. ,98
+Q138,R1,S1:supported;S2:supported,5,5,5,,35
+Q075,R1,S1:unsupported;S2:unsupported,1,5,5,,26
+Q088,R1,S1:unsupported;S2:unsupported;S3:partial,3,2,3,,239
+Q107,R1,S1:unsupported;S2:unsupported;S3:partial,2,2,3,,59
+Q018,R1,S1:unsupported;S2:unsupported;S3:unsupported,2,4,5,,91
+Q092,R1,S1:unsupported;S2:partial;S3:unsupported,2,3,5,,61
+Q108,R1,S1:supported;S2:partial;S3:partial,4,3,4,,87
+Q130,R1,S1:partial;S2:unsupported,3,2,5,,49
+Q094,R1,S1:unsupported,1,1,3,,59
+Q096,R1,S1:partial;S2:unsupported,2,5,5,,34
+Q093,R1,S1:supported;S2:supported;S3:supported,5,5,5,,20
+Q014,R1,S1:supported;S2:partial;S3:supported,4,4,3,,433
+Q066,R1,S1:unsupported;S2:partial;S3:supported,4,4,5,s1: 과도하게 자신감을 가졌을 수도 있다라고 나와있는데 해당 학생은 여러차례 힌트를 확인하여 문제를 풀었기에 자신감이 있다고 단정지을 수는 없다고 생각됩니다.,5
+Q026,R1,S1:unsupported;S2:unsupported;S3:unsupported,1,4,5,"s1: 어려운 내용에 직면하는 것을 꺼릴 가능성이 있음을 시사한다고 했지만 해당 학생은 7, 10단계를 풀고 421단계를 도전하여서 정답으로 맞춘 것으로 보아 어려운 내용에 직면하는 것을 꺼린다고 볼 수 없다고 생각됩니다.",88
+Q051,R1,S2:partial;S1:unsupported;S3:supported,3,3,5,,104
+Q110,R1,S1:unsupported;S2:partial,3,1,5,,45
+Q045,R1,S2:unsupported;S1:unsupported,2,2,3,,239
+Q021,R1,S1:supported;S2:unsupported,3,4,5,,21
+Q027,R1,S1:unsupported;S2:unsupported;S3:supported,2,5,5,,36
+Q124,R1,S1:partial;S2:unsupported,3,2,5,,342
+Q031,R1,S2:partial;S1:unsupported,3,5,5,,59
+Q102,R1,S1:supported;S2:unsupported;S3:unsupported,2,3,3,,56
+Q112,R1,S1:partial;S2:supported,4,5,5,,70
+Q047,R1,S1:partial;S2:supported;S3:unsupported,3,5,5,,65
+Q072,R1,S1:unsupported;S2:unsupported;S3:supported,2,2,3,,46
+Q139,R1,S1:partial;S2:partial;S3:unsupported,3,5,2,,46
+Q104,R1,S1:unsupported;S2:supported;S3:supported,3,5,5,"s1: 학생이 596단계를 풀때 3.70배의 응답시간, 601단계를 풀때 2.87배의 응답시간을 보이고 전체적으로 힌트를 미사용했으며, 정답률60퍼센트를 기록한 것으로 보아 어려운 측면에 직면하는 것을 회피하고자 한다고 볼 수는 없을 것 같습니다. ",34
+Q116,R1,S1:unsupported;S2:unsupported,2,5,5,,158
+Q106,R1,S1:partial;S2:unsupported;S3:supported,3,5,3,S2: 연습 중인 기술의 어려운 측면에 직면하는 것을 꺼리는 태도를 나타낸다고 하였는데 1단계에서 힌트를 2회 사용하며 타 응답자 대비 10배 이상의 시간을 사용한 것으로 보아 해당 서술은 행동기록과 맞지 않는다고 보여집니다.,136
+Q084,R1,S1:unsupported;S2:partial,2,5,5,,33
+Q013,R1,S1:supported;S2:unsupported;S3:unsupported,2,4,3,,53
+Q086,R1,S1:partial;S2:unsupported,3,3,4,,37

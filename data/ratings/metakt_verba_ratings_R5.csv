@@ -1,0 +1,68 @@
+﻿item_id,rater_id,level1_tags,faithfulness,actionability,clarity,free_text,duration_sec
+Q139,R5,S1:partial;S2:partial;S3:unsupported,3,3,5,"S1- 응답 시간 빠름 + 오답이나, 다수의 힌트를 사용한 점에서 부분지지
+S2- 높은 노력에도 반복 오답패턴이지만  정서적 어려움이라고 확신하기엔 과한 해석
+S3- 누적 정답률 + 다수의 힌트 사용 + 짧은 응답 시간을 봤을 때 Slipping으로 보기 어려움",6
+Q030,R5,S1:partial;S2:supported;S3:supported,4,4,5,"S1- 반복 오답 + 높은 빈도로 힌트 사용 하지만, 다소 짧은 응답시간으로 높은 노력의 근거 부족. 오히려 Cognitive Avoidance로 보는 게 맞을지도",78
+Q121,R5,S1:partial;S2:partial,3,3,5,"S1- 정답률 50%로, 높은 노력에도 반복 오답이라는 전형적인 Unproductive Frustration패턴은 아니여서 부분 지지
+S2- 정답률 50%, 힌트 없이 정답, 힌트 사용해서 정답 맞히기도 하였으므로, 개념 이해 부족인지, 계산 실수 인지, 문제 특성인지 위 데이터만으로 확신하기 어렵다고 판단하여 부분 지지",5
+Q096,R5,S1:partial;S2:unsupported,2,3,5,"S1- 힌트 많이 사용하고, 마지막에 정답 맞혔지만 다소 짧은 응답시간이어서 Cognitive Avoidance로 해석가능한 여지가 있음. 따라서 부분지지",21
+Q124,R5,S1:partial;S2:unsupported,3,2,5,,2
+Q092,R5,S1:unsupported;S2:unknown;S3:unsupported,2,2,5,,1
+Q053,R5,S1:supported;S2:unsupported;S3:unsupported,2,2,5,"S2- 어떤 문제가 challenging tasks인지 알 수 있는 근거가 없음. + 오히려 오답한 문제에서 긴 시간을 할애함
+S3- 오히려 정답인 문제는 적은 시간 투여 + 오답은 많은 노력 투여 여서 notable connect 같음 (진짜 자신이 풀 수 없는 문제만 틀린 느낌)",6
+Q094,R5,S1:partial,2,2,5,,1
+Q039,R5,S1:unsupported,1,2,5,,4
+Q134,R5,S1:supported;S2:partial;S3:partial,4,3,5,,2
+Q101,R5,S1:unsupported;S2:partial,3,2,5,"S1- 마지막 오답의 응답시간이 개인 평균과 유사하여 overconfidence를 뒷받침하기 어려움
+S2- 직전 연속 정답 후 오답이 나타나 slipping 가능성은 있으나, 이를 주의나 집중력 저하로 해석할 직접적인 근거는 부족",130
+Q118,R5,S1:supported;S2:unsupported;S3:partial,4,3,5,,118
+Q137,R5,S1:unsupported;S2:supported,3,2,5,,81
+Q021,R5,S1:supported;S2:unsupported,3,2,5,,64
+Q093,R5,S1:supported;S2:supported;S3:supported,5,4,5,,102
+Q001,R5,S1:unsupported;S2:partial;S3:unknown,3,2,4,,109
+Q084,R5,S2:partial;S1:unsupported,2,2,4,,88
+Q133,R5,S1:unsupported;S2:unsupported,2,2,3,"S2- 매우 짧은 응답시간은 충분한 숙고가 이루어지지 않았을 가능성을 보여주지만, 복잡한 측면을 회피하거나 더 단순한 해결책을 선호했다는 직접적인 근거가 되기는 어려움",124
+Q100,R5,S1:supported;S3:unknown;S2:partial,3,3,4,,21
+Q108,R5,S1:partial;S2:unsupported;S3:unsupported,2,2,4,,37
+Q068,R5,S1:partial;S2:unknown;S3:unsupported,3,2,4,S3- high confidence는 제시된 행동 기록에서 확인되지 않아 productive struggle와의 관련성을 판단할 근거가 부족함,127
+Q047,R5,S1:partial;S2:partial;S3:unsupported,3,3,3,,78
+Q081,R5,S1:unsupported;S2:unsupported;S3:unsupported,2,2,2,"S1- 힌트 미사용 + 다소 짧은 응답시간으로 unproductive frustration로 보기 어려움
+S2- 강한 감정 수준은 제시된 행동 기록에서 확인되지 않음
+S3- 기록만으로 alternative coping strategies 사용 여부 판단 불가함",203
+Q076,R5,S1:partial;S2:partial;S3:unknown,2,2,3,S3- 무슨 말을 하고 싶은 건지 모르겠음,94
+Q116,R5,S1:unsupported;S2:unsupported,2,2,4,"S1- 긴 응답시간 + 힌트 사용으로 깊이 있게 참여했다고 판단 가능
+S2- 앞선 이유와 마찬가지로 어려운 태스크를 피한다고 보기 어려움",73
+Q064,R5,S1:supported,4,4,5,,40
+Q097,R5,S1:unsupported;S2:unknown,2,2,4,,129
+Q052,R5,S1:unsupported;S2:unsupported;S3:unsupported,1,1,4,,40
+Q013,R5,S1:supported;S2:unsupported;S3:unsupported,2,2,4,,66
+Q048,R5,S1:partial;S2:unsupported;S3:unsupported,2,2,3,,16755
+Q130,R5,S1:partial;S2:partial,3,2,4,"S1과 S2 모두 일부 빠른 오답으로 뒷받침되나, 문항별 응답시간의 편차가 커 일관된 overconfidence 또는 slipping 패턴으로 단정하기에는 근거가 부족함",403
+Q036,R5,S1:unsupported;S2:unsupported,1,1,4,S2- 오히려 Lucky Guess에 가까움,151
+Q050,R5,S1:unsupported;S2:unsupported;S3:unsupported,1,1,5,"S1~S3의 높은 확신 및 망설임 없음에 대한 주장은 행동 기록과 부합하지 않음. 두 문항 모두 오답이며 응답시간도 개인평균 대비 1.60배, 1.69배로 길어 높은 확신을 뒷받침하는 응답시간 패턴이 나타나지 않음.",97
+Q113,R5,S1:partial;S2:partial;S3:unsupported,3,2,4,,186
+Q057,R5,S1:partial;S2:partial,4,2,4,"S1, S2- 빠른 오답은 Overconfidence(빠른 응답 + 오답) 쪽 근거로 보는 것이 더 타당함. ",141
+Q104,R5,S1:unsupported;S2:supported;S3:unsupported,3,3,5,S1- Cognitive Avoidance를 뒷받침할 과도한 힌트 의존이나 반복 추측이 없음. 오히려 전 문항 힌트 미사용,201
+Q102,R5,S1:supported;S2:unsupported;S3:unsupported,2,2,5,,74
+Q110,R5,S1:unsupported;S2:partial,3,2,5,,39
+Q129,R5,S1:supported;S2:partial;S3:unsupported,3,3,5,,106
+Q015,R5,S1:supported;S2:unsupported,3,3,5,S2- 개인 평균 대비 20배 넘는 시간을 할애했으므로 최소한의 노력을 보였다고 보기 어려움,106
+Q075,R5,S1:unsupported;S2:unsupported,2,2,5,"S1, S2- 힌트사용 + 나름 긴 응답 시간 등을 고려했을 때 회피 성향이 나타난다고 보기 어려움",264
+Q051,R5,S1:unsupported;S2:unsupported;S3:unsupported,1,1,4,,36
+Q019,R5,S1:supported;S2:supported,4,4,5,,60
+Q112,R5,S1:partial;S2:supported,4,4,5,,367
+Q022,R5,S1:partial;S3:partial;S2:partial,3,4,5,,233
+Q114,R5,S1:supported;S2:supported,4,4,5,,191
+Q086,R5,S1:partial;S2:unsupported,3,3,5,,83
+Q014,R5,S1:supported;S2:supported;S3:supported,5,3,5,,153
+Q078,R5,S1:unsupported;S2:unsupported,2,2,5,,364
+Q062,R5,S1:unsupported;S2:unsupported,2,2,5,,39
+Q005,R5,S1:partial;S2:supported;S3:partial,3,3,5,,1572
+Q010,R5,S1:unsupported;S2:partial,3,3,5,,37
+Q074,R5,S1:unsupported;S2:unsupported,1,2,5,,32
+Q026,R5,S1:unsupported;S2:unsupported;S3:unsupported,1,1,4,,35
+Q037,R5,S1:partial;S2:unsupported;S3:unsupported;S4:unsupported,2,2,5,,47
+Q085,R5,S1:unsupported;S2:unsupported,1,2,4,,42
+Q035,R5,S1:partial;S2:partial;S3:unsupported,3,2,4,,35
+Q045,R5,S1:unsupported;S2:unsupported,1,2,4,,34
+Q063,R5,S1:partial;S2:unsupported,3,2,4,,43

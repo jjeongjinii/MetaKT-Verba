@@ -1,0 +1,61 @@
+﻿item_id,rater_id,level1_tags,faithfulness,actionability,clarity,free_text,duration_sec
+Q078,R3,S1:unsupported;S2:partial,2,1,5,"s2에서 높은 노력을 했다고 했으나, 앞의 세 단계의 소요시간을 보아 그러한 수준의 노력이 관측되지 않음",100
+Q141,R3,S1:supported;S2:supported;S3:supported,5,4,2,,217
+Q073,R3,S1:partial;S2:supported;S3:unsupported,4,5,5,"S2의 경우 우연이였거나, 필연이라는 진술을 하고 있는데 이는 어떤 문장에나 해당되는 말인 듯 하다.",73
+Q110,R3,S1:unsupported;S2:unsupported,1,2,4,,214
+Q006,R3,S1:unsupported;S3:supported;S2:unsupported,2,5,5,,61
+Q051,R3,S1:unsupported;S2:unsupported;S3:unsupported,1,5,5,S1을 보았을 때 도전적인 문항에도 계속 도전하는 것으로 보입니다.,40
+Q047,R3,S1:partial;S2:supported;S3:unsupported,3,5,5,,50
+Q064,R3,S1:unsupported,1,5,5,,20
+Q132,R3,S1:unsupported;S2:unsupported,1,1,4,S1의 경우 응답시간과 정답 여부를 보았을 때 학생이 도전적인 과제 또한 적극적으로 도전함을 예측할 수 있음,2
+Q133,R3,S1:unsupported;S2:supported,3,4,4,S1은 응답시간이 짧음에도 불구하고 지속적으로 도전하는 태도가 있다고 명시합니다.,59
+Q090,R3,S1:unsupported;S2:unsupported,2,2,2,"S1에서 충분히 많은 시간을 투자하였고, 힌트까지 참고한 문항이 있었음",75
+Q093,R3,S1:supported;S2:supported;S3:supported,5,5,5,,40
+Q094,R3,S1:partial,4,4,2,"S1에서 팁을 받고도 독립적으로 문제 해결에 참여한 것은 맞으나, 정답률을 보면 강한 능력은 보이지 않는 듯 하다.",70
+Q077,R3,S1:partial;S2:supported,4,2,4,,21
+Q084,R3,S1:unsupported;S2:partial,2,2,4,S1를 보면 응답시간을 보았을 때 어느정도 깊이 소통할 것으로 보임.,344
+Q104,R3,S1:unsupported;S2:supported;S3:supported,3,4,3,S1과 대비하였을 떄 각 문항에 충분한 시간을 투자한 것으로 보임.,51
+Q130,R3,S1:supported;S2:unsupported,3,5,5,S1에서 일부 문항에서는 높은 시간 투자를 보여줌.,47
+Q114,R3,S1:partial;S2:unsupported,3,5,5,S2에서 오류가 바생하는 뚜렷한 패턴을 확인할 수는 없음,63
+Q116,R3,S1:unsupported;S2:unsupported,1,5,5,,72
+Q081,R3,S1:unsupported;S2:unsupported;S3:supported,2,4,5,S2의 감정의 문제를 판단할 수 있는지 모르겠음,313
+Q043,R3,S1:supported;S2:supported;S3:supported,5,5,3,,24
+Q032,R3,S1:supported;S2:supported;S3:unknown,4,2,4,"S1,S3는 모두 자신의 실력을 높게 평가하고 있는 느낌이나 힌트 횟수와 소요 시간은 그렇지 않은 것으로 판단할 수 있음",82
+Q102,R3,S1:supported;S2:partial;S3:unsupported,3,2,2,S2의 진술이 모호함,32
+Q022,R3,S1:supported;S2:unsupported;S3:supported,3,1,2,,22
+Q012,R3,S1:partial;S2:unsupported,2,2,1,,23
+Q074,R3,S1:unsupported;S2:unsupported,1,1,5,S2의 제시된 학생의 불만을 알 수 없음,205
+Q017,R3,S1:supported;S2:supported,5,5,5,,24
+Q108,R3,S2:unsupported;S1:supported;S3:unsupported,2,2,5,,28
+Q096,R3,S1:unsupported;S2:unsupported,2,2,2,,136
+Q113,R3,S1:unsupported;S2:supported;S3:partial,2,5,2,,18
+Q045,R3,S1:supported;S2:unsupported,3,4,2,,55
+Q039,R3,S1:partial,2,5,2,S1의 자기주도적 노력에 대한 강한 능력에 정답률은 고려하지 않는지?,66
+Q015,R3,S1:supported;S2:unsupported,3,4,3,S2 힌트 횟수와 소요 시간은 최소한의 노력이 보장됨을 의미함,36
+Q016,R3,S1:unsupported;S2:unsupported;S3:unsupported,1,2,2,"감정, 대체전략 등 부정확한 용어가 다수 있음",35
+Q044,R3,S1:supported;S2:supported;S3:supported,5,5,2,,115
+Q004,R3,S1:unsupported;S2:unsupported;S3:supported,3,2,2,S1에 올바른 문항을 제공했다고 하는데 모두 오답,18
+Q037,R3,S1:unsupported;S2:unsupported;S3:unsupported;S4:unsupported,1,1,1,S4의 진술문이 행동기록으로 도출될 수 있는 것인지 모르겠습니다,46
+Q135,R3,S1:supported;S2:supported;S3:supported,5,5,4,,66
+Q124,R3,S1:supported;S2:unsupported,3,5,5,,45
+Q076,R3,S1:unsupported;S2:partial;S3:supported,3,4,4,,16
+Q060,R3,S1:partial;S2:supported;S3:supported,4,4,3,,61
+Q086,R3,S1:supported;S2:unsupported,3,5,3,,15
+Q075,R3,S1:unsupported;S2:unsupported,1,2,4,,8
+Q057,R3,S1:supported;S2:supported,5,5,5,,9
+Q128,R3,S1:unsupported;S2:unsupported;S3:unsupported,1,1,5,,28
+Q035,R3,S1:supported;S2:supported;S3:unsupported,3,5,5,,16
+Q026,R3,S1:unsupported;S2:unsupported;S3:unsupported,1,1,5,S2에서 오류 가능성이 있다고 했으나 전부 정답,101
+Q021,R3,S1:supported;S2:unsupported,3,4,5,,24
+Q122,R3,S1:unsupported;S2:supported;S3:supported,2,2,4,,11
+Q083,R3,S1:unsupported;S2:unsupported;S3:unsupported,1,1,2,,65
+Q042,R3,S1:supported;S2:supported;S3:supported,5,5,5,,20
+Q118,R3,S1:supported;S2:partial;S3:supported,4,5,5,,15
+Q050,R3,S1:unsupported;S2:unsupported;S3:unsupported,1,5,5,S1에서 강한 확신은 짧은 응답시간을 근거로 하는 것으로 알고있지만 그렇지 아니함,124
+Q013,R3,S1:supported;S2:unsupported;S3:supported,3,5,5,S2에서 좌절이라 하기에는 응답시간이 짧은 것으로 생각됨,44
+Q010,R3,S2:supported;S1:supported,5,5,5,,8
+Q092,R3,S1:unsupported;S2:supported;S3:unsupported,2,4,5,,13
+Q055,R3,S1:supported;S2:supported,5,5,5,,7
+Q112,R3,S1:partial;S2:partial,4,3,5,,15
+Q139,R3,S1:partial;S2:supported;S3:unsupported,3,2,4,,12
+Q014,R3,S1:supported;S2:partial;S3:supported,4,2,4,,69
