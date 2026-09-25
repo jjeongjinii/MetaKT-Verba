@@ -1,15 +1,21 @@
+"""Stage 3: automatic faithfulness verification for MetaKT-Verba.
 
-import os
+Each Stage-2 sentence is checked against the Stage-1 fact(s) it cites. NLI
+entailment provides the content score; sentences citing ``AMBIGUOUS`` facts are
+also checked for overly definitive wording.
+
+The default checkpoint is ``MoritzLaurer/mDeBERTa-v3-base-mnli-xnli``. Class
+indices are resolved from ``model.config.id2label`` rather than hard-coded.
+"""
+
 import re
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Optional
 
 from stage1_grounding import (
     SymbolicFact, INDICATOR_DESCRIPTIONS_HIGH, INDICATOR_DESCRIPTIONS_HIGH_EN,
     strip_generator_only_instructions,
 )
-from stage2_generation import CitedSentence
-
 
 DEFINITIVE_PATTERNS_KO = [
     r'것이다\.?$', r'였다\.?$', r'했다\.?$',
@@ -37,12 +43,12 @@ HEDGE_PATTERNS_EN = [
 DEFINITIVE_PATTERNS = {'ko': DEFINITIVE_PATTERNS_KO, 'en': DEFINITIVE_PATTERNS_EN}
 HEDGE_PATTERNS = {'ko': HEDGE_PATTERNS_KO, 'en': HEDGE_PATTERNS_EN}
 
-
 def check_hedge_violation(sentence_text: str, lang: str = 'ko') -> bool:
+    if lang not in DEFINITIVE_PATTERNS:
+        raise ValueError(f"Unsupported language: {lang!r}; expected 'ko' or 'en'.")
     has_definitive = any(re.search(p, sentence_text, re.IGNORECASE) for p in DEFINITIVE_PATTERNS[lang])
     has_hedge = any(re.search(p, sentence_text, re.IGNORECASE) for p in HEDGE_PATTERNS[lang])
     return has_definitive and not has_hedge
-
 
 @dataclass
 class VerificationResult:
@@ -51,7 +57,6 @@ class VerificationResult:
     status: str
     nli_scores: Optional[dict] = None
     detail: str = ""
-
 
 def _fact_to_premise_text(fact: SymbolicFact, lang: str = 'ko') -> str:
     descriptions = INDICATOR_DESCRIPTIONS_HIGH if lang == 'ko' else INDICATOR_DESCRIPTIONS_HIGH_EN
@@ -69,8 +74,8 @@ def _fact_to_premise_text(fact: SymbolicFact, lang: str = 'ko') -> str:
         base += f" {strip_generator_only_instructions(fact.note)}"
     return base
 
-
 class NLIVerifier:
+
     def __init__(self, model_name='MoritzLaurer/mDeBERTa-v3-base-mnli-xnli',
                  entailment_threshold: float = 0.5):
         self.model_name = model_name
@@ -78,6 +83,7 @@ class NLIVerifier:
         self._model = None
         self._tokenizer = None
         self._label_names = None
+        self._device = None
 
     def _lazy_load(self):
         if self._model is not None:
@@ -91,7 +97,26 @@ class NLIVerifier:
         self._device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self._model.to(self._device)
         self._model.eval()
-        self._label_names = ["entailment", "neutral", "contradiction"]
+
+        id2label = getattr(self._model.config, "id2label", None) or {}
+        normalized = {}
+        for idx, label in id2label.items():
+            key = str(label).strip().lower().replace("-", "_").replace(" ", "_")
+            if "entail" in key:
+                normalized[int(idx)] = "entailment"
+            elif "neutral" in key:
+                normalized[int(idx)] = "neutral"
+            elif "contrad" in key:
+                normalized[int(idx)] = "contradiction"
+
+        if "entailment" not in normalized.values():
+            raise ValueError(
+                f"{self.model_name}: could not identify an entailment class from "
+                f"model.config.id2label={id2label!r}. Check the checkpoint label mapping."
+            )
+        n_labels = int(getattr(self._model.config, "num_labels", len(id2label)))
+        self._label_names = [normalized.get(i, str(id2label.get(i, f"label_{i}")).lower())
+                             for i in range(n_labels)]
 
     def score(self, premise: str, hypothesis: str) -> dict:
         self._lazy_load()
@@ -114,12 +139,12 @@ class NLIVerifier:
                 if no_citable_evidence:
                     results.append(VerificationResult(
                         sentence_text=s.text, cited_indicators=[], status='PASS_NO_SIGNAL',
-                        detail='인용할 HIGH/AMBIGUOUS 지표 자체가 없는 상황(신호 없음) — 정상'
+                        detail='No citable HIGH/AMBIGUOUS facts are available; no-signal case.'
                     ))
                 else:
                     results.append(VerificationResult(
                         sentence_text=s.text, cited_indicators=[], status='FAIL_NO_CITATION',
-                        detail='인용 태그 없음 — Stage 2 규칙 2 위반'
+                        detail='Missing citation tag; violates the Stage-2 citation requirement.'
                     ))
                 continue
 
@@ -127,7 +152,7 @@ class NLIVerifier:
             if invalid_refs:
                 results.append(VerificationResult(
                     sentence_text=s.text, cited_indicators=s.cited_indicators, status='FAIL_INVALID_REF',
-                    detail=f'Stage 1에 없는 지표 인용: {invalid_refs} — 환각 의심'
+                    detail=f'Citation refers to indicator(s) absent from Stage 1: {invalid_refs}.'
                 ))
                 continue
 
@@ -146,7 +171,7 @@ class NLIVerifier:
                 results.append(VerificationResult(
                     sentence_text=s.text, cited_indicators=s.cited_indicators, status='FAIL_HEDGE',
                     nli_scores=worst_scores,
-                    detail='AMBIGUOUS 근거를 인용했는데 단정적 표현 사용 (규칙 3 위반)'
+                    detail='Definitive wording used for an AMBIGUOUS fact; violates the hedging requirement.'
                 ))
                 continue
 
@@ -159,7 +184,7 @@ class NLIVerifier:
                 results.append(VerificationResult(
                     sentence_text=s.text, cited_indicators=s.cited_indicators, status='FAIL_NLI',
                     nli_scores=worst_scores,
-                    detail=f"entailment={worst_scores['entailment']:.3f} < 임계값{self.entailment_threshold}"
+                    detail=f"entailment={worst_scores['entailment']:.3f} < threshold={self.entailment_threshold}"
                 ))
 
         return results
@@ -173,7 +198,7 @@ class NLIVerifier:
             if no_citable_evidence:
                 results.append(VerificationResult(
                     sentence_text=s.text, cited_indicators=[], status='PASS_NO_SIGNAL',
-                    detail='인용할 HIGH/AMBIGUOUS/RAW 지표 자체가 없는 상황(신호 없음) — 정상'
+                    detail='No citable HIGH/AMBIGUOUS/RAW facts are available; no-signal case.'
                 ))
                 continue
 
@@ -188,23 +213,22 @@ class NLIVerifier:
                 results.append(VerificationResult(
                     sentence_text=s.text, cited_indicators=[best_fact.indicator], status='FAIL_HEDGE',
                     nli_scores=best_scores,
-                    detail='최적 매칭 사실이 AMBIGUOUS인데 단정적 표현 사용 (규칙 3 위반 추정)'
+                    detail='Best-matching fact is AMBIGUOUS but the sentence uses definitive wording.'
                 ))
             elif best_scores['entailment'] >= self.entailment_threshold:
                 results.append(VerificationResult(
                     sentence_text=s.text, cited_indicators=[best_fact.indicator], status='PASS_INFERRED',
                     nli_scores=best_scores,
-                    detail=f'인용 태그 미신뢰 — 최적 매칭 사실[{best_fact.indicator}] 기준 추정 판정'
+                    detail=f'Citation unavailable or unreliable; inferred from best-matching fact [{best_fact.indicator}].'
                 ))
             else:
                 results.append(VerificationResult(
                     sentence_text=s.text, cited_indicators=[best_fact.indicator], status='FAIL_NLI_UNCITED',
                     nli_scores=best_scores,
-                    detail=(f'entailment={best_scores["entailment"]:.3f} < 임계값{self.entailment_threshold} '
-                            f'(가장 잘 맞는 사실[{best_fact.indicator}]도 근거로 인정되지 않음)')
+                    detail=(f'entailment={best_scores["entailment"]:.3f} < threshold={self.entailment_threshold}; '
+                            f'best-matching fact [{best_fact.indicator}] does not meet the entailment threshold.')
                 ))
         return results
-
 
 def summarize_results(results: list) -> dict:
     n = len(results)
@@ -246,7 +270,6 @@ def summarize_results(results: list) -> dict:
         }
     }
 
-
 def threshold_sensitivity_report(verification_dicts: list, thresholds=(0.5, 0.4, 0.3, 0.2, 0.1)) -> dict:
     scored = [v for v in verification_dicts if v.get('nli') is not None and v.get('status') != 'FAIL_HEDGE']
     n_scored = len(scored)
@@ -259,5 +282,4 @@ def threshold_sensitivity_report(verification_dicts: list, thresholds=(0.5, 0.4,
             'pass_rate': (n_would_pass / n_scored) if n_scored else None,
         }
     return report
-
 
