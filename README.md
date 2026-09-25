@@ -13,7 +13,6 @@ data/ratings/           expert ratings R1-R5
 data/minimal_pairs/     minimal-pair survey responses
 data/results/rq1/       per-interaction pipeline summaries (Table 2)
 data/results/rq2/       few-shot judge predictions and recovered NLI scores (Table 4)
-scripts/reproduce.sh    recomputes every expert-based result from the released data (CPU only)
 ```
 
 See `data/README.md` for file and column descriptions.
@@ -30,12 +29,6 @@ Generation and NLI verification need a GPU. Gated models read `HF_TOKEN` from th
 The few-shot judges query an OpenAI-compatible endpoint, for example `vllm serve mistralai/Ministral-8B-Instruct-2410 --port 8000`.
 
 ## Reproducing the paper
-
-**From the released data (CPU, about a minute):**
-
-```bash
-bash scripts/reproduce.sh
-```
 
 | Paper | Script | Needs |
 |---|---|---|
@@ -65,7 +58,7 @@ bash scripts/reproduce.sh
 ## Notes
 
 - Table 4 uses NLI scores recovered for negative-control sentences (`--include-recovery-methods inferred_negative_control`, the default). Also using the 16 sentences recovered from tag residue (`all`) gives NLI AUROC 0.591 (strict) and 0.596 (lenient), with the same conclusions.
-- All random seeds are 42. Many scripts have a `--selftest` option that checks their logic on synthetic data.
+- All random seeds are 42.
 - Comments and some console messages are in Korean.
 
 ## License
