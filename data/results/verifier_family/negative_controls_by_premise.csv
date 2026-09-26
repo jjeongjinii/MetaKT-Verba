@@ -1,0 +1,13 @@
+verifier,premise,group,n,mean_score,pass_rate
+mDeBERTa-v3-base-mnli-xnli,fact,normal,293,0.3264716265551466,0.310580204778157
+mDeBERTa-v3-base-mnli-xnli,record,normal,305,0.035079274412061344,0.013114754098360656
+mDeBERTa-v3-base-mnli-xnli,record,control,48,0.02577066421508789,0.020833333333333332
+DeBERTa-v3-large-mnli-fever-anli-ling-wanli,fact,normal,293,0.500019721813983,0.49829351535836175
+DeBERTa-v3-large-mnli-fever-anli-ling-wanli,record,normal,305,0.20756215032984,0.2098360655737705
+DeBERTa-v3-large-mnli-fever-anli-ling-wanli,record,control,48,0.11229909211397171,0.10416666666666667
+Bespoke-MiniCheck-7B,fact,normal,293,0.5849149364090517,0.6348122866894198
+Bespoke-MiniCheck-7B,record,normal,305,0.20658533487813777,0.12459016393442623
+Bespoke-MiniCheck-7B,record,control,48,0.20949755062184341,0.14583333333333334
+Gemma-3-27B-it,fact,normal,293,0.8668941979522186,0.9795221843003413
+Gemma-3-27B-it,record,normal,305,0.5945901639344262,0.760655737704918
+Gemma-3-27B-it,record,control,48,0.4729166666666667,0.5833333333333334
