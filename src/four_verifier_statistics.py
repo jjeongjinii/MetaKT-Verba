@@ -74,7 +74,7 @@ def analysis_mask(d: pd.DataFrame, subset: str) -> pd.Series:
     m = ~d['is_negative_control'] & d['majority_tag'].isin(['supported', 'partial', 'unsupported']) & d['score'].notna()
     if subset == 'core97':
         m &= d['is_core']
-    elif subset != 'all282':
+    elif subset != 'all287':
         raise ValueError(subset)
     return m
 
@@ -145,12 +145,12 @@ def diagnostics(df: pd.DataFrame, expected_core=None, expected_all=None, fail=Fa
     for v in VERIFIER_ORDER:
         for p in ['fact', 'record']:
             g = df[(df.verifier == v) & (df.premise == p)]
-            for subset in ['core97', 'all282']:
+            for subset in ['core97', 'all287']:
                 a = g[analysis_mask(g, subset)]
                 rows.append({'verifier': v, 'premise': p, 'subset': subset, 'n_raw': len(g), 'n_analysis': len(a), 'n_score_missing': int(g.score.isna().sum()), 'n_unknown': int((g.majority_tag == 'unknown').sum()), 'n_negative_control': int(g.is_negative_control.sum()), 'n_supported': int((a.majority_tag == 'supported').sum()), 'n_partial': int((a.majority_tag == 'partial').sum()), 'n_unsupported': int((a.majority_tag == 'unsupported').sum())})
     out = pd.DataFrame(rows)
     problems = []
-    for subset, exp in [('core97', expected_core), ('all282', expected_all)]:
+    for subset, exp in [('core97', expected_core), ('all287', expected_all)]:
         if exp is None:
             continue
         bad = out[(out.subset == subset) & (out.n_analysis != exp)]
@@ -168,7 +168,7 @@ def table4(df, n_boot, seed):
     for vi, v in enumerate(VERIFIER_ORDER):
         for pi, premise in enumerate(['fact', 'record']):
             g0 = df[(df.verifier == v) & (df.premise == premise)]
-            for si, subset in enumerate(['core97', 'all282']):
+            for si, subset in enumerate(['core97', 'all287']):
                 g = g0[analysis_mask(g0, subset)].sort_values(KEY)
                 for ci, coding in enumerate(['strict', 'lenient']):
                     y = coding_y(g.majority_tag, coding)
@@ -211,7 +211,7 @@ def paired_vs_mdeberta(df, n_boot, seed):
     others = [v for v in VERIFIER_ORDER if v != MDEBERTA]
     for vi, v in enumerate(others):
         for pi, premise in enumerate(['fact', 'record']):
-            for si, subset in enumerate(['core97', 'all282']):
+            for si, subset in enumerate(['core97', 'all287']):
                 a = df[(df.verifier == v) & (df.premise == premise)]
                 b = df[(df.verifier == MDEBERTA) & (df.premise == premise)]
                 a = a[analysis_mask(a, subset)][KEY + ['majority_tag', 'score']].rename(columns={'score': 'score_a', 'majority_tag': 'tag_a'})
@@ -231,7 +231,7 @@ def paired_record_vs_fact(df, n_boot, seed):
     for vi, v in enumerate(VERIFIER_ORDER):
         f = df[(df.verifier == v) & (df.premise == 'fact')]
         r = df[(df.verifier == v) & (df.premise == 'record')]
-        for si, subset in enumerate(['core97', 'all282']):
+        for si, subset in enumerate(['core97', 'all287']):
             ff = f[analysis_mask(f, subset)][KEY + ['majority_tag', 'score']].rename(columns={'score': 'fact_score', 'majority_tag': 'fact_tag'})
             rr = r[analysis_mask(r, subset)][KEY + ['majority_tag', 'score']].rename(columns={'score': 'record_score', 'majority_tag': 'record_tag'})
             m = ff.merge(rr, on=KEY, how='inner', validate='one_to_one')
