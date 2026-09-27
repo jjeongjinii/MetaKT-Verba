@@ -352,7 +352,7 @@ def summarize_auroc(scored: pd.DataFrame, n_boot=2000, seed=42) -> pd.DataFrame:
     rows = []
     scored = analysis_set(scored)
     for (verifier, premise), g0 in scored.groupby(['verifier', 'premise']):
-        for subset_name, g in [('core97', g0[g0.is_core]), ('all282', g0)]:
+        for subset_name, g in [('core97', g0[g0.is_core]), ('all287', g0)]:
             for coding, positives in GROUND_TRUTH_DEFS.items():
                 x = g[(g.majority_tag != 'unknown') & g.score.notna()].copy()
                 y = x.majority_tag.isin(positives).astype(int).to_numpy()
@@ -377,7 +377,7 @@ def paired_vs_baseline(scored: pd.DataFrame, n_boot=2000, seed=42) -> pd.DataFra
     rows = []
     scored = analysis_set(scored)
     for premise in sorted(scored.premise.unique()):
-        for subset in ['core97', 'all282']:
+        for subset in ['core97', 'all287']:
             s = scored[scored.premise.eq(premise)]
             if subset == 'core97':
                 s = s[s.is_core]
@@ -402,7 +402,7 @@ def paired_fact_vs_record(scored: pd.DataFrame, n_boot=2000, seed=42) -> pd.Data
     scored = analysis_set(scored)
     rows = []
     for verifier in sorted(scored.verifier.unique()):
-        for subset in ['core97', 'all282']:
+        for subset in ['core97', 'all287']:
             s = scored[scored.verifier.eq(verifier)]
             if subset == 'core97':
                 s = s[s.is_core]
@@ -577,7 +577,7 @@ def main():
     scored[score_cols].to_csv(os.path.join(args.output_dir, 'scores_all_verifiers.csv'), index=False)
     summary = summarize_auroc(scored, args.n_boot, args.seed)
     if not args.skip_reproduction_check:
-        problems = check_baseline_reproduction(summary, {('all282', 'strict'): (282, 0.479), ('all282', 'lenient'): (282, 0.482), ('core97', 'strict'): (97, 0.591), ('core97', 'lenient'): (97, 0.591)})
+        problems = check_baseline_reproduction(summary, {('all287', 'strict'): (287, 0.479), ('all287', 'lenient'): (287, 0.482), ('core97', 'strict'): (97, 0.591), ('core97', 'lenient'): (97, 0.591)})
         if problems:
             raise RuntimeError('Baseline does not reproduce the paper; do not interpret other rows:\n  ' + '\n  '.join(problems))
         print('[check] mDeBERTa/fact reproduces Tables 3-4.')
