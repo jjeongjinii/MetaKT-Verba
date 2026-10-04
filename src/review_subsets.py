@@ -176,7 +176,7 @@ def main():
 
     p = sub.add_parser("unsupported-split")
     p.add_argument("--scores", default='data/results/verifier_family/scores_with_logprob.pkl')
-    p.add_argument("--coding", default='data/counter_evidence_coding.csv', help="CSV with item_id, sentence_id and a counter-evidence flag")
+    p.add_argument("--coding", default='data/annotations/counter_evidence_coding.csv', help="CSV with item_id, sentence_id and a counter-evidence flag")
     p.add_argument("--flag-col", default="counter_evidence")
     p.add_argument("--verifiers", nargs="+", default=VERIFIERS)
     p.set_defaults(func=cmd_split)
