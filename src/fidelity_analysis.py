@@ -1,17 +1,3 @@
-"""Analyse the fidelity labels (W2) once fidelity_labels.xlsx is filled in.
-
-Interpretation rule (fixed before labeling; keep this text unchanged):
-  * A fact-premise verifier "tracks fidelity" if its fidelity AUROC 95% CI lies above 0.5.
-  * Evidence-target mismatch is supported when fact-premise verifiers track fidelity while their
-    support AUROC (Table 3) includes 0.5, and/or when many faithful sentences are judged unsupported.
-  * Verifier failure on its own target is supported when fact-premise fidelity AUROCs also include 0.5.
-  * Record-premise verifiers are reported against fidelity as the mirror comparison.
-
-Put this file next to cluster_bootstrap_ci.py (e.g. src/) and run:
-  python fidelity_analysis.py --labels fidelity_labels.xlsx --key fidelity_key.csv \
-      --scores outputs/verifier_family/scores_with_logprob.pkl [--retest fidelity_retest.xlsx]
-"""
-
 import argparse
 import os
 import sys
@@ -73,14 +59,14 @@ def kappa(a, b, quadratic=False):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--labels", default="/home/jin/project/metaKT-verba/fidelity_labels.xlsx")
-    ap.add_argument("--key", default="/home/jin/project/metaKT-verba/fidelity_key.csv")
-    ap.add_argument("--scores", default='/home/jin/project/metaKT-verba/outputs/verifier_family/scores_with_logprob.pkl', help="scores_with_logprob.pkl (long format)")
-    ap.add_argument("--retest", default='/home/jin/project/metaKT-verba/fidelity_retest.xlsx')
+    ap.add_argument("--labels", default="/data/annotations/fidelity_labels.xlsx")
+    ap.add_argument("--key", default="/data/annotations/fidelity_key.csv")
+    ap.add_argument("--scores", default='/data/results/verifier_family/scores_with_logprob.pkl', help="scores_with_logprob.pkl (long format)")
+    ap.add_argument("--retest", default='/data/annotations/fidelity_retest.xlsx')
     ap.add_argument("--verifiers", default=",".join(VERIFIERS))
     ap.add_argument("--n-boot", type=int, default=10000)
     ap.add_argument("--seed", type=int, default=42)
-    ap.add_argument("--out-dir", default="/home/jin/project/metaKT-verba/outputs/fidelity_analysis")
+    ap.add_argument("--out-dir", default="/data/results/fidelity_analysis")
     args = ap.parse_args()
 
     key = pd.read_csv(resolve(args.key))
