@@ -1,18 +1,3 @@
-"""Subset analyses for the review response, on the 287-sentence analysis set.
-
-  nonaffective       W6: item-cluster CI for sentences without affective vocabulary (paper: n = 257)
-  restatement        Sec. 5.4.1: sentences that use an internal indicator name pass more often but are not
-                     judged supported more often (Fisher's exact tests)
-  loo-human          leave-one-rater-out human AUROC on the core set (paper: 0.72-0.84 strict, 0.82-0.93 lenient)
-  unsupported-split  W5 / Q3: split 'unsupported' into contradicted vs unrelated using the comment coding
-                     of Section 5.4.2, then AUROC of supported vs each split, per verifier and premise
-
-Put next to cluster_bootstrap_ci.py (e.g. src/) and run from the repository root:
-  python src/review_subsets.py nonaffective --scores outputs/verifier_family/scores_with_logprob.pkl
-  python src/review_subsets.py unsupported-split --scores outputs/verifier_family/scores_with_logprob.pkl \
-      --coding <coding file>.csv --flag-col <column that is 1/yes when counter-evidence was cited>
-"""
-
 import argparse
 import glob
 import os
@@ -26,9 +11,7 @@ from cluster_bootstrap_ci import cluster_auroc_ci  # noqa: E402
 
 VERIFIERS = ["mDeBERTa-v3-base-mnli-xnli", "DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
              "Bespoke-MiniCheck-7B", "Gemma-3-27B-it-logprob"]
-# Reproduces n = 257 and strict AUROC 0.466 for mDeBERTa (fact premise) on the 287-sentence set.
 AFFECT_LEXICON = r"frustrat|confus|bored|concentrat|emotion|feel|interest"
-# Internal indicator names as they appear in sentence text (natural-language or snake_case forms).
 INDICATOR_NAMES = (r"overconfiden|underconfiden|slipping|lucky[ _]guess|confidence[ _]triad|cognitive[ _]avoidance|"
                    r"productive[ _]struggle|unproductive[ _]frustration|strategic[ _]help|boredom[ _]offtask")
 TYPOS = {"unsuppported": "unsupported", "unsuported": "unsupported", "suported": "supported"}
@@ -137,7 +120,7 @@ def cmd_split(args):
     uns = base[base["majority_tag"] == "unsupported"].merge(c, on=["item_id", "sentence_id"], how="left")
     print(f"unsupported in analysis set: {len(uns)} (paper: 130); coded: {int(uns.counter_evidence.notna().sum())}; "
           f"contradicted: {int(uns.counter_evidence.fillna(False).sum())} (paper: 71)")
-    # Section 5.4.2 check: counter-evidence rate among unsupported sentences Stage 3 passed vs failed
+  
     md = s[(s["verifier"] == "mDeBERTa-v3-base-mnli-xnli") & (s["premise"] == "fact")][["item_id", "sentence_id", "score"]]
     chk = uns.drop(columns=["score"], errors="ignore").merge(md, on=["item_id", "sentence_id"]).dropna(subset=["counter_evidence"])
     if len(chk):
@@ -171,29 +154,29 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--n-boot", type=int, default=10000)
     ap.add_argument("--seed", type=int, default=42)
-    ap.add_argument("--out-dir", default="/home/jin/project/metaKT-verba/outputs/review")
+    ap.add_argument("--out-dir", default="data/results/review")
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     p = sub.add_parser("nonaffective")
-    p.add_argument("--scores", default='/home/jin/project/metaKT-verba/outputs/verifier_family/scores_with_logprob.pkl')
+    p.add_argument("--scores", default='data/results/verifier_family/scores_with_logprob.pkl')
     p.add_argument("--lexicon", default=AFFECT_LEXICON)
     p.add_argument("--verifiers", nargs="+", default=VERIFIERS)
     p.set_defaults(func=cmd_nonaffective)
 
     p = sub.add_parser("restatement")
-    p.add_argument("--scores", default='/home/jin/project/metaKT-verba/outputs/verifier_family/scores_with_logprob.pkl')
+    p.add_argument("--scores", default='data/results/verifier_family/scores_with_logprob.pkl')
     p.add_argument("--pattern", default=INDICATOR_NAMES)
     p.add_argument("--threshold", type=float, default=0.5)
     p.set_defaults(func=cmd_restatement)
 
     p = sub.add_parser("loo-human")
-    p.add_argument("--scores", default='/home/jin/project/metaKT-verba/outputs/verifier_family/scores_with_logprob.pkl')
-    p.add_argument("--ratings", default="/home/jin/project/metaKT-verba/calibration_stimuli_out1/rater_replies/metakt_verba_ratings_R*.csv")
+    p.add_argument("--scores", default='data/results/verifier_family/scores_with_logprob.pkl')
+    p.add_argument("--ratings", default="data/ratings/metakt_verba_ratings_R*.csv")
     p.set_defaults(func=cmd_loo)
 
     p = sub.add_parser("unsupported-split")
-    p.add_argument("--scores", default='/home/jin/project/metaKT-verba/outputs/verifier_family/scores_with_logprob.pkl')
-    p.add_argument("--coding", default='/home/jin/project/metaKT-verba/counter_evidence_coding.csv', help="CSV with item_id, sentence_id and a counter-evidence flag")
+    p.add_argument("--scores", default='data/results/verifier_family/scores_with_logprob.pkl')
+    p.add_argument("--coding", default='data/counter_evidence_coding.csv', help="CSV with item_id, sentence_id and a counter-evidence flag")
     p.add_argument("--flag-col", default="counter_evidence")
     p.add_argument("--verifiers", nargs="+", default=VERIFIERS)
     p.set_defaults(func=cmd_split)
