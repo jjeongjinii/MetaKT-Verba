@@ -1,0 +1,143 @@
+{
+  "items": [
+    {
+      "item_id": "C1",
+      "skill": "pattern-finding",
+      "steps": [
+        {
+          "step": 47,
+          "correct": true,
+          "hint_count": 1,
+          "response_time_ratio": 0.6931476332493951
+        },
+        {
+          "step": 48,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.8317771798619265
+        },
+        {
+          "step": 49,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 1.0743788739571989
+        },
+        {
+          "step": 50,
+          "correct": true,
+          "hint_count": 0,
+          "response_time_ratio": 0.4505459641074383
+        }
+      ],
+      "skill_cum_accuracy": 0.1,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student provided a correct response without assistance, indicating some level of understanding or insight.",
+          "ko": "학생은 도움 없이 올바른 답변을 제공하여 어느 정도의 이해나 통찰력을 보여주었다."
+        },
+        {
+          "id": "S2",
+          "en": "This outcome could suggest the student arrived at the solution through thoughtful engagement rather than mere chance.",
+          "ko": "이 결과는 학생이 단순한 운이 아니라 신중한 참여를 통해 해법에 도달했음을 시사할 수 있다."
+        },
+        {
+          "id": "S3",
+          "en": "The available information does not definitively clarify whether the accuracy stemmed from sustained effort or unexpected luck.",
+          "ko": "가용한 정보는 정확성의 원인이 지속적인 노력이었는지 예상치 못한 운이었는지 명확히 구분하지 못한다."
+        }
+      ]
+    },
+    {
+      "item_id": "C2",
+      "skill": "order-of-operations",
+      "steps": [
+        {
+          "step": 163,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.8986784141246289
+        },
+        {
+          "step": 164,
+          "correct": false,
+          "hint_count": 1,
+          "response_time_ratio": 0.0704845773061382
+        },
+        {
+          "step": 165,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.0528634361249781
+        },
+        {
+          "step": 166,
+          "correct": false,
+          "hint_count": 2,
+          "response_time_ratio": 0.3171806252080188
+        }
+      ],
+      "skill_cum_accuracy": 0.0,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the material during this step.",
+          "ko": "학생은 이 단계에서 자료와 깊이적으로 소통하지 않을 수 있다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be a significant likelihood of errors occurring without correction.",
+          "ko": "수정되지 않은 상태에서 오류가 발생할 가능성이 매우 높아 보인다."
+        },
+        {
+          "id": "S3",
+          "en": "This could indicate a lack of attention or understanding related to the current task.",
+          "ko": "이는 현재 작업에 대한 주의력이나 이해력 부족을 나타낼 수 있습니다."
+        }
+      ]
+    },
+    {
+      "item_id": "C3",
+      "skill": "evaluating-functions",
+      "steps": [
+        {
+          "step": 208,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.0924511835953056
+        },
+        {
+          "step": 209,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.2157194210545858
+        },
+        {
+          "step": 210,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.0308170685328957
+        },
+        {
+          "step": 211,
+          "correct": false,
+          "hint_count": 0,
+          "response_time_ratio": 0.5238900255812091
+        }
+      ],
+      "skill_cum_accuracy": 0.2857142857142857,
+      "sentences": [
+        {
+          "id": "S1",
+          "en": "The student may have avoided engaging deeply with the function evaluation task.",
+          "ko": "학생은 함수 평가 작업에 깊이적으로 참여하지 않았을 수도 있습니다."
+        },
+        {
+          "id": "S2",
+          "en": "There appears to be a pattern of errors or omissions during the process.",
+          "ko": "프로세스 중에 오류 또는 누락이 반복적으로 발생하는 듯하다."
+        }
+      ]
+    }
+  ]
+}
