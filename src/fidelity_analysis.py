@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from cluster_bootstrap_ci import cluster_auroc_ci  # noqa: E402
+from cluster_bootstrap_ci import cluster_auroc_ci, roc_auc_score  # noqa: E402
 
 VERIFIERS = ["mDeBERTa-v3-base-mnli-xnli", "DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
              "Bespoke-MiniCheck-7B", "Gemma-3-27B-it-logprob"]
@@ -57,6 +57,27 @@ def kappa(a, b, quadratic=False):
     return 1 - (w * m).sum() / (w * exp).sum()
 
 
+def fragility(y, score, items, n_boot, seed, max_flips=40):
+    """Fewest adversarial label flips that bring the AUROC CI lower bound to <= 0.5.
+    Each step flips the single label (faithful <-> not) that lowers the AUROC most."""
+    y = np.asarray(y, int).copy()
+    score = np.asarray(score, float)
+    for k in range(0, max_flips + 1):
+        r = cluster_auroc_ci(y, score, items, n_boot, seed)
+        if r["ci_lo"] <= 0.5:
+            return k, r
+        best, best_auc = None, np.inf
+        for i in range(len(y)):
+            y[i] = 1 - y[i]
+            if 0 < y.sum() < len(y):
+                a = roc_auc_score(y, score)
+                if a < best_auc:
+                    best, best_auc = i, a
+            y[i] = 1 - y[i]
+        y[best] = 1 - y[best]
+    return None, r
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--labels", default="/data/annotations/fidelity_labels.xlsx")
@@ -67,7 +88,10 @@ def main():
     ap.add_argument("--n-boot", type=int, default=10000)
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--out-dir", default="/data/results/fidelity_analysis")
+    ap.add_argument("--fragility", action="store_true",
+                    help="fewest adversarial label flips that make each fact-premise fidelity CI include 0.5")
     args = ap.parse_args()
+    os.makedirs(args.out_dir, exist_ok=True)
 
     key = pd.read_csv(resolve(args.key))
     lab = read_labels(args.labels, "label_id").merge(key, on="label_id", how="left")
@@ -120,6 +144,19 @@ def main():
         print(f"\n[3] intra-rater, n = {len(both)}: agreement {(both.label_retest == both.label_main).mean():.2f}; "
               f"Cohen's kappa {kappa(both.label_main, both.label_retest):.2f}; "
               f"quadratic-weighted kappa {kappa(both.label_main, both.label_retest, True):.2f}")
+
+    # [4] fragility of the fact-premise fidelity result to label errors
+    if args.fragility:
+        print("\n[4] fragility: fewest adversarial flips of the author's labels until the CI includes 0.5")
+        for v in [x.strip() for x in args.verifiers.split(",") if x.strip()]:
+            sc = s[(s["verifier"] == v) & (s["premise"] == "fact")][["item_id", "sentence_id", "score"]]
+            m = lab.merge(sc, on=["item_id", "sentence_id"]).dropna(subset=["score"])
+            for coding, pos in [("strict", {"faithful"}), ("lenient", {"faithful", "partial"})]:
+                k, r = fragility(m["label"].isin(pos), m["score"], m["item_id"], 2000, args.seed)
+                kk = f">{40}" if k is None else str(k)
+                print(f"  {v[:28]:28s} {coding:7s} flips needed: {kk:>3s} of {len(m)} "
+                      f"({'n/a' if k is None else f'{100 * k / len(m):.0f}%'}); AUROC then {r['auroc']:.3f} "
+                      f"[{r['ci_lo']:.3f}, {r['ci_hi']:.3f}]")
 
 
 if __name__ == "__main__":
