@@ -121,24 +121,3 @@ Only record premises change; sentence text, facts, and majority labels remain fi
 The hypothesis-only condition uses the content-free premise `The student is practicing a skill.` Map it to **Neutral** in Table 3. For **Shuffled**, compute a sentence's mean score across all five shuffles, then compute AUROC. Keep variants separate and verify that every analyzed sentence has all five scores. Combine these results with Fact and Record from `scores_main.csv`, for both core/broader sets and strict/lenient coding.
 
 The matched-minus-control paired item-bootstrap intervals in Section 5.4.2 are unadjusted diagnostic intervals. They are separate from the 16 Holm-adjusted record-minus-fact comparisons used in Table 3's significance markers and Section 5.3.3. Historical `tableA1_*` filenames refer to these paired results, not a current manuscript Table A1.
-
-## Required annotations — not yet supplied
-
-The latest manuscript reports two additional annotation-based analyses. `annotations/` is a proposed public location; the following inputs have not been provided in the inspected materials.
-
-- **Fidelity (Section 5.3.3):** labels for all 83 core sentences against symbolic facts (`faithful`, `partial`, `unfaithful`), an ID-mapping key, and the 20-sentence retest labels. The manuscript reports retest kappa .78 and 32/57 faithful sentences judged unsupported by educators. File names such as `fidelity_labels.xlsx`, `fidelity_key.csv`, and `fidelity_retest.xlsx` are script input conventions, not verified existing files.
-- **Counter-evidence (Section 5.4.2):** the complete blind comment coding for 130 unsupported sentences. The latest totals are 76 contradicted and 54 unrelated; counter-evidence is cited for 22/40 passed and 54/90 failed sentences. The older 40-row coding extract does not reproduce these totals and must not be treated as the complete coding.
-
-Preserve sentence IDs, annotation definitions, and retest mapping. Align the fidelity scripts' differing ID/label schemas before providing an executable workflow. Missing counter-evidence codes must not be assigned to “unrelated.”
-
-## `derived/` and source data
-
-`full_predictions2.csv` supplies indicators, behavior context, and row identities for regeneration. The examined local file has 316,965 rows. Either release an authorized derived copy or provide a verified exporter, source acquisition instructions, and hashes/ID mappings that reproduce it. Exporter equivalence has not yet been established.
-
-ASSISTments source files, including `student_log_*.csv`, `training_label.csv`, and `validation_test_label.csv`, are not included in the public release. Place acquired source data under a Git-ignored raw-data directory and follow their providers' terms.
-
-## Scope and outstanding inputs
-
-The annotation-based results are part of the manuscript but cannot yet be reproduced from code alone. Earlier minimal-pair and separate few-shot judge datasets are outside the current paper scope. Restatement uses 42/287 sentences in the latest manuscript, and leave-one-rater-out lenient AUROC ranges from .81 to .93; older manuscript values are obsolete.
-
-Table 2's item correlations require original answer-key scores; reconstructed sentence scores serve a different analysis. Remaining manuscript/code discrepancies are listed in the repository-level README.
