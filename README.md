@@ -84,19 +84,6 @@ Use the six released control variants with `review_subsets.py record-controls`. 
 - Fixed rating stimuli and original answer keys are preserved. Regenerating stimuli does not replace the material shown to the raters.
 - For shuffled-record controls, average each sentence's scores across five shuffles before computing AUROC. This differs from averaging five AUROCs. Control-generation seeds use 2027+k, k=1,…,5.
 
-## Reproduction status
-
-The prepared main score file was checked for unique keys, complete scores, matching sentence metadata, logprob normalization, and the 83/287 analysis counts. Preparation of these files does not constitute a complete rerun of the paper.
-
-The following issues remain explicit rather than silently changing inputs to match the manuscript:
-
-- Table 2's item correlations use the **original item answer-key scores**, while sentence discrimination uses reconstructed scores. Weighted kappa excludes unknown ratings pairwise; the current aggregation implementation needs to be aligned with that definition.
-- Regenerate paired record-minus-fact comparisons from the main logprob scores, rather than using older tables based on verbalized Gemma confidence. The latest manuscript reports these results in Table 3 and Section 5.3.3.
-- The latest manuscript's restatement result is 42/287 sentences (14.6%), and its leave-one-rater-out ranges are .72–.84 strict and .81–.93 lenient. These replace the older manuscript values and agree with the checked code results.
-- The complete 130-sentence counter-evidence coding and fidelity labels are not provided. They are needed for manuscript results, although their analyses cannot yet be reproduced from the available inputs. The latest coding totals are 76 contradicted and 54 unrelated (22/40 passed and 54/90 failed sentences cite counter-evidence); the earlier partial coding file is not a substitute.
-- The stratified within-source AUROC and ordinal-median sensitivity require an explicit implementation. The original checkpoint AUC and full-log audit have not been independently rerun in this release preparation.
-
-Generation/scoring scripts also require public-path cleanup and helper-import consolidation before a complete regeneration workflow is available. No single-command full reproduction is claimed at this stage.
 
 ## License
 
