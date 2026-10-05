@@ -1,21 +1,3 @@
-"""W3: continuous Gemma score from Yes/No next-token probabilities.
-
-The verbalized confidence used so far takes only ~8-11 distinct values (multiples of five),
-so most sentence pairs are tied. Here Gemma answers a one-word Yes/No question and the score
-is P(Yes) / (P(Yes) + P(No)) from the first generated token's top log-probabilities.
-Same zero-shot instruction under both premises; only the premise text differs.
-
-Needs the vLLM OpenAI-compatible server already used for Gemma (no other dependencies).
-  python gemma_logprob_scores.py \
-      --cases outputs/verifier_family/cases.pkl \
-      --scores outputs/verifier_family/scores.pkl \
-      --api-base http://localhost:8000/v1 --model <served Gemma name>
-
-Writes:
-  <out-dir>/scores_gemma_logprob.csv     new rows only (verifier = Gemma-3-27B-it-logprob)
-  <out-dir>/scores_with_logprob.pkl      --scores plus the new rows (feed to cluster_bootstrap_ci.py)
-"""
-
 import argparse
 import json
 import math
@@ -71,9 +53,9 @@ def p_yes(prompt: str, model: str, api_base: str, top_k: int, timeout: int = 120
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--cases", default="/home/elicer/project/metaKT-verba/outputs/verifier_family/cases.pkl")
-    ap.add_argument("--scores", default="/home/elicer/project/metaKT-verba/outputs/verifier_family/scores.pkl")
-    ap.add_argument("--out-dir", default="/home/elicer/project/metaKT-verba/outputs/verifier_family")
+    ap.add_argument("--cases", default="/data/results/verifier_family/cases.pkl")
+    ap.add_argument("--scores", default="/data/results/verifier_family/scores.pkl")
+    ap.add_argument("--out-dir", default="/data/results/verifier_family")
     ap.add_argument("--api-base", default="http://localhost:8000/v1")
     ap.add_argument("--model", default='google/Gemma-3-27B-it', help="model name as served by vLLM")
     ap.add_argument("--top-logprobs", type=int, default=20)
