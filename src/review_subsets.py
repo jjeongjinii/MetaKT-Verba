@@ -1,3 +1,23 @@
+"""Subset analyses for the review response, on the 287-sentence analysis set.
+
+  nonaffective       W6: item-cluster CI for sentences without affective vocabulary (paper: n = 257)
+  record-controls    W2: record-premise AUROC with the true record vs shuffled records and a content-free
+                     premise (same sentences); paired item-cluster bootstrap of the difference
+  fact-controls      shuffled-fact control: fact sensitivity (P[cited-fact score > other-indicator score])
+                     and educator AUROC with shuffled facts, paired item-cluster bootstrap
+  restatement        Sec. 5.4.1: sentences that use an internal indicator name pass more often but are not
+                     judged supported more often (Fisher's exact tests)
+                     (needs record_controls_scores.pkl from record_controls.py)
+  loo-human          leave-one-rater-out human AUROC on the core set (paper: 0.72-0.84 strict, 0.82-0.93 lenient)
+  unsupported-split  W5 / Q3: split 'unsupported' into contradicted vs unrelated using the comment coding
+                     of Section 5.4.2, then AUROC of supported vs each split, per verifier and premise
+
+Put next to cluster_bootstrap_ci.py (e.g. src/) and run from the repository root:
+  python src/review_subsets.py nonaffective --scores outputs/verifier_family/scores_with_logprob.pkl
+  python src/review_subsets.py unsupported-split --scores outputs/verifier_family/scores_with_logprob.pkl \
+      --coding <coding file>.csv --flag-col <column that is 1/yes when counter-evidence was cited>
+"""
+
 import argparse
 import glob
 import os
@@ -8,7 +28,7 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from cluster_bootstrap_ci import cluster_auroc_ci, cluster_paired_auroc_diff  # noqa: E402
+from cluster_bootstrap_ci import ClusterSampler, cluster_auroc_ci, cluster_paired_auroc_diff  # noqa: E402
 
 VERIFIERS = ["mDeBERTa-v3-base-mnli-xnli", "DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
              "Bespoke-MiniCheck-7B", "Gemma-3-27B-it-logprob"]
@@ -93,6 +113,59 @@ def cmd_controls(args):
     print("auroc_control for 'shuffled' uses each sentence's mean score over the shuffles")
     print(out.round(3).to_string(index=False))
     out.to_csv(os.path.join(args.out_dir, "record_controls.csv"), index=False)
+
+
+def cmd_fact_controls(args):
+    true = load_scores(args.scores)
+    true = true[true["premise"] == "fact"][["item_id", "sentence_id", "verifier", "score", "majority_tag", "is_core"]]
+    ctl = []
+    for f in sorted(glob.glob(args.controls)):
+        m = re.search(r"factshuf(\d+)", os.path.basename(f))
+        if not m:
+            continue
+        d = pd.read_pickle(f) if f.endswith(".pkl") else pd.read_csv(f)
+        d = d[d["premise"] == "fact"][["item_id", "sentence_id", "verifier", "score"]].copy()
+        d["verifier"] = d["verifier"].str.replace(r"-factshuf\d+$", "", regex=True)
+        d["k"] = int(m.group(1))
+        ctl.append(d)
+    if not ctl:
+        raise FileNotFoundError(args.controls)
+    ctl = pd.concat(ctl, ignore_index=True).rename(columns={"score": "ctl"})
+    flags = pd.read_pickle(args.flags)[["item_id", "sentence_id", "status_matched"]]
+    pair = ctl.merge(true, on=["item_id", "sentence_id", "verifier"]).merge(flags, on=["item_id", "sentence_id"])
+    pair["win"] = (pair["score"] > pair["ctl"]) + 0.5 * (pair["score"] == pair["ctl"])
+    sent = (pair.groupby(["item_id", "sentence_id", "verifier"])
+            .agg(win=("win", "mean"), ctl=("ctl", "mean"), score=("score", "first"),
+                 majority_tag=("majority_tag", "first"), is_core=("is_core", "first"),
+                 status_matched=("status_matched", "first"), k=("k", "nunique")).reset_index())
+
+    rows_s, rows_a = [], []
+    for v, gv in sent.groupby("verifier"):
+        for scope in ("core", "all"):
+            g0 = gv[gv.is_core == True] if scope == "core" else gv
+            for subset in ("all_rows", "status_matched"):
+                g = g0[g0.status_matched] if subset == "status_matched" else g0
+                smp = ClusterSampler(g["item_id"], args.seed)
+                w = g["win"].to_numpy()
+                boots = [w[smp.draw()].mean() for _ in range(args.n_boot)]
+                rows_s.append({"verifier": v, "scope": scope, "subset": subset, "n": len(g),
+                               "fact_sensitivity": w.mean(), "lo": np.percentile(boots, 2.5),
+                               "hi": np.percentile(boots, 97.5), "shuffles": int(g["k"].max())})
+            for coding, pos in [("strict", {"supported"}), ("lenient", {"supported", "partial"})]:
+                y = g0["majority_tag"].isin(pos).astype(int)
+                r = cluster_paired_auroc_diff(y, g0["score"], g0["ctl"], g0["item_id"], args.n_boot, args.seed)
+                c = cluster_auroc_ci(y, g0["ctl"], g0["item_id"], args.n_boot, args.seed)
+                rows_a.append({"verifier": v, "scope": scope, "coding": coding, "n": r["n"],
+                               "auroc_cited_fact": r["auroc_a"], "auroc_shuffled_fact": r["auroc_b"],
+                               "shuffled_lo": c["ci_lo"], "shuffled_hi": c["ci_hi"],
+                               "delta": r["delta"], "delta_lo": r["ci_lo"], "delta_hi": r["ci_hi"], "p": r["p_value"]})
+    a, b = pd.DataFrame(rows_s), pd.DataFrame(rows_a)
+    print("[1] fact sensitivity: P(score with cited fact > score with another indicator's fact); 0.5 = insensitive")
+    print(a.round(3).to_string(index=False))
+    print("\n[2] educator-label AUROC with cited vs shuffled facts (shuffled = mean over shuffles)")
+    print(b.round(3).to_string(index=False))
+    a.to_csv(os.path.join(args.out_dir, "fact_sensitivity.csv"), index=False)
+    b.to_csv(os.path.join(args.out_dir, "fact_controls_auroc.csv"), index=False)
 
 
 def cmd_restatement(args):
@@ -203,7 +276,6 @@ def main():
     ap.add_argument("--n-boot", type=int, default=10000)
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--out-dir", default="/data/results/review")
-
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     p = sub.add_parser("nonaffective")
@@ -217,6 +289,13 @@ def main():
     p.add_argument("--scores", default='/data/results/verifier_family/scores_with_logprob.pkl', help="true-record scores (scores_with_logprob.pkl)")
     p.add_argument("--controls", default="data/results/record_controls/scores_*.pkl")
     p.set_defaults(func=cmd_controls)
+
+    p = sub.add_parser("fact-controls")
+    p.add_argument("--scores", default='/data/results/verifier_family/scores_with_logprob.pkl', help="cited-fact scores (scores_with_logprob.pkl)")
+    p.add_argument("--controls", default="outputs/fact_controls/scores_*factshuf*.pkl")
+    p.add_argument("--flags", default="outputs/fact_controls/cases_factshuf1.pkl",
+                   help="any cases_factshuf*.pkl (for the status_matched flag)")
+    p.set_defaults(func=cmd_fact_controls)
 
     p = sub.add_parser("restatement")
     p.add_argument("--scores", default='/data/results/verifier_family/scores_with_logprob.pkl')
