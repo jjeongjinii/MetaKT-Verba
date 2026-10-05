@@ -58,18 +58,4 @@ Use the updated scoring scripts' premise selection and output tags to keep contr
 
 Fidelity is a manuscript experiment, rather than an optional future study. Its labels, mapping key, and retest data have not been supplied, so this analysis is not yet executable from released inputs. The two scripts use different identifier/label schemas; choose a canonical schema or provide a converter. The exploratory greedy label-flip search is not a manuscript table and must not be described as a guaranteed global minimum.
 
-## Shared helpers and release assembly
-
-Preserve the existing public `metakt_indicators.py`, `export_indicators.py`, `audit_cognitive_avoidance.py`, and `core_set_io.py`, even where they are absent from a local research copy. Verify exporter schema and row-ID equivalence before promising full data regeneration.
-
-`verifier_common.py` is a proposed consolidation, not an implemented module. The current verifier script still imports helpers from older few-shot and score-recovery scripts. Migrate the required prompt, case-table, sampling, citation, and I/O helpers and check imports before removing those scripts. Earlier source-file counts predated the latest manuscript's required control and fidelity analyses; they are not a complete release checklist.
-
-Use the latest verifier and logprob scorer versions with record-premise selection and tagged control outputs. Move credentials to environment variables and replace server-specific default paths before distribution.
-
-## Outside the minimal paper release
-
-Earlier standalone Ministral/Llama few-shot experiments, minimal-pair survey analysis, and MetaKT+ repair/training experiments are excluded. Retain any helpers that current scripts still import until consolidation is complete.
-
-Extra verbalized-confidence Gemma settings are supplementary artifacts with no numbered table in the latest manuscript. Missing annotation inputs constrain reproduction of fidelity and counter-evidence results; they do not remove those experiments from the paper's scope.
-
 The release does not yet provide a verified single-command end-to-end regeneration workflow. Remaining definition differences and unavailable analyses are documented in the repository-level README.
