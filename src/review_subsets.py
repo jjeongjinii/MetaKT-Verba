@@ -1,17 +1,20 @@
 import argparse
 import glob
 import os
+import re
 import sys
 
 import numpy as np
 import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from cluster_bootstrap_ci import cluster_auroc_ci  # noqa: E402
+from cluster_bootstrap_ci import cluster_auroc_ci, cluster_paired_auroc_diff  # noqa: E402
 
 VERIFIERS = ["mDeBERTa-v3-base-mnli-xnli", "DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
              "Bespoke-MiniCheck-7B", "Gemma-3-27B-it-logprob"]
+# Reproduces n = 257 and strict AUROC 0.466 for mDeBERTa (fact premise) on the 287-sentence set.
 AFFECT_LEXICON = r"frustrat|confus|bored|concentrat|emotion|feel|interest"
+# Internal indicator names as they appear in sentence text (natural-language or snake_case forms).
 INDICATOR_NAMES = (r"overconfiden|underconfiden|slipping|lucky[ _]guess|confidence[ _]triad|cognitive[ _]avoidance|"
                    r"productive[ _]struggle|unproductive[ _]frustration|strategic[ _]help|boredom[ _]offtask")
 TYPOS = {"unsuppported": "unsupported", "unsuported": "unsupported", "suported": "supported"}
@@ -45,6 +48,51 @@ def cmd_nonaffective(args):
     print(f"lexicon: {args.lexicon}")
     print(out.round(3).to_string(index=False))
     out.to_csv(os.path.join(args.out_dir, "nonaffective_auroc.csv"), index=False)
+
+
+def cmd_controls(args):
+    true = load_scores(args.scores)
+    true = true[true["premise"] == "record"][["item_id", "sentence_id", "verifier", "score", "majority_tag", "is_core"]]
+    ctl = []
+    for f in sorted(glob.glob(args.controls)):
+        m = re.search(r"(shuffle\d+|hyponly)", os.path.basename(f))
+        if not m:
+            continue
+        d = pd.read_pickle(f) if f.endswith(".pkl") else pd.read_csv(f)
+        d = d[d["premise"] == "record"][["item_id", "sentence_id", "verifier", "score"]].copy()
+        d["verifier"] = d["verifier"].str.replace(r"-(shuffle\d+|hyponly)$", "", regex=True)
+        d["variant"] = m.group(1)
+        ctl.append(d)
+    if not ctl:
+        raise FileNotFoundError(args.controls)
+    ctl = pd.concat(ctl, ignore_index=True)
+    ctl["kind"] = np.where(ctl["variant"].str.startswith("shuffle"), "shuffled", "hyponly")
+    wide = (ctl.groupby(["item_id", "sentence_id", "verifier", "kind"])["score"].mean()
+            .unstack("kind").reset_index())
+    nshuf = ctl[ctl.kind == "shuffled"].groupby("verifier")["variant"].nunique().to_dict()
+    df = true.merge(wide, on=["item_id", "sentence_id", "verifier"], how="inner")
+
+    rows = []
+    for (v, scope), g0 in [((v, sc), g[g.is_core == True] if sc == "core" else g)
+                           for v, g in df.groupby("verifier") for sc in ("core", "all")]:
+        for coding, pos in [("strict", {"supported"}), ("lenient", {"supported", "partial"})]:
+            for kind in ("shuffled", "hyponly"):
+                if kind not in g0 or g0[kind].isna().all():
+                    continue
+                g = g0.dropna(subset=[kind])
+                yy = g["majority_tag"].isin(pos).astype(int)
+                r = cluster_paired_auroc_diff(yy, g["score"], g[kind], g["item_id"], args.n_boot, args.seed)
+                c = cluster_auroc_ci(yy, g[kind], g["item_id"], args.n_boot, args.seed)
+                rows.append({"verifier": v, "scope": scope, "coding": coding, "control": kind,
+                             "n": r["n"], "auroc_true": r["auroc_a"], "auroc_control": r["auroc_b"],
+                             "control_lo": c["ci_lo"], "control_hi": c["ci_hi"],
+                             "delta": r["delta"], "delta_lo": r["ci_lo"], "delta_hi": r["ci_hi"],
+                             "p": r["p_value"],
+                             "n_shuffles": nshuf.get(v, 0) if kind == "shuffled" else None})
+    out = pd.DataFrame(rows)
+    print("auroc_control for 'shuffled' uses each sentence's mean score over the shuffles")
+    print(out.round(3).to_string(index=False))
+    out.to_csv(os.path.join(args.out_dir, "record_controls.csv"), index=False)
 
 
 def cmd_restatement(args):
@@ -120,7 +168,7 @@ def cmd_split(args):
     uns = base[base["majority_tag"] == "unsupported"].merge(c, on=["item_id", "sentence_id"], how="left")
     print(f"unsupported in analysis set: {len(uns)} (paper: 130); coded: {int(uns.counter_evidence.notna().sum())}; "
           f"contradicted: {int(uns.counter_evidence.fillna(False).sum())} (paper: 71)")
-  
+    # Section 5.4.2 check: counter-evidence rate among unsupported sentences Stage 3 passed vs failed
     md = s[(s["verifier"] == "mDeBERTa-v3-base-mnli-xnli") & (s["premise"] == "fact")][["item_id", "sentence_id", "score"]]
     chk = uns.drop(columns=["score"], errors="ignore").merge(md, on=["item_id", "sentence_id"]).dropna(subset=["counter_evidence"])
     if len(chk):
@@ -154,29 +202,37 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--n-boot", type=int, default=10000)
     ap.add_argument("--seed", type=int, default=42)
-    ap.add_argument("--out-dir", default="data/results/review")
+    ap.add_argument("--out-dir", default="/data/results/review")
+
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     p = sub.add_parser("nonaffective")
-    p.add_argument("--scores", default='data/results/verifier_family/scores_with_logprob.pkl')
+    p.add_argument("--scores", default='/data/results/verifier_family/scores_with_logprob.pkl')
     p.add_argument("--lexicon", default=AFFECT_LEXICON)
     p.add_argument("--verifiers", nargs="+", default=VERIFIERS)
     p.set_defaults(func=cmd_nonaffective)
 
+
+    p = sub.add_parser("record-controls")
+    p.add_argument("--scores", default='/data/results/verifier_family/scores_with_logprob.pkl', help="true-record scores (scores_with_logprob.pkl)")
+    p.add_argument("--controls", default="data/results/record_controls/scores_*.pkl")
+    p.set_defaults(func=cmd_controls)
+
     p = sub.add_parser("restatement")
-    p.add_argument("--scores", default='data/results/verifier_family/scores_with_logprob.pkl')
+    p.add_argument("--scores", default='/data/results/verifier_family/scores_with_logprob.pkl')
     p.add_argument("--pattern", default=INDICATOR_NAMES)
     p.add_argument("--threshold", type=float, default=0.5)
     p.set_defaults(func=cmd_restatement)
 
+
     p = sub.add_parser("loo-human")
-    p.add_argument("--scores", default='data/results/verifier_family/scores_with_logprob.pkl')
-    p.add_argument("--ratings", default="data/ratings/metakt_verba_ratings_R*.csv")
+    p.add_argument("--scores", default='/data/results/verifier_family/scores_with_logprob.pkl')
+    p.add_argument("--ratings", default="/data/ratings/metakt_verba_ratings_R*.csv")
     p.set_defaults(func=cmd_loo)
 
     p = sub.add_parser("unsupported-split")
-    p.add_argument("--scores", default='data/results/verifier_family/scores_with_logprob.pkl')
-    p.add_argument("--coding", default='data/annotations/counter_evidence_coding.csv', help="CSV with item_id, sentence_id and a counter-evidence flag")
+    p.add_argument("--scores", default='/data/results/verifier_family/scores_with_logprob.pkl')
+    p.add_argument("--coding", default='/data/annotations/counter_evidence_coding.csv', help="CSV with item_id, sentence_id and a counter-evidence flag")
     p.add_argument("--flag-col", default="counter_evidence")
     p.add_argument("--verifiers", nargs="+", default=VERIFIERS)
     p.set_defaults(func=cmd_split)
