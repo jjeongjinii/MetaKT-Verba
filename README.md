@@ -4,7 +4,7 @@ Code and study artifacts for **“Faithful to What? Auditing Automatic Faithfuln
 
 MetaKT-Verba converts Meta-KT's nine metacognitive indicators into short narratives for teachers. Stage 1 grounds indicators in symbolic facts, Stage 2 generates sentences with fact citations, and Stage 3 checks the sentences using NLI. The study evaluates narrative generation and audits automatic verification against five expert raters.
 
-This repository focuses on the experiments in Tables 1, 2, 3, and A1 and their supporting analyses. Earlier Ministral/Llama few-shot judge comparisons, minimal-pair surveys, and MetaKT+ feature-repair experiments are outside this release's scope.
+This repository focuses on the experiments in Tables 1, 2, 3, and their supporting analyses. Earlier Ministral/Llama few-shot judge comparisons, minimal-pair surveys, and MetaKT+ feature-repair experiments are outside this release's scope.
 
 ## Repository layout
 
@@ -41,8 +41,7 @@ Run commands from the repository root. Some research scripts retain server-speci
 |---|---|---|
 | Table 1: generation, baselines, and ablations | `rq1_recompute_from_json.py`, `rq1_full_bestmatch.py` | three generation JSON files and three best-match CSV files |
 | Table 2: human agreement and automatic–human alignment | `aggregate_ratings.py`, `threshold_retuning_analysis.py`, `cluster_bootstrap_ci.py` | fixed answer keys, R1–R5 responses, sentence-level scores |
-| Table 3: verifier discrimination | `cluster_bootstrap_ci.py verifiers` | `scores_main.csv` |
-| Table A1: paired record-minus-fact comparisons | `cluster_bootstrap_ci.py verifiers` | `scores_main.csv`; Holm correction across all 16 comparisons |
+| Table 3: verifier discrimination | `cluster_bootstrap_ci.py verifiers` | `scores_main.csv` | `cluster_bootstrap_ci.py verifiers` | `scores_main.csv`; Holm correction across all 16 comparisons |
 | Gemma scoring sensitivity | `verifier_family_experiment.py` | `scores_gemma_sensitivity.csv` |
 | Within-indicator and cognitive-avoidance analyses | `within_indicator_auroc.py`, `cluster_bootstrap_ci.py nli`, `audit_cognitive_avoidance.py` | sentence-level scores; derived/full-log inputs for the log audit |
 | Nonaffective, leave-one-rater-out, and restatement diagnostics | `review_subsets.py` | main scores and, for leave-one-rater-out, R1–R5 responses |
@@ -64,7 +63,7 @@ This command does not load a language model. Inspect the generated condition tab
 python src/cluster_bootstrap_ci.py --n-boot 10000 --seed 42 --out-dir outputs/verifier_cluster verifiers --scores data/results/verifier_family/scores_main.csv --answer-key data/stimuli/internal_answer_key.csv --verifiers "mDeBERTa-v3-base-mnli-xnli,DeBERTa-v3-large-mnli-fever-anli-ling-wanli,Bespoke-MiniCheck-7B,Gemma-3-27B-it-logprob" --holm-family all
 ```
 
-The script currently writes `table5_verifier_auroc_cluster.csv`; its **core/shared** rows correspond to the current paper's Table 3. It also writes `tableA1_paired_record_minus_fact_cluster.csv`. Historical filenames and script comments do not define the current paper's table numbering.
+The script currently writes `table5_verifier_auroc_cluster.csv`; its **core/shared** rows correspond to the current paper's Table 3. It also writes `paired_record_minus_fact_cluster.csv`. Historical filenames and script comments do not define the current paper's table numbering.
 
 ## Analysis conventions
 
@@ -72,7 +71,7 @@ The script currently writes `table5_verifier_auroc_cluster.csv`; its **core/shar
 - The main Gemma score is normalized Yes/No next-token probability, not verbalized confidence. Verbalized confidence and in-context settings are stored separately.
 - Strict positives are `supported`; lenient positives are `supported` or `partial`.
 - The main sentence analysis excludes negative controls, unknown labels, missing scores, and sentences without a reconstructable fact premise. Both premises use the same eligible sentences: **83 core sentences** or **287 sentences overall**. The five-rater core contains 40 items and 97 sentences before sentence eligibility filtering.
-- Verifier uncertainty is estimated by resampling items, with 10,000 bootstrap draws and seed 42. Table A1 uses one Holm family across 16 comparisons. RQ1 resamples interactions. Input order matters for reproducing seeded bootstrap results.
+- Verifier uncertainty is estimated by resampling items, with 10,000 bootstrap draws and seed 42. Table 3 uses one Holm family across 16 comparisons. RQ1 resamples interactions. Input order matters for reproducing seeded bootstrap results.
 - Fixed rating stimuli and original answer keys are preserved. Regenerating stimuli does not replace the material shown to the raters.
 - For shuffled-record controls, average each sentence's scores across five shuffles before computing AUROC. This differs from averaging five AUROCs. Control-generation seeds use 2027+k, k=1,…,5.
 
@@ -83,7 +82,7 @@ The prepared main score file was checked for unique keys, complete scores, match
 The following issues remain explicit rather than silently changing inputs to match the manuscript:
 
 - Table 2's item correlations use the **original item answer-key scores**, while sentence discrimination uses reconstructed scores. Weighted kappa excludes unknown ratings pairwise; the current aggregation implementation needs to be aligned with that definition.
-- Table A1 contains a remaining adjusted-p-value discrepancy. Regenerate all comparisons together from the main logprob scores before treating the released table as final.
+- Table 3 contains a remaining adjusted-p-value discrepancy. Regenerate all comparisons together from the main logprob scores before treating the released table as final.
 - The supplied restatement code identifies 42 sentences, whereas the manuscript reports 43. The leave-one-rater-out lenient minimum also needs a rounding/definition check.
 - The complete 130-sentence counter-evidence coding and fidelity labels are not provided. Unsupported-split and fidelity analyses are therefore outside the executable reproduction scope.
 - The stratified within-source AUROC and ordinal-median sensitivity require an explicit implementation. The original checkpoint AUC and full-log audit have not been independently rerun in this release preparation.
