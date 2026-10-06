@@ -7,7 +7,7 @@ openpyxl>=3.1
 # Generation and NLI verification (GPU)
 torch>=2.1
 transformers>=4.44
-huggingface_hub>=0.23
+huggingface_hub>=0.30.0,<1.0
 accelerate>=0.30
 sentencepiece>=0.1.99
 protobuf>=4.25
